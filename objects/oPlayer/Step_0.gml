@@ -94,4 +94,3 @@ if x < 0 or x > room_width or y > room_height {
 }
 
 if v_speed!=0 or (v_speed==0 and !place_meeting(x,y+3,oWall)) sprite_index=sJump
-
