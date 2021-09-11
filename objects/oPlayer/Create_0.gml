@@ -1,14 +1,3 @@
-h_speed = 0
-v_speed = 0
-accel = 0.15
-decel = 0.15
-mov_speed = 4
-jump_height = 9
-gravity_force = 0.5
-jump_press_time_max = 10
-jump_press_time = 0
-ground_time_max = 10
-ground_time = 0
-walljump_force = 6
-accel_air = 0.08
-decel_air = 0.08
+event_inherited();
+
+mov_speed = 3
