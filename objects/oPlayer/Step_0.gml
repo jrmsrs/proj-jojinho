@@ -5,10 +5,13 @@ if keyboard_check_pressed(ord("W")) {
     jumpPressTime = jumpPressTimeMax
 }
 
-if hAxis!=0{
-	image_xscale = hAxis*2
-	if hSpeed!=0 sprite_index = sRun else sprite_index = sIdle
-}else sprite_index = sIdle
+if hAxis!=0 
+	if hSpeed!=0 
+		sprite_index = sRun 
+	else 
+		sprite_index = sIdle
+else 
+	sprite_index = sIdle
 
 //Walljump
 if place_meeting(x+6,y,oWall) or place_meeting(x-6,y,oWall) {
