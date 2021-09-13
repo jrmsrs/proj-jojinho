@@ -37,8 +37,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Creature",
-    "path": "folders/Objects/Creature.yy",
+    "name": "Creatures",
+    "path": "folders/Objects/Creatures.yy",
   },
   "resourceVersion": "1.0",
   "name": "oPlayer",

@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Entities",
-    "path": "folders/Objects/Creature/Entities.yy",
+    "path": "folders/Objects/Creatures/Entities.yy",
   },
   "resourceVersion": "1.0",
   "name": "oEntAI",

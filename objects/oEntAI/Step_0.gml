@@ -1,4 +1,4 @@
-beingAttacked = mouse_check_button_pressed(mb_left)
+beingAttacked = mouse_check_button_pressed(mb_left) and distance_to_object(oPlayer)<attackRange
 backwardsPlayer = (image_xscale<0 and sign(x-oPlayer.x)<0) or (image_xscale>0 and sign(x-oPlayer.x)>0)
 
 event_inherited();
@@ -29,4 +29,10 @@ if distance_to_object(oPlayer)<attackRange{
 	if !place_meeting(x,y+6,oWall)
 		do hAxis=-2*sign(oPlayer.x-x) 
 		until distance_to_object(oPlayer)<attackRange
+}
+
+//se voltar para o player quando desviando
+if beingAttacked { 
+	hAxis=-2*sign(oPlayer.x-x) 
+	image_xscale=hAxis
 }

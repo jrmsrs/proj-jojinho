@@ -1,24 +1,24 @@
 //métodos
 getSpriteIdle = function(){
-	return sIdle
+	return sZombIdle
 }
 
 getSpriteRun = function(){
-	return sRun
+	return sZombRun
 }
 
 getSpriteSlide = function(){
-	return sIdle
+	return sZombIdle
 }
 
 getSpriteJump = function(){
-	return sJump
+	return sZombJump
 }
 
 getSpriteFall = function(){
-	return sJump
+	return sZombJump
 }
 
 getSpriteAttack = function(){
-	return [sUse,sUse,sUse]
+	return [sZombUse,sZombUse,sZombUse]
 }
