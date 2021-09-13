@@ -92,3 +92,12 @@ function resetIfOut(){
 	    y = ystart
 	}
 }
+	
+function swapSprite(){
+	if hAxis!=0										//Caso esteja se movendo
+		if running sprite_index = getSpriteRun()		//Caso esteja se movendo aceleradamente/fixo
+		else sprite_index = getSpriteSlide()			//Caso esteja desacelerando
+	else sprite_index = getSpriteIdle()				//Caso esteja totalmente parado
+	if jumping sprite_index=getSpriteJump()			
+	if falling sprite_index=getSpriteJump()
+}

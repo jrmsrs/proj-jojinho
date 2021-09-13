@@ -11,4 +11,6 @@ switch currentState {
     case states.attack: attackState(); break
 }
 
+swapSprite()
+
 resetIfOut()
