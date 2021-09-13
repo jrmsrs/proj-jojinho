@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":10,},
     {"id":{"name":"oEntTerrestrial","path":"objects/oEntTerrestrial/oEntTerrestrial.yy",},"order":0,},
     {"id":{"name":"sTiles01617","path":"sprites/sTiles01617/sTiles01617.yy",},"order":3,},
     {"id":{"name":"oGround","path":"objects/oGround/oGround.yy",},"order":2,},
@@ -33,7 +34,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":1,},
     {"id":{"name":"sUse2","path":"sprites/sUse2/sUse2.yy",},"order":4,},
     {"id":{"name":"sTiles015","path":"sprites/sTiles015/sTiles015.yy",},"order":1,},
-    {"id":{"name":"rTest","path":"rooms/rTest/rTest.yy",},"order":0,},
+    {"id":{"name":"rStage1","path":"rooms/rStage1/rStage1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -47,7 +48,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
+    {"roomId":{"name":"rStage1","path":"rooms/rStage1/rStage1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
