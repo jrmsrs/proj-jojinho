@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sTiles01617",
-    "path": "sprites/sTiles01617/sTiles01617.yy",
+    "name": "sTilesBasicPurple",
+    "path": "sprites/sTilesBasicPurple/sTilesBasicPurple.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
@@ -168,7 +168,9 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "tBlocks145",
-  "tags": [],
+  "name": "tBlock1",
+  "tags": [
+    "world",
+  ],
   "resourceType": "GMTileSet",
 }

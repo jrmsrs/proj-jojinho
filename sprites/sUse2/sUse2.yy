@@ -110,6 +110,8 @@
   },
   "resourceVersion": "1.0",
   "name": "sUse2",
-  "tags": [],
+  "tags": [
+    "player",
+  ],
   "resourceType": "GMSprite",
 }

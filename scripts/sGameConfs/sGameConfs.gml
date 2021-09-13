@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function keyInit(){
 	keyLeft = keyboard_check_direct(ord("A")) or gamepad_axis_value(0,gp_axislh)<0
 	keyRight = keyboard_check_direct(ord("D")) or gamepad_axis_value(0,gp_axislh)>0
@@ -31,6 +29,8 @@ function parallaxSetup(parallax){
 }
 
 function roomDefine(){
-	if room == rStage1 parallaxSetup(2)
-	
+	switch(room){
+		case rStage1: parallaxSetup(2); break
+		default: parallaxSetup(0)
+	}
 }

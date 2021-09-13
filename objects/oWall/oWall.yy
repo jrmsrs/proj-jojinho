@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite18",
-    "path": "sprites/Sprite18/Sprite18.yy",
+    "name": "_debug1",
+    "path": "sprites/_debug1/_debug1.yy",
   },
   "solid": false,
   "visible": false,
@@ -34,6 +34,8 @@
   },
   "resourceVersion": "1.0",
   "name": "oWall",
-  "tags": [],
+  "tags": [
+    "world",
+  ],
   "resourceType": "GMObject",
 }

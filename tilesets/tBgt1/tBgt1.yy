@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sTiles1",
-    "path": "sprites/sTiles1/sTiles1.yy",
+    "name": "sTilesBasicViolet",
+    "path": "sprites/sTilesBasicViolet/sTilesBasicViolet.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
@@ -168,7 +168,9 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "tBlocks2",
-  "tags": [],
+  "name": "tBgt1",
+  "tags": [
+    "world",
+  ],
   "resourceType": "GMTileSet",
 }

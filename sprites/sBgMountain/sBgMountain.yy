@@ -74,6 +74,8 @@
   },
   "resourceVersion": "1.0",
   "name": "sBgMountain",
-  "tags": [],
+  "tags": [
+    "world",
+  ],
   "resourceType": "GMSprite",
 }

@@ -32,6 +32,8 @@
   },
   "resourceVersion": "1.0",
   "name": "oEntAI",
-  "tags": [],
+  "tags": [
+    "enemies",
+  ],
   "resourceType": "GMObject",
 }

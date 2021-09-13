@@ -7,6 +7,10 @@
   },
   "resourceVersion": "1.0",
   "name": "sStateMachine",
-  "tags": [],
+  "tags": [
+    "player",
+    "enemies",
+    "game",
+  ],
   "resourceType": "GMScript",
 }

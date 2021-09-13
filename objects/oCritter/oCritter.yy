@@ -40,6 +40,8 @@
   },
   "resourceVersion": "1.0",
   "name": "oCritter",
-  "tags": [],
+  "tags": [
+    "enemies",
+  ],
   "resourceType": "GMObject",
 }

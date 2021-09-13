@@ -91,6 +91,8 @@
   },
   "resourceVersion": "1.0",
   "name": "sRun",
-  "tags": [],
+  "tags": [
+    "player",
+  ],
   "resourceType": "GMSprite",
 }

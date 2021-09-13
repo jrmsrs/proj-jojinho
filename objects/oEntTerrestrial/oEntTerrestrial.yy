@@ -29,6 +29,9 @@
   },
   "resourceVersion": "1.0",
   "name": "oEntTerrestrial",
-  "tags": [],
+  "tags": [
+    "player",
+    "enemies",
+  ],
   "resourceType": "GMObject",
 }

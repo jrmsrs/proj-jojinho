@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite18",
-    "path": "sprites/Sprite18/Sprite18.yy",
+    "name": "_debug1",
+    "path": "sprites/_debug1/_debug1.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,11 +27,13 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Debug",
-    "path": "folders/Objects/Debug.yy",
+    "name": "_debug",
+    "path": "folders/Objects/_debug.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oMouse",
-  "tags": [],
+  "name": "_oMouse",
+  "tags": [
+    "game",
+  ],
   "resourceType": "GMObject",
 }
