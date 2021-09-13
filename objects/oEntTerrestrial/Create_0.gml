@@ -14,5 +14,8 @@ accelAir = 0.08
 decelAir = 0.08
 hAxis = 0
 walljumpForce = 0
+
 currentState = states.normal;
 defaultScale = image_xscale
+
+attacking=0

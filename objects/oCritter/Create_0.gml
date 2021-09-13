@@ -1,3 +1,3 @@
 event_inherited();
 
-movSpeed = 1
+movSpeed = 0.5

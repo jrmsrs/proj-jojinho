@@ -1,5 +1,6 @@
 keyInit()
 hAxis = round(keyRight-keyLeft)
+if keyAttack attacking=1
 
 event_inherited();
 

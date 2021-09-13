@@ -11,6 +11,10 @@ switch currentState {
     case states.attack: attackState(); break
 }
 
+gravityMove()
+collisionMove()
+walljumpMove()
+
 swapSprite()
 
 resetIfOut()
