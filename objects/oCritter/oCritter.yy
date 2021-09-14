@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "sIdle",
-    "path": "sprites/sIdle/sIdle.yy",
+    "name": "sZombIdle",
+    "path": "sprites/sZombIdle/sZombIdle.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "sIdle",
-    "path": "sprites/sIdle/sIdle.yy",
+    "name": "sZombIdle",
+    "path": "sprites/sZombIdle/sZombIdle.yy",
   },
   "persistent": false,
   "parentObjectId": {

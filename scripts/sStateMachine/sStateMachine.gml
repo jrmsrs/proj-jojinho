@@ -1,28 +1,10 @@
 function enumInit(){
 	enum states{
-		normal,
-		attack
-	}
-}
-
-function normalState(){
-	flipMove()
-	frictionMove()
-	jumpMove()
-	
-
-	//Swap pra estado de ataque
-	if attacking==1{
-		image_index=0
-		currentState=states.attack
-	}
-}
-
-function attackState(){
-	
-	if image_index>=image_number-1{
-		currentState=states.normal
-		attacking=0
+		IDLE,
+		MOVE,
+		AIR,
+		HIT,
+		ATTACK
 	}
 }
 
@@ -64,10 +46,10 @@ function collisionMove(){
 	//Collision left/right and apply force
 	if place_meeting(x+hSpeed,y,oWall) {
 	    while(!place_meeting(x+sign(hSpeed),y,oWall)) 
-			if currentState=states.normal x+=sign(hSpeed)
+			x+=sign(hSpeed)
 	    hSpeed = 0
 	}
-	if currentState=states.normal  x+=hSpeed
+	x+=hSpeed
 	//Collision top/down and apply force
 	if place_meeting(x,y+vSpeed,oWall) {
 	    while(!place_meeting(x,y+sign(vSpeed),oWall)) y+=sign(vSpeed)
@@ -96,26 +78,4 @@ function resetIfOut(){
 	    x = xstart
 	    y = ystart
 	}
-}
-	
-function swapSprite(){
-	if hAxis!=0	{									//Caso esteja se movendo
-		if running{
-			sprite_index = getSpriteRun()		//Caso esteja se movendo aceleradamente/fixo
-		}else{
-			sprite_index = getSpriteSlide()			//Caso esteja desacelerando
-		}
-	}else{
-		sprite_index = getSpriteIdle()				//Caso esteja totalmente parado
-	}
-	if jumping{
-		sprite_index=getSpriteJump()
-	}
-	if falling{
-		sprite_index=getSpriteJump()
-	}
-	if attacking{
-		sprite_index=getSpriteAttack()[attacking-1]
-	}
-	
 }

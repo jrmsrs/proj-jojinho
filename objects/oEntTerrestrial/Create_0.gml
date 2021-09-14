@@ -15,7 +15,9 @@ decelAir = 0.08
 hAxis = 0
 walljumpForce = 0
 
-currentState = states.normal;
+currentState = states.IDLE;
 defaultScale = image_xscale
 
 attacking=0
+
+debug=0

@@ -26,6 +26,7 @@ if distance_to_object(oPlayer)<attackRange and !playerBackwards{
 	if beingAttacked{
 		jumpHeight/=1.3
 		jumpPressTime = jumpPressTimeMax
+		attacking=0
 	}else jumpHeight=jumpHeightOriginal
 	if !place_meeting(x,y+6,oWall)  
 		do hAxis=-2*sign(oPlayer.x-x) 
@@ -36,4 +37,8 @@ if distance_to_object(oPlayer)<attackRange and !playerBackwards{
 if beingAttacked and !playerBackwards { 
 	hAxis=-2*sign(oPlayer.x-x) 
 	image_xscale=-hAxis
+}
+
+if (place_meeting(x+35,y,oPlayer) or place_meeting(x-35,y,oPlayer)) {
+	attacking=1
 }
