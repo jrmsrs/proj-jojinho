@@ -4,16 +4,17 @@ function enumInit(){
 		MOVE,
 		AIR,
 		HIT,
-		ATTACK
+		ATTACK,
+		AIRTTACK
 	}
 }
 
-function flipMove(){
+function flipToDirection(){
 	if hAxis==1 or hAxis==-1 
 		image_xscale = hAxis*defaultScale
 }
 	
-function frictionMove(){
+function accelDecel(){
 	if onFloor {
 	    if hAxis != 0 hSpeed = lerp(hSpeed,hAxis * movSpeed,accel)
 	    else hSpeed = lerp(hSpeed,0,decel)
@@ -23,7 +24,7 @@ function frictionMove(){
 	}
 }
 
-function jumpMove(){
+function jump(){
 	if jumpPressTime>0 jumpPressTime--
 	if groundTime>0 groundTime--
 	if onFloor groundTime = groundTimeMax
@@ -34,7 +35,7 @@ function jumpMove(){
 	}
 }
 
-function gravityMove(){
+function gravity(){
 	//Gravity
 	vSpeed += gravityForce
 	//limit max falling speed
@@ -42,7 +43,7 @@ function gravityMove(){
 	
 }
 	
-function collisionMove(){
+function wallCollision(){
 	//Collision left/right and apply force
 	if place_meeting(x+hSpeed,y,oWall) {
 	    while(!place_meeting(x+sign(hSpeed),y,oWall)) 
@@ -58,7 +59,7 @@ function collisionMove(){
 	y+=vSpeed 
 }
 
-function walljumpMove(){
+function wallJump(){
 	if place_meeting(x+6,y,oWall) or place_meeting(x-6,y,oWall) {
 		if walljumpForce==0 exit
 	    if jumpPressTime>0 and !onFloor {

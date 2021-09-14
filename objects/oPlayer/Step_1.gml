@@ -1,24 +1,28 @@
 //métodos
 getSpriteIdle = function(){
-	return sIdle
+	return sPlayerIdle
 }
 
 getSpriteRun = function(){
-	return sRun
+	return sPlayerRun
 }
 
 getSpriteSlide = function(){
-	return sIdle
+	return sPlayerIdle
 }
 
 getSpriteJump = function(){
-	return sJump
+	return sPlayerJump
 }
 
 getSpriteFall = function(){
-	return sJump
+	return sPlayerJump
 }
 
 getSpriteAttack = function(){
-	return [sUse,sUse,sUse]
+	return [sPlayerAttack1,sPlayerAttack1,sPlayerAttack1]
+}
+
+getSpriteAirttack = function(){
+	return sPlayerAirttack
 }

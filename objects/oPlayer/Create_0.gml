@@ -1,4 +1,4 @@
 event_inherited();
-walljumpForce = 6
+walljumpForce = 3
 movSpeed = 3
 debug=1

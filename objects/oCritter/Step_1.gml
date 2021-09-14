@@ -20,5 +20,9 @@ getSpriteFall = function(){
 }
 
 getSpriteAttack = function(){
-	return [sZombUse,sZombUse,sZombUse]
+	return [sZombAirttack,sZombAirttack,sZombAirttack]
+}
+
+getSpriteAirttack = function(){
+	return sZombAirttack
 }

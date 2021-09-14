@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "sIdle",
-    "path": "sprites/sIdle/sIdle.yy",
+    "name": "sPlayerIdle",
+    "path": "sprites/sPlayerIdle/sPlayerIdle.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oEntTerrestrial",
-    "path": "objects/oEntTerrestrial/oEntTerrestrial.yy",
+    "name": "oEntHumanoid",
+    "path": "objects/oEntHumanoid/oEntHumanoid.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
