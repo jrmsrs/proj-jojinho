@@ -1,28 +1,9 @@
-//métodos
-getSpriteIdle = function(){
-	return sZombIdle
-}
-
-getSpriteRun = function(){
-	return sZombRun
-}
-
-getSpriteSlide = function(){
-	return sZombIdle
-}
-
-getSpriteJump = function(){
-	return sZombJump
-}
-
-getSpriteFall = function(){
-	return sZombJump
-}
-
-getSpriteAttack = function(){
-	return [sZombAirttack,sZombAirttack,sZombAirttack]
-}
-
-getSpriteAirttack = function(){
-	return sZombAirttack
-}
+//sprites var
+sIdleby = sZombIdle
+sIdle = sZombIdle
+sAttack = [sZombAttack,sZombAttack,sZombAttack]
+sDash = sZombIdle
+sRun = sZombRun
+sRunttack = sZombIdle
+sAir = [sZombJump, sZombJump]
+sAirttack = sZombAirttack

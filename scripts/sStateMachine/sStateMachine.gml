@@ -1,10 +1,11 @@
 function enumInit(){
 	enum states{
 		IDLE,
+		ATTACK,
+		DASH,
 		MOVE,
 		AIR,
 		HIT,
-		ATTACK,
 		AIRTTACK
 	}
 }
@@ -25,14 +26,12 @@ function accelDecel(){
 }
 
 function jump(){
-	if jumpPressTime>0 jumpPressTime--
-	if groundTime>0 groundTime--
-	if onFloor groundTime = groundTimeMax
-	if jumpPressTime>0 and groundTime>0 {
-	    vSpeed = -jumpHeight
-	    jumpPressTime = 0
-	    groundTime = 0
+
+	if jumpPressTime>0 {
+		vSpeed = -jumpHeight
+		jumpPressTime = 0
 	}
+	
 }
 
 function gravity(){

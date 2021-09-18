@@ -6,10 +6,8 @@ decel = 0.15
 movSpeed = 1.5
 jumpHeight = 9
 gravityForce = 0.5
-jumpPressTimeMax = 10
+jumpPressTimeMax = 5
 jumpPressTime = 0
-groundTimeMax = 10
-groundTime = 0
 accelAir = 0.08
 decelAir = 0.08
 hAxis = 0
@@ -19,5 +17,6 @@ currentState = states.IDLE;
 defaultScale = image_xscale
 
 attacking=0
+dashing=0
 
 debug=0
