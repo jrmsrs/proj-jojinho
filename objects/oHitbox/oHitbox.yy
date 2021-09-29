@@ -4,7 +4,7 @@
     "path": "sprites/_debug2hitbox/_debug2hitbox.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

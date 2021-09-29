@@ -135,10 +135,15 @@ switch currentState {
 		if sprite_index != sAirttack
 			image_index=0
 		sprite_index = sAirttack
-		if image_index>=image_number-1
+		if image_index>=image_number-1{
 			image_index=image_number-1
-		if vSpeed==0 and onFloor
-			currentState=states.IDLE
+			if vSpeed==0 and onFloor
+				currentState=states.IDLE
+		}
+		if vSpeed==0 and onFloor{ //caso caia no chao antes de terminar o ataque:
+			sprite_index = sAttack[0] //entre no estado attack a partir do mesmo indice de sprite
+			currentState=states.ATTACK
+		}
 		attacking=0
 		if hurt 
 			currentState=states.HURT
