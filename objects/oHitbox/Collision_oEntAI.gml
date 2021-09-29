@@ -5,6 +5,6 @@ if layer==!layer_get_id("PlayerBladeHitbox") exit
 if place_meeting(x,y,other) 
 	switch(oPlayer.weapon1){
 		case "Blade Wu":
-			other.hurt = 10
+			other.hurt = 5
 			break
 	}

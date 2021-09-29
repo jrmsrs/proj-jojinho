@@ -22,4 +22,7 @@ dashing=0
 
 debug=0
 
+life=10
+def=.2
 hurt=0
+faintTimer=0

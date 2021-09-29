@@ -20,3 +20,6 @@ sRun = sPlayerRun
 sRunttack = sPlayerRunttack
 sAir = [sPlayerAirJump, sPlayerAirFall]
 sAirttack = sPlayerAirttack
+sHurt = sPlayerHurt
+sHurtFall = sPlayerHurtFall
+sHurtFallBack = sPlayerHurtFallBack

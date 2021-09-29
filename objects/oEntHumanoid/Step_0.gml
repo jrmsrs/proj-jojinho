@@ -125,6 +125,7 @@ switch currentState {
 		}
 		if hurt 
 			currentState=states.HURT
+		accelDecel()
 		gravity()
 		break
 		
@@ -148,9 +149,51 @@ switch currentState {
 		break
 		
 	case states.HURT:
+		if sprite_index != sHurt{
+			image_index=0
+			life -= hurt - hurt*def 
+		}
+		sprite_index = sHurt
+		if image_index>=image_number-1{
+			currentState=states.IDLE
+			hurt=0
+		}
 		hSpeed=0
-		
+		if life<=0
+			currentState=states.HURTFALL
 		gravity()
+		break
+		
+	case states.HURTFALL:
+		if sprite_index != sHurtFall
+			image_index=0
+		sprite_index = sHurtFall
+		if image_index>=image_number-1{
+			faintTimer=0
+			currentState=states.FAINT
+		}
+		break
+		
+	case states.HURTFALLBACK:
+		if sprite_index != sHurtFallBack
+			image_index=0
+		sprite_index = sHurtFallBack
+		if image_index>=image_number-1{
+			currentState=states.IDLE
+		}
+		break
+		
+	case states.FAINT:
+		image_index=image_number-1
+		if faintTimer>=10
+			if !(life>0){ //depois do debug setar pra if life>0
+				hurt=0
+				life=10
+				currentState=states.HURTFALLBACK
+			}else
+				instance_destroy(self)
+		faintTimer++
+		break
 }
 
 wallCollision()

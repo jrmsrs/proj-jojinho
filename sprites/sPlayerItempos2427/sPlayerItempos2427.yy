@@ -110,8 +110,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Creatures/Player.yy",
+    "name": "Game",
+    "path": "folders/Sprites/Game.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayerItempos2427",

@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Item_Blades",
-    "path": "folders/Sprites/Item_Blades.yy",
+    "name": "Game",
+    "path": "folders/Sprites/Game.yy",
   },
   "resourceVersion": "1.0",
   "name": "sIBladeTemp",

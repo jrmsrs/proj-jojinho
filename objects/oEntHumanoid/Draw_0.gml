@@ -19,16 +19,32 @@ switch currentState{
 		draw_text(x,y-sprite_height,"Air")
 		break
 		
-	case states.ATTACK : 
+	case states.ATTACK: 
 		draw_text(x,y-sprite_height,"Attack")
 		break
 		
-	case states.AIRTTACK : 
+	case states.AIRTTACK: 
 		draw_text(x,y-sprite_height,"Airttack")
 		break
 		
-	case states.RUNTTACK : 
+	case states.RUNTTACK: 
 		draw_text(x,y-sprite_height,"Runttack")
+		break
+	
+	case states.HURT:
+		draw_text(x,y-sprite_height,"Hurt")
+		break
+		
+	case states.HURTFALL:
+		draw_text(x,y-sprite_height,"Hurtfall")
+		break
+		
+	case states.HURTFALLBACK:
+		draw_text(x,y-sprite_height,"Hurtfallback")
+		break
+		
+	case states.FAINT:
+		draw_text(x,y-sprite_height,"Faint")
 		break
 	
 }

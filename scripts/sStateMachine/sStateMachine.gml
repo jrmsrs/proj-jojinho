@@ -9,7 +9,10 @@ function enumInit(){
 		AIR,
 		HIT,
 		AIRTTACK,
-		HURT
+		HURT,
+		HURTFALL,
+		HURTFALLBACK,
+		FAINT
 	}
 }
 
