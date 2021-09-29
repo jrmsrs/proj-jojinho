@@ -1,9 +1,11 @@
 function enumInit(){
 	enum states{
+		IDLEBY,
 		IDLE,
 		ATTACK,
 		DASH,
-		MOVE,
+		RUN,
+		RUNTTACK,
 		AIR,
 		HIT,
 		AIRTTACK

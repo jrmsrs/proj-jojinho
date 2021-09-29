@@ -12,6 +12,7 @@ accelAir = 0.08
 decelAir = 0.08
 hAxis = 0
 walljumpForce = 0
+idleTimer = 0
 
 currentState = states.IDLE;
 defaultScale = image_xscale

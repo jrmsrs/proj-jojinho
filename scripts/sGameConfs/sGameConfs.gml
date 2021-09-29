@@ -5,8 +5,8 @@ function keyInit(){
 	keyJumpHold = keyboard_check(ord("W")) or gamepad_button_check(0,gp_face1)
 	keyJumpReleased = keyboard_check_released(ord("W")) or gamepad_button_check_released(0,gp_face1)
 	keyDash = keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0,gp_face2)
-	keyAttack = keyboard_check_pressed(ord("K")) or gamepad_button_check_pressed(0,gp_face3)
-	
+	keyAttack = mouse_check_button_pressed(mb_left) or gamepad_button_check_pressed(0,gp_face3)
+	keyQuit = keyboard_check_pressed(ord("K"))
 }
 
 function parallaxSetup(parallax){
