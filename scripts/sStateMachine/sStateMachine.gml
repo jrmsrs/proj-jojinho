@@ -8,7 +8,8 @@ function enumInit(){
 		RUNTTACK,
 		AIR,
 		HIT,
-		AIRTTACK
+		AIRTTACK,
+		HURT
 	}
 }
 

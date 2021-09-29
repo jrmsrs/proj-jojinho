@@ -21,3 +21,5 @@ attacking=0
 dashing=0
 
 debug=0
+
+hurt=0
