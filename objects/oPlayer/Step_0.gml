@@ -1,6 +1,6 @@
 keyInit()
 hAxis = round(keyRight-keyLeft)
-if keyAttack attacking=1
+if keyAttack && weapon1!="none" attacking=1
 if keyDash and dashTimer>=100{
 	dashing=1
 	dashTimer=0

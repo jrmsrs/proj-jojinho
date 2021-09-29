@@ -101,7 +101,7 @@ switch currentState {
 		break
 		
 	case states.RUNTTACK:
-		hSpeed+=(.04*sign(-image_xscale))
+		hSpeed+=(.05*sign(-image_xscale))
 		if sprite_index != sRunttack
 			image_index=0
 		sprite_index = sRunttack
@@ -109,6 +109,7 @@ switch currentState {
 			currentState=states.IDLE
 			attacking=0
 		}
+		gravity()
 		break
 		
 	case states.AIRTTACK:

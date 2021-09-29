@@ -9,6 +9,8 @@ debug=1
 dashTimer=0
 dashMax=100
 
+weapon1="Blade Wu"
+
 //sprites
 sIdleby = sPlayerIdleby
 sIdle = sPlayerIdle
