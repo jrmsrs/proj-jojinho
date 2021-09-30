@@ -11,7 +11,7 @@ switch currentState {
 			image_index=0
 		}
 		sprite_index = sIdleby
-		if keyboard_check_pressed(vk_anykey) or idleTimer>=100{
+		if keyboard_check_pressed(vk_anykey) or mouse_check_button_pressed(mb_any) or idleTimer>=100{
 			currentState=states.IDLE
 			idleTimer=0
 		}
@@ -23,14 +23,14 @@ switch currentState {
 		if sprite_index != sIdle
 			image_index=0
 		sprite_index = sIdle
-		if keyboard_check_pressed(vk_anykey) idleTimer=0
+		if keyboard_check_pressed(vk_anykey) or mouse_check_button_pressed(mb_any) idleTimer=0
 		if idleTimer>=500
 			currentState=states.IDLEBY
 		if hAxis!=0 and !place_meeting(x+sign(image_xscale),y,oWall)
 			currentState=states.RUN
 		if vSpeed!=0
 			currentState=states.AIR
-		if attacking
+		if onFloor and attacking
 			currentState=states.ATTACK
 		if dashing
 			currentState=states.DASH
@@ -97,16 +97,37 @@ switch currentState {
 		break
 	
 	case states.ATTACK: 
-		if image_index == 3 
-			instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
 		hSpeed=0
-		if sprite_index != sAttack[0]
+		if sprite_index != sAttack[combo]{
 			image_index=0
-		sprite_index = sAttack[0]
-		if image_index>=image_number-1{
-			currentState=states.IDLE
-			attacking=0
+			attacking--
 		}
+		sprite_index = sAttack[combo]
+		
+		if image_index >= 2 {
+			if sprite_index != sAttack[0] and image_index == 2{  //combos acertam por tras
+				instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
+				instance_create_layer(x+5*-sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
+			}else if image_index == 3{
+				instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
+			}
+		}
+		
+		if image_index>=image_number-1{
+			if sprite_index == sAttack[2]
+				attacking=0
+			if !attacking{
+				currentState=states.IDLE
+				combo=0
+			}else{
+				combo=++combo%3
+			}
+		}
+		
+		if attacking>=2
+			attacking=2 //guarda um maximo de 2 proximos ataques em buffer 
+		if dashing
+			currentState=states.DASH
 		if hurt 
 			currentState=states.HURT
 		gravity()
@@ -116,13 +137,17 @@ switch currentState {
 		if image_index == 3 
 			instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
 		//hSpeed+=(.03*sign(-image_xscale))
-		if sprite_index != sRunttack
+		if sprite_index != sRunttack{
 			image_index=0
+			attacking=0
+		}
 		sprite_index = sRunttack
 		if image_index>=image_number-1{
 			currentState=states.IDLE
-			attacking=0
+			combo=1
 		}
+		if dashing
+			currentState=states.DASH
 		if hurt 
 			currentState=states.HURT
 		accelDecel()
@@ -145,6 +170,8 @@ switch currentState {
 			currentState=states.ATTACK
 		}
 		attacking=0
+		if dashing
+			currentState=states.DASH
 		if hurt 
 			currentState=states.HURT
 		flipToDirection()

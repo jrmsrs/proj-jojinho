@@ -19,6 +19,7 @@ defaultScale = image_xscale
 
 attacking=0
 dashing=0
+combo=0
 
 debug=0
 

@@ -19,3 +19,4 @@ if jumpPressTime>0 and !keyJumpHold jumpPressTime--
 if jumping and keyJumpReleased vSpeed = vSpeed/2
 
 dashTimer++
+

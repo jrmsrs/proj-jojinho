@@ -23,3 +23,5 @@ sAirttack = sPlayerAirttack
 sHurt = sPlayerHurt
 sHurtFall = sPlayerHurtFall
 sHurtFallBack = sPlayerHurtFallBack
+
+alpha=0
