@@ -11,7 +11,7 @@ switch currentState {
 			image_index=0
 		}
 		sprite_index = sIdleby
-		if keyboard_check_pressed(vk_anykey) or mouse_check_button_pressed(mb_any) or idleTimer>=100{
+		if anyKeyPressed or idleTimer>=100{
 			currentState=states.IDLE
 			idleTimer=0
 		}

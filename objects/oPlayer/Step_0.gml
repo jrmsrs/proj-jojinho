@@ -1,13 +1,10 @@
 keyInit()
 hAxis = round(keyRight-keyLeft)
 if keyAttack && weapon1!="none" attacking=1
-if keyDash and dashTimer>=100{
+if keyDash and dashLimiter{
 	dashing=1
-	dashTimer=0
-}
+	dashLimiter=0
 
-if dashTimer>=dashMax{
-	dashTimer=dashMax
 }
 
 event_inherited();
@@ -18,5 +15,4 @@ if jumpPressTime>0 and !keyJumpHold jumpPressTime--
 //Pulo medio
 if jumping and keyJumpReleased vSpeed = vSpeed/2
 
-dashTimer++
-
+if onFloor dashLimiter = 1
