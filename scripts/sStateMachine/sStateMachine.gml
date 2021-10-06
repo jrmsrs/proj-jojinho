@@ -1,4 +1,4 @@
-function enumInit(){
+function statesInit(){
 	enum states{
 		IDLEBY,
 		IDLE,

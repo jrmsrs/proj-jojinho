@@ -1,3 +1,5 @@
+statesInit()
+
 hSpeed = 0
 vSpeed = 0
 vSpeedMax = 12

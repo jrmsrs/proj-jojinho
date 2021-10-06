@@ -31,7 +31,7 @@
     "path": "folders/Objects/Creatures/Entities.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oEntAI",
+  "name": "oEntAIEnPatrol",
   "tags": [
     "enemies",
   ],

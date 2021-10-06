@@ -1,8 +1,7 @@
 onFloor = place_meeting(x,y+6,oWall)
 jumping = vSpeed<0 or (vSpeed==0 and !onFloor)
 
-//STATE MACHINE
-enumInit()
+if object_get_parent(oEntAIEnPatrol) anyKeyPressed=1
 
 switch currentState {
 	case states.IDLEBY:
@@ -23,7 +22,7 @@ switch currentState {
 		if sprite_index != sIdle
 			image_index=0
 		sprite_index = sIdle
-		if keyboard_check_pressed(vk_anykey) or mouse_check_button_pressed(mb_any) idleTimer=0
+		if anyKeyPressed idleTimer=0
 		if idleTimer>=500
 			currentState=states.IDLEBY
 		if hAxis!=0 and !place_meeting(x+sign(image_xscale),y,oWall)

@@ -11,8 +11,8 @@
   },
   "persistent": false,
   "parentObjectId": {
-    "name": "oEntAI",
-    "path": "objects/oEntAI/oEntAI.yy",
+    "name": "oEntAIEnPatrol",
+    "path": "objects/oEntAIEnPatrol/oEntAIEnPatrol.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
