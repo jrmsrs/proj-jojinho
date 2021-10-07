@@ -8,7 +8,7 @@ instance_create_layer(x,y,"Game",oCamera)
 //individual specie values
 walljumpForce=3
 movSpeed=3
-debug=1
+//debug=0
 
 dashLimiter=1
 

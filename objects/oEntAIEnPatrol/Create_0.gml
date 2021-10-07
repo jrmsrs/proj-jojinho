@@ -9,4 +9,4 @@ maxRange = 220
 iaTimer = 0
 distanceSensor = 0
 
-debug=1
+//debug=0

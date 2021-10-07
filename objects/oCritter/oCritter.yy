@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sPlayerIdle",
-    "path": "sprites/sPlayerIdle/sPlayerIdle.yy",
+    "name": "sZombAirttack",
+    "path": "sprites/sZombAirttack/sZombAirttack.yy",
   },
   "solid": false,
   "visible": true,

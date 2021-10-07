@@ -26,14 +26,11 @@ if image_index==image_number-1 and !attacking alpha=0
 
 if image_index>3 and ((firstAttack and !attacking) or sprite_index == sAttack[2]){ //fade off
 	alpha-=.045
-	//show_debug_message(image_alpha)
 }else{ 
 	alpha+=.035
-	//show_debug_message("n")
 }
 	
 if alpha>=1 alpha=1
 if alpha<=0 alpha=0
-
 
 draw_self()

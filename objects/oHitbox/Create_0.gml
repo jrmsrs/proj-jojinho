@@ -1,3 +1,5 @@
+if !oEntHumanoid.debug image_alpha = 0
+
 frames=0
 
 if layer==layer_get_id("PlayerBladeHitbox"){
