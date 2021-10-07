@@ -1,5 +1,6 @@
 event_inherited();
 
+alignment = "enemy"
 //jumpHeightOriginal = jumpHeight
 maxRange = 220
 //attackRange = 70

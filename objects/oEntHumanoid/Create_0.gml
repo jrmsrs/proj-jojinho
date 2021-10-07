@@ -1,5 +1,7 @@
 statesInit()
 
+alignment = "player"
+
 hSpeed = 0
 vSpeed = 0
 vSpeedMax = 12
@@ -25,7 +27,9 @@ combo=0
 
 debug=0
 
-life=10
+maxLife=10
+life=maxLife
+lifeTillFaint=10
 def=.2
 hurt=0
 faintTimer=0

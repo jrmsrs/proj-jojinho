@@ -1,6 +1,8 @@
 //parent values
 event_inherited();
 
+alignment = "player"
+
 instance_create_layer(x,y,"Game",oCamera)
 
 //individual specie values
@@ -26,3 +28,5 @@ sHurtFall = sPlayerHurtFall
 sHurtFallBack = sPlayerHurtFallBack
 
 alpha=0
+
+life=30

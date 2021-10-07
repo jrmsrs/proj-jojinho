@@ -1,6 +1,8 @@
 /// @description Description
 keyInit()
 
+if !object_exists(oPlayer) exit
+
 xCam = clamp(oPlayer.x - wCam / 2, 0, room_width - wCam)
 yCam = clamp(oPlayer.y - hCam / 2, 0, room_height - hCam)
 

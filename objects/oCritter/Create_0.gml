@@ -28,4 +28,4 @@ sHurt = sPlayerHurt
 sHurtFall = sPlayerHurtFall
 sHurtFallBack = sPlayerHurtFallBack
 
-image_blend = c_green
+image_blend = c_red

@@ -104,12 +104,12 @@ switch currentState {
 		sprite_index = sAttack[combo]
 		
 		if image_index >= 2 {
-			if sprite_index != sAttack[0] and image_index == 2{  //combos acertam por tras
-				instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
-				instance_create_layer(x+5*-sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
-			}else if image_index == 3{
-				instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
-			}
+			if alignment == "player"
+				if sprite_index != sAttack[0] and image_index == 2{  //combos acertam por tras
+					instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
+					instance_create_layer(x+5*-sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
+				}else if image_index == 3
+					instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
 		}
 		
 		if image_index>=image_number-1{
@@ -134,7 +134,8 @@ switch currentState {
 		
 	case states.RUNTTACK:
 		if image_index == 3 
-			instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
+			if alignment == "player"
+				instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
 		//hSpeed+=(.03*sign(-image_xscale))
 		if sprite_index != sRunttack{
 			image_index=0
@@ -155,7 +156,8 @@ switch currentState {
 		
 	case states.AIRTTACK:
 		if image_index == 3 
-			instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
+			if alignment == "player"
+				instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
 		if sprite_index != sAirttack
 			image_index=0
 		sprite_index = sAirttack
@@ -183,6 +185,7 @@ switch currentState {
 		if sprite_index != sHurt{
 			image_index=0
 			life -= hurt - hurt*def 
+			lifeTillFaint -= hurt - hurt*def 
 		}
 		sprite_index = sHurt
 		if image_index>=image_number-1{
@@ -190,7 +193,7 @@ switch currentState {
 			hurt=0
 		}
 		hSpeed=0
-		if life<=0
+		if life<=0 or lifeTillFaint<=0
 			currentState=states.HURTFALL
 		gravity()
 		break
@@ -215,14 +218,20 @@ switch currentState {
 		break
 		
 	case states.FAINT:
+		lifeTillFaint=10
 		image_index=image_number-1
 		if faintTimer>=10
-			if !(life>0){ //depois do debug setar pra if life>0
+			if life>0{
 				hurt=0
-				life=10
 				currentState=states.HURTFALLBACK
 			}else
-				instance_destroy(self)
+				if object_index!=oPlayer{
+					instance_destroy(self)
+					exit
+				}else{
+					game_restart()
+				}
+				
 		faintTimer++
 		break
 }
