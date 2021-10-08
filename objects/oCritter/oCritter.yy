@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "sZombAirttack",
-    "path": "sprites/sZombAirttack/sZombAirttack.yy",
+    "name": "sZombIdle",
+    "path": "sprites/sZombIdle/sZombIdle.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "sPlayerIdle",
-    "path": "sprites/sPlayerIdle/sPlayerIdle.yy",
+    "name": "sZombIdle",
+    "path": "sprites/sZombIdle/sZombIdle.yy",
   },
   "persistent": false,
   "parentObjectId": {

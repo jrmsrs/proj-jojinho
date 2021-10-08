@@ -14,4 +14,5 @@ if jumpPressTime>0 and !keyJumpHold jumpPressTime--
 //Pulo medio
 if jumping and keyJumpReleased vSpeed = vSpeed/2
 
-if onFloor or place_meeting(x+6,y,oWall) dashLimiter = 1
+//recupera possibilidade de dash quando esta no chao ou quando faz walljump
+if onFloor or (place_meeting(x+6,y,oWall) and keyJumpPressed) dashLimiter = 1

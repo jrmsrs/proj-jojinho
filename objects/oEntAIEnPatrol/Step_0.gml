@@ -61,10 +61,11 @@ switch(currentState){
 	case states.ATTACK:
 		if image_index >= 2 {
 			if sprite_index != sAttack[0] and image_index == 2{  //combos acertam por tras
-				instance_create_layer(x+16*sign(image_xscale),y-30,"EnemyHitbox",oHitbox)
+				instance_create_layer(x+12*sign(image_xscale),y-30,"EnemyHitbox",oHitbox)
 				instance_create_layer(x+5*-sign(image_xscale),y-30,"EnemyHitbox",oHitbox)
-			}else if image_index == 3
-				instance_create_layer(x+16*sign(image_xscale),y-30,"EnemyHitbox",oHitbox)
+			}else if image_index == 3{
+				instance_create_layer(x+12*sign(image_xscale),y-30,"EnemyHitbox",oHitbox)
+			}
 		}
 		break
 		

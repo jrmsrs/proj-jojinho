@@ -1,4 +1,4 @@
-//if !oEntHumanoid.debug image_alpha = 0
+if !oEntHumanoid.debug image_alpha = 0
 
 frames=0
 
