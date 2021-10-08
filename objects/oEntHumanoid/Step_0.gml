@@ -107,10 +107,10 @@ switch currentState {
 		if image_index >= 2 {
 			if alignment == "player"
 				if sprite_index != sAttack[0] and image_index == 2{  //combos acertam por tras
-					instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
+					instance_create_layer(x+12*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
 					instance_create_layer(x+5*-sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
 				}else if image_index == 3
-					instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
+					instance_create_layer(x+12*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
 		}
 		
 		if image_index>=image_number-1{
@@ -136,7 +136,7 @@ switch currentState {
 	case states.RUNTTACK:
 		if image_index == 3 
 			if alignment == "player"
-				instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
+				instance_create_layer(x+12*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
 		//hSpeed+=(.03*sign(-image_xscale))
 		if sprite_index != sRunttack{
 			image_index=0
@@ -158,7 +158,7 @@ switch currentState {
 	case states.AIRTTACK:
 		if image_index == 3 
 			if alignment == "player"
-				instance_create_layer(x+16*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
+				instance_create_layer(x+12*sign(image_xscale),y-30,"PlayerBladeHitbox",oHitbox)
 		if sprite_index != sAirttack
 			image_index=0
 		sprite_index = sAirttack

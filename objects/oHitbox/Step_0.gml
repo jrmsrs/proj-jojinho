@@ -4,7 +4,7 @@ if layer==layer_get_id("PlayerBladeHitbox"){
 		image_angle=-70*dir
 	}
 	if frames>=1{
-		image_yscale=.4
+		image_yscale=.5
 		image_angle=-130*dir
 	}
 } else if layer==layer_get_id("EnemyHitbox"){
@@ -13,7 +13,7 @@ if layer==layer_get_id("PlayerBladeHitbox"){
 		image_angle=-70*dir
 	}
 	if frames>=1{
-		image_yscale=.4
+		image_yscale=.5
 		image_angle=-130*dir
 	}
 }
