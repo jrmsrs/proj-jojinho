@@ -33,7 +33,7 @@
     {"id":{"name":"sZombRun","path":"sprites/sZombRun/sZombRun.yy",},"order":4,},
     {"id":{"name":"_debug2hitbox","path":"sprites/_debug2hitbox/_debug2hitbox.yy",},"order":1,},
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},"order":0,},
-    {"id":{"name":"oCritter","path":"objects/oCritter/oCritter.yy",},"order":0,},
+    {"id":{"name":"oZomb","path":"objects/oZomb/oZomb.yy",},"order":0,},
     {"id":{"name":"sPlayerAttack3","path":"sprites/sPlayerAttack3/sPlayerAttack3.yy",},"order":6,},
     {"id":{"name":"sPlayerHurtFallBack","path":"sprites/sPlayerHurtFallBack/sPlayerHurtFallBack.yy",},"order":17,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":2,},
@@ -98,6 +98,8 @@
     {"folderPath":"folders/Sprites/Creatures.yy","order":13,"resourceVersion":"1.0","name":"Creatures","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Creatures/Enemies.yy","order":1,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Item_Blades.yy","order":14,"resourceVersion":"1.0","name":"Item_Blades","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Creatures/Enemies/Zomb.yy","order":9,"resourceVersion":"1.0","name":"Zomb","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Creatures/Enemies/Demo.yy","order":10,"resourceVersion":"1.0","name":"Demo","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

@@ -36,7 +36,7 @@
     "path": "folders/Objects/Creatures.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oCritter",
+  "name": "oZomb",
   "tags": [
     "enemies",
   ],
