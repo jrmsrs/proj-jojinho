@@ -1,5 +1,6 @@
 onFloor = place_meeting(x,y+6,oWall)
 jumping = vSpeed<0 or (vSpeed==0 and !onFloor)
+invincible = currentState==states.FAINT or currentState==states.HURTFALL or currentState==states.HURTFALLBACK
 
 if object_get_parent(oEntAIEnPatrol) anyKeyPressed=1
 
@@ -192,7 +193,7 @@ switch currentState {
 			currentState=states.IDLE
 			hurt=0
 		}
-		hSpeed=0
+		if image_index>=1 and onFloor hSpeed=0
 		if life<=0 or lifeTillFaint<=0
 			currentState=states.HURTFALL
 		gravity()
@@ -203,9 +204,14 @@ switch currentState {
 			image_index=0
 		sprite_index = sHurtFall
 		if image_index>=image_number-1{
-			faintTimer=0
-			currentState=states.FAINT
+			image_index=image_number-1
+			if onFloor{
+				faintTimer=0
+				currentState=states.FAINT
+			}
 		}
+		gravity()
+		if onFloor hSpeed=0
 		break
 		
 	case states.HURTFALLBACK:
@@ -215,6 +221,7 @@ switch currentState {
 		if image_index>=image_number-1{
 			currentState=states.IDLE
 		}
+		gravity()
 		break
 		
 	case states.FAINT:
@@ -231,8 +238,9 @@ switch currentState {
 				}else{
 					game_restart()
 				}
-				
+		if onFloor hSpeed=0
 		faintTimer++
+		gravity()
 		break
 }
 

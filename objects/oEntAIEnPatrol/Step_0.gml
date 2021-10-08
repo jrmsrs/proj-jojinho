@@ -2,12 +2,9 @@ event_inherited();
 
 if !object_exists(oPlayer) exit
 
-
-playerInvincible = oPlayer.currentState==states.FAINT or oPlayer.currentState==states.HURTFALL or oPlayer.currentState==states.HURTFALLBACK
-
 function chase(){
 	if distance_to_object(oPlayer) <= 38 and distance_to_object(oPlayer) > 15{
-		if playerInvincible return false
+		if oPlayer.invincible return false
 		hAxis = sign(oPlayer.x-x) 
 		return true
 	}
@@ -26,10 +23,10 @@ switch(currentState){
 		if iaTimer >= 300 or chase(){
 			iaTimer=0
 			currentState = states.RUN
-			if !playerInvincible hAxis=sign(image_xscale)
+			if !oPlayer.invincible hAxis=sign(image_xscale)
 			else hAxis=-sign(image_xscale)
 		}
-		if distance_to_object(oPlayer) <= 14 and sign(oPlayer.x-x)==sign(image_xscale) and !playerInvincible{
+		if distance_to_object(oPlayer) <= 14 and sign(oPlayer.x-x)==sign(image_xscale) and !oPlayer.invincible{
 			hAxis=0
 			attacking=1
 		}
@@ -54,7 +51,7 @@ switch(currentState){
 		
 		if chase() iaTimer=0 //
 		
-		if distance_to_object(oPlayer)<=14 and !playerInvincible {
+		if distance_to_object(oPlayer)<=14 and !oPlayer.invincible {
 			hAxis=0
 			currentState = states.IDLE
 		}

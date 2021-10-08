@@ -2,9 +2,13 @@
 if layer!=layer_get_id("PlayerBladeHitbox") exit
 
 //enviar dano
-if place_meeting(x,y,other) 
-	switch(oPlayer.weapon1){
-		case "Blade Wu":
-			other.hurt = 5
-			break
-	}
+switch(oPlayer.weapon1){
+	case "Blade Wu":
+		other.hurt = 5
+		break
+}
+	
+if !other.invincible{
+	other.hSpeed = choose(0,1,2,3,4)*sign(image_xscale)
+	other.vSpeed = -4
+}
