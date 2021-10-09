@@ -11,6 +11,11 @@ switch weapon1 {
 		weapon1Sprite2 = sIBladeWuAtk2
 		weapon1Sprite3 = sIBladeWuAtk3
 		break
+	case "Blade Draga":
+		weapon1Sprite1 = sIBladeDragaAtk1
+		weapon1Sprite2 = sIBladeDragaAtk2
+		weapon1Sprite3 = sIBladeDragaAtk3
+		break
 }
 
 if sprite_index == sAttack[0] or sprite_index == sRunttack

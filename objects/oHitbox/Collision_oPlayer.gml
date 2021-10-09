@@ -2,7 +2,7 @@
 if layer!=layer_get_id("EnemyHitbox") exit
 
 //if place_meeting(x,y,other) 
-	other.hurt = 5
+	other.hurt = choose(2,3,4,5,6)
 
 if !other.invincible{
 	other.hSpeed = choose(1,2,3,4)*sign(image_xscale)

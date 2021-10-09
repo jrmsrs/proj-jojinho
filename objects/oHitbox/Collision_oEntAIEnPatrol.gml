@@ -6,6 +6,9 @@ switch(oPlayer.weapon1){
 	case "Blade Wu":
 		other.hurt = 5
 		break
+	case "Blade Draga":
+		other.hurt = choose(2,8)
+		break
 }
 	
 if !other.invincible{

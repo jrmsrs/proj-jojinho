@@ -86,8 +86,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sprites/Creatures/Enemies.yy",
+    "name": "Zomb",
+    "path": "folders/Sprites/Creatures/Enemies/Zomb.yy",
   },
   "resourceVersion": "1.0",
   "name": "sZombAirttack",
