@@ -18,7 +18,7 @@ function statesInit(){
 }
 
 function aiFlyingStatesInit(){
-	enum states{
+	enum aiFlyingStates{
 		SCOUT,
 		CHASE,
 		RETURN,

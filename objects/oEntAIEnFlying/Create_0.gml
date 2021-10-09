@@ -8,7 +8,9 @@ accel=0.15
 decel=0.15
 hSpeed=0
 vSpeed=0
-scale=image_xscale
+scale=-image_xscale
 scoutCounter=0
+originX=x
+originY=y
 
-currentState=states.SCOUT
+currentState=aiFlyingStates.SCOUT

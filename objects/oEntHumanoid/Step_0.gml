@@ -1,6 +1,6 @@
 onFloor = place_meeting(x,y+6,oWall)
 jumping = vSpeed<0 or (vSpeed==0 and !onFloor)
-invincible = currentState==states.FAINT or currentState==states.HURTFALL or currentState==states.HURTFALLBACK
+invincible = currentState==states.FAINT or currentState==states.HURT or currentState==states.HURTFALL or currentState==states.HURTFALLBACK
 
 if object_get_parent(oEntAIEnPatrol) anyKeyPressed=1
 
