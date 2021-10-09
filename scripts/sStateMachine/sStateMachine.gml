@@ -1,5 +1,6 @@
 function statesInit(){
 	enum states{
+		//humanoid
 		IDLEBY,
 		IDLE,
 		ATTACK,
@@ -9,6 +10,18 @@ function statesInit(){
 		AIR,
 		HIT,
 		AIRTTACK,
+		HURT,
+		HURTFALL,
+		HURTFALLBACK,
+		FAINT
+	}
+}
+
+function aiFlyingStatesInit(){
+	enum states{
+		SCOUT,
+		CHASE,
+		RETURN,
 		HURT,
 		HURTFALL,
 		HURTFALLBACK,
