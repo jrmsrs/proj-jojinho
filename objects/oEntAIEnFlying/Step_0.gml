@@ -3,11 +3,14 @@
 //caso esteja muito distante
 
 //3 estados: Scout, Chase/Attack, Return
+invincible = currentState==aiFlyingStates.FAINT or currentState==aiFlyingStates.HURT or currentState==aiFlyingStates.HURTFALL or currentState==aiFlyingStates.HURTFALLBACK
+onFloor = place_meeting(x,y+6,oWall)
 
 switch currentState{
 	case aiFlyingStates.SCOUT:
 		movSpeed=movSpeedScout
-		sprite_index=sDemoScout
+		sprite_index=sScout
+		
 		if scoutCounter>=100{
 			hSpeed= choose(1,.5,-.5,-1)*movSpeed
 			vSpeed= choose(1,.5,-.5,-1)*movSpeed
@@ -21,49 +24,107 @@ switch currentState{
 			vSpeed=-vSpeed
 			scoutCounter=0
 		}
+		
 		if distance_to_object(oPlayer)<=130 and !oPlayer.invincible
 			currentState=aiFlyingStates.CHASE
 		if distance_to_point(originX,originY)>=300
 			currentState=aiFlyingStates.RETURN
+		if hurt 
+			currentState=aiFlyingStates.HURT
+		if hSpeed!=0 image_xscale = sign(hSpeed)*scale
 		break
 		
 	case aiFlyingStates.CHASE:
 		scoutCounter=100
 		movSpeed=movSpeedChase
-		sprite_index=sDemoChase
-		
+		sprite_index=sChase
 		
 		if x-oPlayer.x>3 or x-oPlayer.x<-3 
 			hSpeed=-sign(x-oPlayer.x)*movSpeed
 		if y-oPlayer.y>3 or y-oPlayer.y<-3 
 			vSpeed=-sign(y-oPlayer.y)*movSpeed
-		
 			
 		if distance_to_object(oPlayer)>130 or oPlayer.invincible
 			currentState=aiFlyingStates.SCOUT
+		if hurt 
+			currentState=aiFlyingStates.HURT
+		if hSpeed!=0 image_xscale = sign(hSpeed)*scale
 		break
 		
 	case aiFlyingStates.RETURN:
 		scoutCounter=100
+		
 		if distance_to_object(oPlayer)<=130 and !oPlayer.invincible
 			currentState=aiFlyingStates.CHASE
-			
 		if (x>originX-10 and x<originX+10) and (y>originY-10 and y<originY+10)
 			currentState=aiFlyingStates.SCOUT
+		if hurt 
+			currentState=aiFlyingStates.HURT
 			
 		if x-originX>3 or x-originX<-3 
 			hSpeed=-sign(x-originX)*movSpeed
 		if y-originX>3 or y-originX<-3 
 			vSpeed=-sign(y-originY)*movSpeed
+		if hSpeed!=0 image_xscale = sign(hSpeed)*scale
 		break
 		
+	case aiFlyingStates.HURT:
+		scoutCounter=100
+		if sprite_index != sHurt{
+			image_index=0
+			life -= hurt - hurt*def 
+			lifeTillFaint -= hurt - hurt*def 
+		}
+		
+		sprite_index = sHurt
+		if image_index>=image_number-1{
+			currentState=aiFlyingStates.SCOUT
+			hurt=0
+		}
+		if life<=0 or lifeTillFaint<=0
+			currentState=aiFlyingStates.HURTFALL
+		break
+		
+	case aiFlyingStates.HURTFALL:
+		if sprite_index != sHurtFall{
+			image_index=0
+		}	
+		sprite_index=sHurtFall
+		
+		if image_index>=image_number-3{
+			image_index=0
+			if onFloor{
+				faintTimer=0
+				currentState=aiFlyingStates.FAINT
+			}
+		}
+		gravity()
+		break
+		
+	case aiFlyingStates.FAINT:
+		lifeTillFaint=10
+		if image_index>=image_number-1
+			image_index=image_number-1
+		if faintTimer>=10
+			if life>0{
+				hurt=0
+				currentState=aiFlyingStates.HURTFALLBACK
+			}else instance_destroy(self)
+		faintTimer++
+		gravity()
+		break
+	
+	case aiFlyingStates.HURTFALLBACK:
+		if sprite_index != sHurtFallBack
+			image_index=0
+		sprite_index = sHurtFallBack
+		if image_index>=image_number-1
+			currentState=aiFlyingStates.SCOUT
+		gravity()
+		break
+	
 }
 
 wallCollision()
 
-if hSpeed!=0 image_xscale = sign(hSpeed)*scale
-
-//show_debug_message(-sign(x-originX))
-//show_debug_message("x_y")
-//show_debug_message(-sign(y-originY))
 scoutCounter++
