@@ -10,4 +10,3 @@ sHurtFall = sDemoHurtFall
 sHurtFallBack = sDemoHurtFallBack
 sScout = sDemoScout
 
-life=20

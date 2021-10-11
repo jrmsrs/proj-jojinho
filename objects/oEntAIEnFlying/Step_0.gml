@@ -5,6 +5,7 @@
 //3 estados: Scout, Chase/Attack, Return
 invincible = currentState==aiFlyingStates.FAINT or currentState==aiFlyingStates.HURT or currentState==aiFlyingStates.HURTFALL or currentState==aiFlyingStates.HURTFALLBACK
 onFloor = place_meeting(x,y+6,oWall)
+if invincible and !currentState==aiFlyingStates.HURT hurt=0
 
 switch currentState{
 	case aiFlyingStates.SCOUT:
@@ -75,12 +76,10 @@ switch currentState{
 			life -= hurt - hurt*def 
 			lifeTillFaint -= hurt - hurt*def 
 		}
-		
 		sprite_index = sHurt
-		if image_index>=image_number-1{
+		hurt=0
+		if image_index>=image_number-1
 			currentState=aiFlyingStates.SCOUT
-			hurt=0
-		}
 		if lifeTillFaint<=0
 			currentState=aiFlyingStates.HURTFALL
 		if life<=0{

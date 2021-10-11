@@ -3,6 +3,7 @@ jumping = vSpeed<0 or (vSpeed==0 and !onFloor)
 invincible = currentState==states.FAINT or currentState==states.HURT or currentState==states.HURTFALL or currentState==states.HURTFALLBACK
 
 if object_get_parent(oEntAIEnPatrol) anyKeyPressed=1
+if invincible and !currentState==states.HURT hurt=0
 
 switch currentState {
 	case states.IDLEBY:
@@ -189,10 +190,9 @@ switch currentState {
 			lifeTillFaint -= hurt - hurt*def 
 		}
 		sprite_index = sHurt
-		if image_index>=image_number-1{
+		hurt=0
+		if image_index>=image_number-1
 			currentState=states.IDLE
-			hurt=0
-		}
 		if image_index>=1 and onFloor hSpeed=0
 		if lifeTillFaint<=0
 			currentState=states.HURTFALL

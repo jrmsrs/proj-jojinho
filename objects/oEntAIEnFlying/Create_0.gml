@@ -15,9 +15,9 @@ originY=y
 gravityForce = 0.5
 vSpeedMax = 12
 
-maxLife=20
+maxLife=10
 life=maxLife
-lifeTillFaint=10
+lifeTillFaint=5
 def=.2
 hurt=0
 faintTimer=0

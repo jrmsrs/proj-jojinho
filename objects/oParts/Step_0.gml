@@ -92,9 +92,9 @@ if !runOnce{
 
 if runOnce++ >= 1
 	runOnce=1
-if timer++ >= 300
+if timer++ >= 400
 	image_alpha-=.005
-if timer >= 500
+if timer >= 600
 	instance_destroy()
 	
 gravity()
