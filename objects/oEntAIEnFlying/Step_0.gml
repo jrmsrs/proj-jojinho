@@ -81,8 +81,15 @@ switch currentState{
 			currentState=aiFlyingStates.SCOUT
 			hurt=0
 		}
-		if life<=0 or lifeTillFaint<=0
+		if lifeTillFaint<=0
 			currentState=aiFlyingStates.HURTFALL
+		if life<=0{
+			var corpse = instance_create_layer(x,y-10,"Creatures",oParts)
+			corpse.owner=name
+			corpse.variant=choose(0,1,2)
+			corpse.part=0
+			instance_destroy(self)
+		}
 		break
 		
 	case aiFlyingStates.HURTFALL:
@@ -105,11 +112,9 @@ switch currentState{
 		lifeTillFaint=10
 		if image_index>=image_number-1
 			image_index=image_number-1
-		if faintTimer>=10
-			if life>0{
-				hurt=0
-				currentState=aiFlyingStates.HURTFALLBACK
-			}else instance_destroy(self)
+		if faintTimer>=15
+			hurt=0
+			currentState=aiFlyingStates.HURTFALLBACK
 		faintTimer++
 		gravity()
 		break

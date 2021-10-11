@@ -1,6 +1,7 @@
 statesInit()
 
 alignment = "player"
+name = "creature"
 
 hSpeed = 0
 vSpeed = 0

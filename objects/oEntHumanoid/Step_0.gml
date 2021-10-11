@@ -194,8 +194,20 @@ switch currentState {
 			hurt=0
 		}
 		if image_index>=1 and onFloor hSpeed=0
-		if life<=0 or lifeTillFaint<=0
+		if lifeTillFaint<=0
 			currentState=states.HURTFALL
+		if life<=0{
+			var corpse = instance_create_layer(x,y-10,"Creatures",oParts)
+			corpse.owner=name
+			corpse.variant=choose(0,1,2)
+			corpse.part=0
+			if object_index!=oPlayer{
+				instance_destroy(self)
+				exit
+			}else{
+				game_restart()
+			}
+		}
 		gravity()
 		break
 		
@@ -227,17 +239,12 @@ switch currentState {
 	case states.FAINT:
 		lifeTillFaint=10
 		image_index=image_number-1
-		if faintTimer>=10
-			if life>0{
-				hurt=0
-				currentState=states.HURTFALLBACK
-			}else
-				if object_index!=oPlayer{
-					instance_destroy(self)
-					exit
-				}else{
-					game_restart()
-				}
+		if faintTimer>=15
+			hurt=0
+			currentState=states.HURTFALLBACK
+			
+				
+			
 		if onFloor hSpeed=0
 		faintTimer++
 		gravity()

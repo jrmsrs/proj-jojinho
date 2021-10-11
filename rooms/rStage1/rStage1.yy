@@ -26,7 +26,8 @@
             {"properties":[],"isDnd":false,"objectId":{"name":"oZomb","path":"objects/oZomb/oZomb.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2032.0,"y":544.0,"resourceVersion":"1.0","name":"inst_125BB5A8","tags":[],"resourceType":"GMRInstance",},
             {"properties":[],"isDnd":false,"objectId":{"name":"oZomb","path":"objects/oZomb/oZomb.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2384.0,"y":672.0,"resourceVersion":"1.0","name":"inst_64DF2275","tags":[],"resourceType":"GMRInstance",},
             {"properties":[],"isDnd":false,"objectId":{"name":"oZomb","path":"objects/oZomb/oZomb.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2224.0,"y":736.0,"resourceVersion":"1.0","name":"inst_7429C9C6","tags":[],"resourceType":"GMRInstance",},
-            {"properties":[],"isDnd":false,"objectId":{"name":"oDemo","path":"objects/oDemo/oDemo.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-3.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1728.0,"y":416.0,"resourceVersion":"1.0","name":"inst_2219AD22","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"oDemo","path":"objects/oDemo/oDemo.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1728.0,"y":416.0,"resourceVersion":"1.0","name":"inst_2219AD22","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"oDemo","path":"objects/oDemo/oDemo.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":480.0,"resourceVersion":"1.0","name":"inst_5BAB9262","tags":[],"resourceType":"GMRInstance",},
           ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Creatures","tags":[],"resourceType":"GMRInstanceLayer",},
         {"instances":[
             {"properties":[],"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":4.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":512.0,"resourceVersion":"1.0","name":"inst_3ADFD961","tags":[],"resourceType":"GMRInstance",},
@@ -1040,7 +1041,7 @@
       ],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"BackBgs","tags":[],"resourceType":"GMRLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "",
+  "creationCodeFile": "${project_dir}/rooms/rStage1/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_204F6D56","path":"rooms/rStage1/rStage1.yy",},
@@ -1137,6 +1138,7 @@
     {"name":"inst_64DF2275","path":"rooms/rStage1/rStage1.yy",},
     {"name":"inst_7429C9C6","path":"rooms/rStage1/rStage1.yy",},
     {"name":"inst_2219AD22","path":"rooms/rStage1/rStage1.yy",},
+    {"name":"inst_5BAB9262","path":"rooms/rStage1/rStage1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -1157,7 +1159,7 @@
     "PhysicsWorld": false,
     "PhysicsWorldGravityX": 0.0,
     "PhysicsWorldGravityY": 10.0,
-    "PhysicsWorldPixToMetres": 0.1,
+    "PhysicsWorldPixToMetres": 0.01,
   },
   "parent": {
     "name": "Rooms",

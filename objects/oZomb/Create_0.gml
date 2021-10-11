@@ -1,6 +1,8 @@
 //parent values
 event_inherited();
 
+name="zomb"
+
 //individual specie values
 movSpeed = 0.5
 

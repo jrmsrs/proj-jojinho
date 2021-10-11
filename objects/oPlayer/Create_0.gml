@@ -2,6 +2,7 @@
 event_inherited();
 
 alignment = "player"
+name="player"
 
 instance_create_layer(x,y,"Game",oCamera)
 
