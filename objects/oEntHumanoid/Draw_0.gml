@@ -1,4 +1,4 @@
-draw_self()
+event_inherited();
 
 if !debug exit
 switch currentState{

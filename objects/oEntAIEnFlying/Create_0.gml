@@ -1,3 +1,5 @@
+event_inherited();
+
 aiFlyingStatesInit()
 
 movSpeedScout=1.2

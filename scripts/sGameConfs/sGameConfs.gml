@@ -14,6 +14,8 @@ function keyInit(){
 	keyUpSec = keyboard_check_direct(vk_up) or gamepad_axis_value(0,gp_axisrv)<-0.01
 	keyDownSec = keyboard_check_direct(vk_down) or gamepad_axis_value(0,gp_axisrv)>0.01
 	
+	gpAxisRNull = (!keyLeftSec and !keyRightSec and !keyUpSec and !keyDownSec) and !keyboard_check(vk_anykey)
+	
 	anyKeyPressed = keyLeft or keyRight or keyJumpPressed or keyDash or keyAttack
 }
 

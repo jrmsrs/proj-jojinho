@@ -1,3 +1,5 @@
+event_inherited();
+
 statesInit()
 
 alignment = "player"

@@ -31,3 +31,7 @@ sHurtFallBack = sPlayerHurtFallBack
 alpha=0
 
 life=30
+maxLife=life
+
+cursor=0
+cursorMoved=false

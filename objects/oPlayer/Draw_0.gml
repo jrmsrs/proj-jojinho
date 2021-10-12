@@ -1,7 +1,7 @@
 /// @description Description
 
 // Inherit the parent event
-event_inherited();
+
 
 firstAttack = sprite_index == sAttack[0] or sprite_index == sAirttack or sprite_index == sRunttack
 
@@ -39,3 +39,5 @@ if alpha>=1 alpha=1
 if alpha<=0 alpha=0
 
 draw_self()
+
+event_inherited();

@@ -25,3 +25,8 @@ if keyboard_check_pressed(ord("M")){
 	weapon1="Blade Draga"
 	show_message("Draga")
 }
+if !gpAxisRNull{
+	cursor = instance_create_layer(x,y-17,"Creatures",oGamePadCursor)
+	global.playerDir = point_direction(0,0, gamepad_axis_value(0,gp_axisrh), gamepad_axis_value(0,gp_axisrv));
+}else
+	cursorMoved=false
