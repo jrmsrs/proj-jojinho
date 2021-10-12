@@ -5,7 +5,7 @@ if variable_instance_exists(oCamera,"xCam")
 	and x > oCamera.xCam
 	and y <= camera_get_view_height(view_camera[0])+oCamera.yCam
 	and y > oCamera.yCam{
-		x += lengthdir_x(14, dir)
-		y += lengthdir_y(14, dir)
+		x += lengthdir_x(30, dir)
+		y += lengthdir_y(30, dir)
 	}else
 		instance_destroy()

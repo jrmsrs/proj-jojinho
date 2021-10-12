@@ -1,5 +1,6 @@
 image_xscale=.1
 image_yscale=image_xscale
+
 keyInit()
 
 if !mouse_check_button_released(mb_middle) 
