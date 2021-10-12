@@ -25,3 +25,5 @@ hurt=0
 faintTimer=0
 
 currentState=aiFlyingStates.SCOUT
+
+//showHealthTimer=0

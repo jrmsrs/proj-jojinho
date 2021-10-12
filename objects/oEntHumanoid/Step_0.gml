@@ -1,3 +1,5 @@
+event_inherited();
+
 onFloor = place_meeting(x,y+6,oWall)
 jumping = vSpeed<0 or (vSpeed==0 and !onFloor)
 invincible = currentState==states.FAINT or currentState==states.HURT or currentState==states.HURTFALL or currentState==states.HURTFALLBACK
@@ -72,6 +74,8 @@ switch currentState {
 			currentState=states.DASH
 		if hurt 
 			currentState=states.HURT
+		if shooting
+			currentState=states.SHOOTTACK
 		flipToDirection()
 		accelDecel()
 		jump()
@@ -91,6 +95,8 @@ switch currentState {
 			currentState=states.DASH
 		if hurt 
 			currentState=states.HURT
+		if shooting
+			shooting=0
 		if image_index>=image_number-1
 			image_index=image_number-1
 		flipToDirection()
@@ -186,6 +192,7 @@ switch currentState {
 		break
 		
 	case states.SHOOTTACK:
+		hSpeed=0
 		if sprite_index != sShoot{
 			image_index=0
 		}
@@ -193,6 +200,13 @@ switch currentState {
 		shooting=0
 		if image_index>=image_number-1
 			currentState=states.IDLE
+		if image_index==image_number-2
+			instance_create_layer(
+				x+(global.playerDir>=62 and (global.playerDir<=90))*10*-sign(image_xscale)
+				+(global.playerDir>=270 and (global.playerDir<=308))*10*sign(image_xscale),
+				y - 30,
+				"Creatures",oBullet
+			)
 		if dashing
 			currentState=states.DASH
 		if hurt 
@@ -210,6 +224,10 @@ switch currentState {
 		hurt=0
 		if image_index>=image_number-1
 			currentState=states.IDLE
+		if shooting
+			shooting=0
+		if attacking
+			attacking=0
 		if image_index>=1 and onFloor hSpeed=0
 		if lifeTillFaint<=0
 			currentState=states.HURTFALL
@@ -260,7 +278,12 @@ switch currentState {
 			hurt=0
 			currentState=states.HURTFALLBACK
 		}
-		if onFloor hSpeed=0
+		if shooting
+			shooting=0
+		if attacking
+			attacking=0
+		if onFloor 
+			hSpeed=0
 		faintTimer++
 		gravity()
 		break

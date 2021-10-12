@@ -37,5 +37,6 @@ maxLife=life
 
 cursor=0
 cursorMoved=false
+initialPlayerDir=1
 global.playerDir=0
 shootDir=0

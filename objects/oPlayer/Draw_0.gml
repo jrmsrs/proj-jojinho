@@ -34,7 +34,6 @@ if image_index>3 and ((firstAttack and !attacking) or sprite_index == sAttack[2]
 if alpha>=1 alpha=1
 if alpha<=0 alpha=0
 
-
 //ranged attack
 switch weapon2 {
 	case "Gun Revla":
@@ -47,14 +46,12 @@ if image_xscale==defaultScale
 		shootDir = global.playerDir
 	else shootDir = 0
 else 
-	if !( (global.playerDir <= 360 and global.playerDir>=270) or (global.playerDir > 0 and global.playerDir<=90) )
+	if !( (global.playerDir < 360 and global.playerDir>270) or (global.playerDir > 0 and global.playerDir<90) )
 		shootDir = global.playerDir+180
 	else shootDir = 0
 
 if sprite_index == sShoot
 		draw_sprite_ext(weapon2Sprite,image_index,x,y-20,sign(image_xscale),sign(image_yscale),shootDir,c_white,1)
-
-	
 
 draw_self()
 show_debug_message(global.playerDir)

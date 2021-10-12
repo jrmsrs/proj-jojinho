@@ -31,5 +31,10 @@ if keyboard_check_pressed(ord("M")){
 if !gpAxisRNull{
 	cursor = instance_create_layer(x,y-17,"Creatures",oGamePadCursor)
 	global.playerDir = point_direction(0,0, gamepad_axis_value(0,gp_axisrh), gamepad_axis_value(0,gp_axisrv));
+	initialPlayerDir = 0
 }else
 	cursorMoved=false
+	
+if initialPlayerDir
+	if image_xscale>0 global.playerDir=0
+	else global.playerDir=180

@@ -1,6 +1,4 @@
-//vai patrulhar um territorio definido no x e y de origem,
-//podendo escapar quando persegue o player, mas sempre retornando
-//caso esteja muito distante
+event_inherited();
 
 //3 estados: Scout, Chase/Attack, Return
 invincible = currentState==aiFlyingStates.FAINT or currentState==aiFlyingStates.HURT or currentState==aiFlyingStates.HURTFALL or currentState==aiFlyingStates.HURTFALLBACK

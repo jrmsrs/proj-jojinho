@@ -9,3 +9,5 @@ if variable_instance_exists(oCamera,"xCam")
 		y += lengthdir_y(30, dir)
 	}else
 		instance_destroy()
+		
+oGame.actualDir=dir

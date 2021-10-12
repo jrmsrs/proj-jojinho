@@ -9,4 +9,6 @@ if !gpAxisRNull and !oPlayer.cursorMoved{
 	oPlayer.cursorMoved=true
 }
 
+
+
 cursorTimer=0

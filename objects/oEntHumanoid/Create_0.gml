@@ -51,3 +51,5 @@ sAirttack = sPlayerAirttack
 sHurt = sPlayerHurt
 sHurtFall = sPlayerHurtFall
 sHurtFallBack = sPlayerHurtFallBack
+
+//showHealthTimer=0
