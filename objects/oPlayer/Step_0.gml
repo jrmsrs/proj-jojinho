@@ -17,6 +17,9 @@ if jumping and keyJumpReleased vSpeed = vSpeed/2
 //recupera possibilidade de dash quando esta no chao ou quando faz walljump
 if onFloor or (place_meeting(x+6,y,oWall) and keyJumpPressed) dashLimiter = 1
 
+if keyShoot
+	shooting=1
+
 if keyboard_check_pressed(ord("N")){
 	weapon1="Blade Wu"
 	show_message("Wu")

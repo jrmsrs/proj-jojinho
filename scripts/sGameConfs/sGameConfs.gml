@@ -7,6 +7,7 @@ function keyInit(){
 	keyJumpReleased = keyboard_check_released(ord("W")) or gamepad_button_check_released(0,gp_face1)
 	keyDash = keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0,gp_face2)
 	keyAttack = mouse_check_button_pressed(mb_left) or gamepad_button_check_pressed(0,gp_face3)
+	keyShoot = mouse_check_button_pressed(mb_right) or gamepad_button_check_pressed(0,gp_face4)
 	keyQuit = keyboard_check_pressed(ord("K"))
 	
 	keyLeftSec = keyboard_check_direct(vk_left) or gamepad_axis_value(0,gp_axisrh)<-0.01

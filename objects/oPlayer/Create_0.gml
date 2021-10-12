@@ -14,11 +14,13 @@ movSpeed=3
 dashLimiter=1
 
 weapon1="Blade Wu"
+weapon2="Gun Revla"
 
 //sprites
 sIdleby = sPlayerIdleby
 sIdle = sPlayerIdle
 sAttack = [sPlayerAttack1,sPlayerAttack2,sPlayerAttack3]
+sShoot = sPlayerShoot
 sDash = sPlayerDash
 sRun = sPlayerRun 
 sRunttack = sPlayerRunttack
@@ -35,3 +37,5 @@ maxLife=life
 
 cursor=0
 cursorMoved=false
+global.playerDir=0
+shootDir=0

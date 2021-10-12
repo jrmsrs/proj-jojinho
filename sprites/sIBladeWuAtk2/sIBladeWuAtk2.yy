@@ -124,8 +124,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Item_Blades",
-    "path": "folders/Sprites/Item_Blades.yy",
+    "name": "Blades",
+    "path": "folders/Sprites/Items/Blades.yy",
   },
   "resourceVersion": "1.0",
   "name": "sIBladeWuAtk2",

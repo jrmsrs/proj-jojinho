@@ -37,6 +37,8 @@ switch currentState {
 			currentState=states.DASH
 		if hurt 
 			currentState=states.HURT
+		if shooting
+			currentState=states.SHOOTTACK
 		accelDecel()
 		jump()
 		gravity()
@@ -183,6 +185,21 @@ switch currentState {
 		gravity()
 		break
 		
+	case states.SHOOTTACK:
+		if sprite_index != sShoot{
+			image_index=0
+		}
+		sprite_index = sShoot
+		shooting=0
+		if image_index>=image_number-1
+			currentState=states.IDLE
+		if dashing
+			currentState=states.DASH
+		if hurt 
+			currentState=states.HURT
+		gravity()
+		break
+		
 	case states.HURT:
 		if sprite_index != sHurt{
 			image_index=0
@@ -239,12 +256,10 @@ switch currentState {
 	case states.FAINT:
 		lifeTillFaint=10
 		image_index=image_number-1
-		if faintTimer>=15
+		if faintTimer>=15{
 			hurt=0
 			currentState=states.HURTFALLBACK
-			
-				
-			
+		}
 		if onFloor hSpeed=0
 		faintTimer++
 		gravity()

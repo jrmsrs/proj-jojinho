@@ -24,6 +24,7 @@ idleTimer = 0
 currentState = states.IDLE;
 defaultScale = image_xscale
 
+shooting=0
 attacking=0
 dashing=0
 combo=0
@@ -36,3 +37,17 @@ lifeTillFaint=10
 def=.2
 hurt=0
 faintTimer=0
+
+//default: player sprites
+sIdleby = sPlayerIdleby
+sIdle = sPlayerIdle
+sAttack = [sPlayerAttack1,sPlayerAttack2,sPlayerAttack3]
+sShoot = sPlayerShoot
+sDash = sPlayerDash
+sRun = sPlayerRun 
+sRunttack = sPlayerRunttack
+sAir = [sPlayerAirJump, sPlayerAirFall]
+sAirttack = sPlayerAirttack
+sHurt = sPlayerHurt
+sHurtFall = sPlayerHurtFall
+sHurtFallBack = sPlayerHurtFallBack

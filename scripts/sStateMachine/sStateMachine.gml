@@ -4,6 +4,7 @@ function statesInit(){
 		IDLEBY,
 		IDLE,
 		ATTACK,
+		SHOOTTACK,
 		DASH,
 		RUN,
 		RUNTTACK,
