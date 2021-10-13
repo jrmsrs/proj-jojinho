@@ -54,5 +54,14 @@ if sprite_index == sShoot
 		draw_sprite_ext(weapon2Sprite,image_index,x,y-20,sign(image_xscale),sign(image_yscale),shootDir,c_white,1)
 
 draw_self()
-show_debug_message(global.playerDir)
+
 event_inherited();
+
+inventoryTurnOn = gamepad_button_check_pressed(0,gp_padu) or gamepad_button_check_pressed(0,gp_padd) or keyboard_check(ord("H")) or mouse_wheel_down() or mouse_wheel_up()
+if inventoryTimer<=0 inventoryTimer=0
+
+if inventoryTurnOn
+	inventoryTimer=50
+
+if inventoryTimer--
+	drawInventory(global.totItemTypes, [ds_list_size(global.inventoryWeapon1), ds_list_size(global.inventoryWeapon2), ds_list_size(global.inventoryEquip)])

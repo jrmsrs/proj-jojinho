@@ -6,6 +6,8 @@ switch(oPlayer.weapon2){
 }
 	
 if !other.invincible{
-	other.hSpeed = choose(0,1,2,3,4)*sign(image_xscale)
-	other.vSpeed = -4
+	oDemo.hSpeed = 2*sign(x-oPlayer.x)
+	oDemo.vSpeed = 2*sign(y-oPlayer.y)
 }
+
+instance_destroy()

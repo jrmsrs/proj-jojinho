@@ -1,8 +1,17 @@
-//melee hitbox layers
-layer_create(-100,"PlayerBladeHitbox")
-layer_create(-200,"EnemyHitbox")
+//Initialize inventory
+global.inventoryWeapon1 = ds_list_create();
+global.inventoryWeapon2 = ds_list_create();
+global.inventoryEquip = ds_list_create();
+//Initial items
+ds_list_add(global.inventoryWeapon1,"Blade Wu","Blade Draga")
+ds_list_add(global.inventoryWeapon2,"Gun Revla")
 
-//
-layer_create(10400,"Finalization1")
-layer_create(10500,"Finalization2")
-layer_create(10600,"Finalization3")
+//global.totItems = ds_list_size(inventoryWeapon1) + ds_list_size(inventoryWeapon2) + ds_list_size(inventoryEquip)
+
+hasItem = [
+	ds_list_size(global.inventoryWeapon1)>0,
+	ds_list_size(global.inventoryWeapon2)>0,
+	ds_list_size(global.inventoryEquip)>0
+]
+
+global.totItemTypes = hasItem[0]+hasItem[1]+hasItem[2]

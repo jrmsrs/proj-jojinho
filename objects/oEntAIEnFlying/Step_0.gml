@@ -68,6 +68,7 @@ switch currentState{
 		break
 		
 	case aiFlyingStates.HURT:
+		selected=1
 		scoutCounter=100
 		if sprite_index != sHurt{
 			image_index=0

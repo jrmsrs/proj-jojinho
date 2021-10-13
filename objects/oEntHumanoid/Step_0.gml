@@ -215,6 +215,7 @@ switch currentState {
 		break
 		
 	case states.HURT:
+		if object_index!=oPlayer selected=1
 		if sprite_index != sHurt{
 			image_index=0
 			life -= hurt - hurt*def 
