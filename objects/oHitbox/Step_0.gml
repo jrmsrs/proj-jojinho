@@ -22,4 +22,3 @@ if layer==layer_get_id("PlayerBladeHitbox"){
 if frames>=2 instance_destroy(self)
 
 frames++
-

@@ -3,4 +3,3 @@ if other.id!=oPlayer.id{
 	other.showHealthTimer=0
 	ds_list_add(global.selectedCreatures,other)
 }
-

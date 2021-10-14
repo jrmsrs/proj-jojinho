@@ -6,8 +6,6 @@ global.inventoryEquip = ds_list_create();
 ds_list_add(global.inventoryWeapon1,"Blade Wu","Blade Draga")
 ds_list_add(global.inventoryWeapon2,"Gun Revla")
 
-//global.totItems = ds_list_size(inventoryWeapon1) + ds_list_size(inventoryWeapon2) + ds_list_size(inventoryEquip)
-
 hasItem = [
 	ds_list_size(global.inventoryWeapon1)>0,
 	ds_list_size(global.inventoryWeapon2)>0,

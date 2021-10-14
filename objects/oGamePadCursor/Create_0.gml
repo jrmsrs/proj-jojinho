@@ -7,6 +7,4 @@ if !gpAxisRNull and !oPlayer.cursorMoved{
 	oPlayer.cursorMoved=true
 }
 
-//global.lockCursor=false
-
 cursorTimer=0

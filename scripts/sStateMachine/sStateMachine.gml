@@ -46,12 +46,10 @@ function accelDecel(){
 }
 
 function jump(){
-
-	if jumpPressTime>0 {
+	if onFloor and jumpPressTime>0 {
 		vSpeed = -jumpHeight
 		jumpPressTime = 0
 	}
-	
 }
 
 function gravity(){

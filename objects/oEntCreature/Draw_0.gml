@@ -1,8 +1,7 @@
 draw_self()
 
-if target{
+if target
 	draw_sprite_stretched(sTargetIndicator,0,x-15-1,y-50-1,32,6)
-}
 
 if selected{
 	draw_sprite_stretched(sHealthBar,0,x-15,y-50,30,4)

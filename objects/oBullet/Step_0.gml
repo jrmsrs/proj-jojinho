@@ -8,7 +8,6 @@ if bulletTimer++<1 {
 			dir = global.playerDir
 		else dir = 0
 	}else{ 
-		//show_message("s")
 		if !( (global.playerDir < 360 and global.playerDir>270) or (global.playerDir > 0 and global.playerDir<90) )
 			dir = global.playerDir
 		else dir = 180
@@ -22,6 +21,4 @@ if variable_instance_exists(oCamera,"xCam")
 	and y > oCamera.yCam{
 		x += lengthdir_x(15, dir)
 		y += lengthdir_y(15, dir)
-	}else
-		if bulletTimer>=35 
-			instance_destroy()
+	}else if bulletTimer>=35 instance_destroy()

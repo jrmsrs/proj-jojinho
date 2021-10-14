@@ -20,16 +20,6 @@ if onFloor or (place_meeting(x+6,y,oWall) and keyJumpPressed) dashLimiter = 1
 if keyShoot
 	shooting=1
 
-if keyboard_check_pressed(ord("N")){
-	weapon1="Blade Wu"
-	show_message("Wu")
-}
-if keyboard_check_pressed(ord("M")){
-	weapon1="Blade Draga"
-	show_message("Draga")
-}
-
-
 if !gpAxisRNull{
 	cursor = instance_create_layer(x,y-17,"Creatures",oGamePadCursor)
 	if !lockCursor
@@ -56,5 +46,3 @@ if keyUnlockCursor
 
 if ds_list_size(global.selectedCreatures)>0
 	global.lockTarget=ds_list_find_value(global.selectedCreatures,ds_list_size(global.selectedCreatures)-1)
-	
-show_debug_message(lockCursor)
