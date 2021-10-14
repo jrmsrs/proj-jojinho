@@ -21,9 +21,14 @@ if keyShoot
 	shooting=1
 
 if !gpAxisRNull{
-	cursor = instance_create_layer(x,y-17,"Creatures",oGamePadCursor)
+	cursor = instance_create_layer(x,y-17,"Game",oGamePadCursor)
 	if !lockCursor
 		global.playerDir = point_direction(0,0, gamepad_axis_value(0,gp_axisrh), gamepad_axis_value(0,gp_axisrv));
+	initialPlayerDir = 0
+}else if mouse_check_button(mb_middle){
+	cursor = instance_create_layer(x,y-17,"Game",oGamePadCursor)
+	if !lockCursor
+		global.playerDir = point_direction(oPlayer.x,oPlayer.y-16, mouse_x, mouse_y);
 	initialPlayerDir = 0
 }else
 	cursorMoved=false

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "_debug1",
-    "path": "sprites/_debug1/_debug1.yy",
+    "name": "mouseCursor",
+    "path": "sprites/mouseCursor/mouseCursor.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "_debug",
-    "path": "folders/Objects/_debug.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "_oMouse",
+  "name": "oMouseCursor",
   "tags": [
     "game",
   ],

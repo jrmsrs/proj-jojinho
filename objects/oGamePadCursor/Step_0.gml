@@ -1,3 +1,5 @@
+image_alpha=1
+
 if cursorTimer++<1 
 	dir = global.playerDir
 

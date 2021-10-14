@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "_debug3",
-    "path": "sprites/_debug3/_debug3.yy",
+    "name": "gameCursor",
+    "path": "sprites/gameCursor/gameCursor.yy",
   },
   "solid": false,
   "visible": true,

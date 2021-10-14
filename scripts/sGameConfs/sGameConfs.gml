@@ -18,11 +18,16 @@ function keyInit(){
 	keySetW1=mouse_wheel_up() or gamepad_button_check_pressed(0,gp_padu)
 	keySetW2=mouse_wheel_down() or gamepad_button_check_pressed(0,gp_padd)
 	
-	keyLockCursor=gamepad_button_check_pressed(0,gp_stickr)
-	keyUnlockCursor=gamepad_button_check_pressed(0,gp_stickl)
+	keyLockCursor=keyboard_check_pressed(ord("Q")) or gamepad_button_check_pressed(0,gp_stickr)
+	keyUnlockCursor=keyboard_check_pressed(ord("E")) or gamepad_button_check_pressed(0,gp_stickl)
 	
-	
-	gpAxisRNull = (!keyLeftSec and !keyRightSec and !keyUpSec and !keyDownSec)
+	gpAxisRValues = [
+		gamepad_axis_value(0,gp_axisrh)<-0.01,
+		gamepad_axis_value(0,gp_axisrh)> 0.01,
+		gamepad_axis_value(0,gp_axisrv)<-0.01,
+		gamepad_axis_value(0,gp_axisrv)> 0.01
+	]
+	gpAxisRNull = !(gpAxisRValues[0]+gpAxisRValues[1]+gpAxisRValues[2]+gpAxisRValues[3])
 	
 	anyKeyPressed = keyLeft or keyRight or keyJumpPressed or keyDash or keyAttack
 }
