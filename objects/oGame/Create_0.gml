@@ -1,3 +1,4 @@
+global.debug=false
 //Initialize inventory
 global.inventoryWeapon1 = ds_list_create();
 global.inventoryWeapon2 = ds_list_create();

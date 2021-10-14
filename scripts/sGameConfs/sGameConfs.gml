@@ -37,6 +37,8 @@ function keyInit(){
 	]
 	gpAxisRNull = !(gpAxisRValues[0]+gpAxisRValues[1]+gpAxisRValues[2]+gpAxisRValues[3])
 	
+	keyDebug = keyboard_check_pressed(vk_f1)
+	
 	anyKeyPressed = keyLeft or keyRight or keyJumpPressed or keyDash or keyWeapon1 or keyWeapon2
 }
 

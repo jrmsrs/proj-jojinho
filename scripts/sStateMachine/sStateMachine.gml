@@ -9,7 +9,6 @@ function statesInit(){
 		RUN,
 		RUNTTACK,
 		AIR,
-		HIT,
 		AIRTTACK,
 		HURT,
 		HURTFALL,

@@ -29,8 +29,6 @@ attacking=0
 dashing=0
 combo=0
 
-debug=0
-
 maxLife=10
 life=maxLife
 lifeTillFaint=10
