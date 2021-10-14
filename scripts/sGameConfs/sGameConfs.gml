@@ -6,9 +6,17 @@ function keyInit(){
 	keyJumpHold = keyboard_check(ord("W")) or gamepad_button_check(0,gp_face1)
 	keyJumpReleased = keyboard_check_released(ord("W")) or gamepad_button_check_released(0,gp_face1)
 	keyDash = keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0,gp_face2)
-	keyAttack = mouse_check_button_pressed(mb_left) or gamepad_button_check_pressed(0,gp_face3)
-	keyShoot = mouse_check_button_pressed(mb_right) or gamepad_button_check_pressed(0,gp_face4)
+	keyWeapon1 = mouse_check_button_pressed(mb_left) or gamepad_button_check_pressed(0,gp_face3)
+	keyWeapon2 = mouse_check_button_pressed(mb_right) or gamepad_button_check_pressed(0,gp_face4)
 	keyQuit = keyboard_check_pressed(ord("K"))
+	
+	//key invert weapon1/weapon2
+	keyInvert = keyboard_check_pressed(vk_tab) or gamepad_button_check(0,gp_shoulderr)
+	keyWeaponAux=keyWeapon1
+	if global.invertWeapon{ 
+		keyWeapon1=keyWeapon2
+		keyWeapon2=keyWeaponAux
+	}
 	
 	keyLeftSec = keyboard_check_direct(vk_left) or gamepad_axis_value(0,gp_axisrh)<-0.01
 	keyRightSec = keyboard_check_direct(vk_right) or gamepad_axis_value(0,gp_axisrh)>0.01
@@ -29,7 +37,7 @@ function keyInit(){
 	]
 	gpAxisRNull = !(gpAxisRValues[0]+gpAxisRValues[1]+gpAxisRValues[2]+gpAxisRValues[3])
 	
-	anyKeyPressed = keyLeft or keyRight or keyJumpPressed or keyDash or keyAttack
+	anyKeyPressed = keyLeft or keyRight or keyJumpPressed or keyDash or keyWeapon1 or keyWeapon2
 }
 
 function parallaxSetup(parallax){

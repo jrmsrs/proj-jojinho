@@ -39,6 +39,8 @@ alpha=0
 life=30
 maxLife=life
 
+global.invertWeapon=false
+
 cursor=0
 cursorMoved=false
 initialPlayerDir=1
