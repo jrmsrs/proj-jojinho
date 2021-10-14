@@ -3,8 +3,9 @@ event_inherited();
 if !object_exists(oPlayer) exit
 
 function chase(){
-	if distance_to_object(oPlayer) <= 38 and distance_to_object(oPlayer) > 15{
-		if oPlayer.invincible return false
+	if alert or (distance_to_object(oPlayer) <= 38 and distance_to_object(oPlayer) > 15){
+		if oPlayer.invincible 
+			return false
 		hAxis = sign(oPlayer.x-x) 
 		return true
 	}
@@ -19,8 +20,10 @@ function chase(){
 
 switch(currentState){
 	case states.IDLE:
+		if sprite_index!=sIdle and sprite_index!=sHurt and sprite_index!=sHurtFallBack
+			alert=false
 		hAxis=0
-		if iaTimer >= 300 or chase(){
+		if iaTimer++ >= 300 or chase() or alert{
 			iaTimer=0
 			currentState = states.RUN
 			if !oPlayer.invincible hAxis=sign(image_xscale)
@@ -30,26 +33,26 @@ switch(currentState){
 			hAxis=0
 			attacking=1
 		}
-		//show_debug_message(sign(oPlayer.x-x))
 		break
 		
 	case states.RUN:
-		if iaTimer >= 500{
+		if iaTimer++ >= 500{
 			iaTimer=0
 			currentState = states.IDLE
 			hAxis=0
 			break
 		}
-		//modo patrulha
+		
 		hAxis=sign(image_xscale)
 	
 		//se não houver um chão adiante ou se houver uma parede, inverta a direcao
 		if (!place_meeting(x+sign(image_xscale)*16,y+6,oWall) or place_meeting(x+sign(image_xscale)*4,y,oWall)) and onFloor{
-			image_xscale = -image_xscale
-			hAxis = image_xscale
+			hAxis = -hAxis
+			alert=false
 		}
 		
-		if chase() iaTimer=0 //
+		if chase()
+			iaTimer=0 //temporizador zera enquanto está perseguindo
 		
 		if distance_to_object(oPlayer)<=14 and !oPlayer.invincible {
 			hAxis=0
@@ -68,10 +71,9 @@ switch(currentState){
 			}
 		}
 		break
-		
+	
 	case states.RUNTTACK:
+		//sempre vai travar o movimento quando ataca
 		currentState=states.ATTACK
 		break
 }
-
-iaTimer++

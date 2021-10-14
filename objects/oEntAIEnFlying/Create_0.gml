@@ -2,9 +2,9 @@ event_inherited();
 
 aiFlyingStatesInit()
 
-movSpeedScout=1.2
+movSpeed=1.2
 movSpeedChase=1.5
-movSpeed=movSpeedScout
+
 accel=0.15
 decel=0.15
 hSpeed=0
@@ -26,4 +26,7 @@ faintTimer=0
 
 currentState=aiFlyingStates.SCOUT
 
-//showHealthTimer=0
+maxChaseRange = 130
+maxAlertChaseRange = 450
+alert=false
+dir=0

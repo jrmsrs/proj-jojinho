@@ -4,10 +4,12 @@ event_inherited();
 invincible = currentState==aiFlyingStates.FAINT or currentState==aiFlyingStates.HURT or currentState==aiFlyingStates.HURTFALL or currentState==aiFlyingStates.HURTFALLBACK
 onFloor = place_meeting(x,y+6,oWall)
 if invincible and !currentState==aiFlyingStates.HURT hurt=0
+dir = point_direction(x,y,oPlayer.x,oPlayer.y)
 
 switch currentState{
 	case aiFlyingStates.SCOUT:
-		movSpeed=movSpeedScout
+		if sprite_index!=sScout
+			alert=false
 		sprite_index=sScout
 		
 		if scoutCounter>=100{
@@ -24,7 +26,7 @@ switch currentState{
 			scoutCounter=0
 		}
 		
-		if distance_to_object(oPlayer)<=130 and !oPlayer.invincible
+		if (distance_to_object(oPlayer)<=130 or alert) and !oPlayer.invincible
 			currentState=aiFlyingStates.CHASE
 		if distance_to_point(originX,originY)>=300
 			currentState=aiFlyingStates.RETURN
@@ -35,25 +37,26 @@ switch currentState{
 		
 	case aiFlyingStates.CHASE:
 		scoutCounter=100
-		movSpeed=movSpeedChase
 		sprite_index=sChase
 		
 		if x-oPlayer.x>3 or x-oPlayer.x<-3 
-			hSpeed=-sign(x-oPlayer.x)*movSpeed
+			hSpeed = lengthdir_x(movSpeedChase, dir)
 		if y-oPlayer.y>3 or y-oPlayer.y<-3 
-			vSpeed=-sign(y-oPlayer.y)*movSpeed
-			
-		if distance_to_object(oPlayer)>130 or oPlayer.invincible
+			vSpeed = lengthdir_y(movSpeedChase, dir)
+		if (distance_to_object(oPlayer)>maxChaseRange or oPlayer.invincible) and !alert
+			currentState=aiFlyingStates.SCOUT
+		if distance_to_object(oPlayer)>maxAlertChaseRange
 			currentState=aiFlyingStates.SCOUT
 		if hurt 
 			currentState=aiFlyingStates.HURT
-		if hSpeed!=0 image_xscale = sign(hSpeed)*scale
+		if hSpeed!=0 
+			image_xscale = sign(hSpeed)*scale
 		break
 		
 	case aiFlyingStates.RETURN:
 		scoutCounter=100
 		
-		if distance_to_object(oPlayer)<=130 and !oPlayer.invincible
+		if distance_to_object(oPlayer)<=maxChaseRange and !oPlayer.invincible
 			currentState=aiFlyingStates.CHASE
 		if (x>originX-10 and x<originX+10) and (y>originY-10 and y<originY+10)
 			currentState=aiFlyingStates.SCOUT
@@ -68,6 +71,7 @@ switch currentState{
 		break
 		
 	case aiFlyingStates.HURT:
+		alert=true
 		selected=1
 		scoutCounter=100
 		if sprite_index != sHurt{
@@ -78,7 +82,7 @@ switch currentState{
 		sprite_index = sHurt
 		hurt=0
 		if image_index>=image_number-1
-			currentState=aiFlyingStates.SCOUT
+			currentState=aiFlyingStates.CHASE
 		if lifeTillFaint<=0
 			currentState=aiFlyingStates.HURTFALL
 		if life<=0{
@@ -91,6 +95,7 @@ switch currentState{
 		break
 		
 	case aiFlyingStates.HURTFALL:
+		hurt=0
 		if sprite_index != sHurtFall{
 			image_index=0
 		}	
