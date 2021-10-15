@@ -1038,6 +1038,10 @@
         {"spriteId":{"name":"sBgCloud","path":"sprites/sBgCloud/sBgCloud.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":0.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":1500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Parallax1","tags":[],"resourceType":"GMRBackgroundLayer",},
         {"spriteId":null,"colour":4294939749,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":7.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":1600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
       ],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"BackBgs","tags":[],"resourceType":"GMRLayer",},
+    {"visible":true,"depth":1700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
+        {"instances":[],"visible":true,"depth":1800,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"PlayerBladeHitbox","tags":[],"resourceType":"GMRInstanceLayer",},
+        {"instances":[],"visible":true,"depth":1900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"EnemyHitbox","tags":[],"resourceType":"GMRInstanceLayer",},
+      ],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Hitbox","tags":[],"resourceType":"GMRLayer",},
   ],
   "inheritLayers": false,
   "creationCodeFile": "${project_dir}/rooms/rStage1/RoomCreationCode.gml",
