@@ -4,7 +4,8 @@ event_inherited();
 invincible = currentState==aiFlyingStates.FAINT or currentState==aiFlyingStates.HURT or currentState==aiFlyingStates.HURTFALL or currentState==aiFlyingStates.HURTFALLBACK
 onFloor = place_meeting(x,y+6,oWall)
 if invincible and !currentState==aiFlyingStates.HURT hurt=0
-dir = point_direction(x,y,oPlayer.x,oPlayer.y)
+dirToPlayer = point_direction(x,y,oPlayer.x,oPlayer.y)
+dirToOrigin = point_direction(x,y,originX,originY)
 
 switch currentState{
 	case aiFlyingStates.SCOUT:
@@ -40,9 +41,9 @@ switch currentState{
 		sprite_index=sChase
 		
 		if x-oPlayer.x>3 or x-oPlayer.x<-3 
-			hSpeed = lengthdir_x(movSpeedChase, dir)
+			hSpeed = lengthdir_x(movSpeedChase, dirToPlayer)
 		if y-oPlayer.y>3 or y-oPlayer.y<-3 
-			vSpeed = lengthdir_y(movSpeedChase, dir)
+			vSpeed = lengthdir_y(movSpeedChase, dirToPlayer)
 		if (distance_to_object(oPlayer)>maxChaseRange or oPlayer.invincible) and !alert
 			currentState=aiFlyingStates.SCOUT
 		if distance_to_object(oPlayer)>maxAlertChaseRange
@@ -64,21 +65,25 @@ switch currentState{
 			currentState=aiFlyingStates.HURT
 			
 		if x-originX>3 or x-originX<-3 
-			hSpeed=-sign(x-originX)*movSpeed
+			hSpeed = lengthdir_x(movSpeed, dirToOrigin)
 		if y-originX>3 or y-originX<-3 
-			vSpeed=-sign(y-originY)*movSpeed
-		if hSpeed!=0 image_xscale = sign(hSpeed)*scale
+			vSpeed = lengthdir_y(movSpeed, dirToOrigin)
+		if hSpeed!=0 
+			image_xscale = sign(hSpeed)*scale
 		break
 		
 	case aiFlyingStates.HURT:
-		alert=true
 		selected=1
 		scoutCounter=100
 		if sprite_index != sHurt{
 			image_index=0
+			if alert{
+				hSpeed=0; vSpeed=0
+			}	
 			life -= hurt - hurt*def 
 			lifeTillFaint -= hurt - hurt*def 
 		}
+		alert=true
 		sprite_index = sHurt
 		hurt=0
 		if image_index>=image_number-1
@@ -119,6 +124,7 @@ switch currentState{
 			hurt=0
 			currentState=aiFlyingStates.HURTFALLBACK
 		faintTimer++
+		hSpeed = lerp(hSpeed,0,accel)
 		gravity()
 		break
 	

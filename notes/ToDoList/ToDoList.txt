@@ -1,0 +1,44 @@
+# proj-jojinho
+
+- [objectivos](#objectivos)
+- [proximos bugs conhecidos a serem resolvidos](#proximos-bugs-conhecidos-a-serem-resolvidos)
+- [passos pra concluir os objetivos principais](#passos-pra-concluir-os-objetivos-principais)
+- [objetivos futuros](#objetivos-futuros)
+
+
+## objectivos
+
+- [x] jogabilidade okay de action platformer/metroidvania
+- [x] inimigos (ao menos dois tipos)
+- [x] sistema de itens: weapons (ao menos duas melee e uma ranged)
+- [x] HUD 
+- [ ] telas: menu, pause, etc _- trabalhando_
+- [ ] estagios simples (ao menos dois)
+- [ ] boss
+
+## proximos bugs conhecidos a serem resolvidos
+
+- [ ] IA do objeto oDemo está ignorando o efeito knockback do tiro quando em estado de chase
+- [x] objeto oDemo está deslizando (provavelmente inerte) quando em estado de hurtfall
+
+## passos pra concluir os objetivos principais
+
+### telas: menu, pause, etc _- trabalhando_
+- [ ] criar tela de pause (retornar ao menu de inicio, sair do jogo)
+- [ ] criar tela de morte
+- [ ] criar tela de inicio
+
+### estagios simples (ao menos dois)
+- [ ] nada ainda
+
+### boss
+- [ ] nada ainda
+
+## objetivos futuros
+
+### jogabilidade
+- [ ] oGameCursor vinculado ao mouse estar se movendo
+- [ ] IA desvia de ataques
+- [ ] IA persegue o dash
+- [ ] IA pula pequenos abismos e ladeiras
+- [ ] IA pula (com ataque) quando o player pula, tentando impedir o player de fugir do combate

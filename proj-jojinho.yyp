@@ -66,6 +66,7 @@
     {"id":{"name":"sZombParts","path":"sprites/sZombParts/sZombParts.yy",},"order":8,},
     {"id":{"name":"tBlock2","path":"tilesets/tBlock2/tBlock2.yy",},"order":6,},
     {"id":{"name":"sIBladeTempAtk2","path":"sprites/sIBladeTempAtk2/sIBladeTempAtk2.yy",},"order":9,},
+    {"id":{"name":"ToDoList","path":"notes/ToDoList/ToDoList.yy",},"order":0,},
     {"id":{"name":"sPlayerAirFall","path":"sprites/sPlayerAirFall/sPlayerAirFall.yy",},"order":12,},
     {"id":{"name":"sGameConfs","path":"scripts/sGameConfs/sGameConfs.yy",},"order":2,},
     {"id":{"name":"sIBladeTemp","path":"sprites/sIBladeTemp/sIBladeTemp.yy",},"order":5,},

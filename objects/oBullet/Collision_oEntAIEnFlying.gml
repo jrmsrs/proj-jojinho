@@ -6,8 +6,8 @@ switch(oPlayer.weapon2){
 }
 	
 if !other.invincible{
-	oDemo.hSpeed = 2*sign(x-oPlayer.x)
-	oDemo.vSpeed = 2*sign(y-oPlayer.y)
+	other.hSpeed = 2*sign(x-other.x)
+	other.vSpeed = 2*sign(y-other.y)
 }
 
 instance_destroy()
