@@ -18,8 +18,9 @@
 
 ## proximos bugs conhecidos a serem resolvidos
 
-- [ ] IA do objeto oDemo está ignorando o efeito knockback do tiro quando em estado de chase
+- [x] IA do objeto oDemo está ignorando o efeito knockback do tiro quando em estado de chase
 - [x] objeto oDemo está deslizando (provavelmente inerte) quando em estado de hurtfall
+- [x] corrigir modo return to origin da IA do objeto oDemo (funcionando ainda do jeito antigo)
 
 ## passos pra concluir os objetivos principais
 
