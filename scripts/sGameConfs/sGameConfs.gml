@@ -13,10 +13,11 @@ function keyInit(){
 	//key invert weapon1/weapon2
 	keyInvert = keyboard_check_pressed(vk_tab) or gamepad_button_check(0,gp_shoulderr)
 	keyWeaponAux=keyWeapon1
-	if global.invertWeapon{ 
-		keyWeapon1=keyWeapon2
-		keyWeapon2=keyWeaponAux
-	}
+	if instance_exists(oPlayer) 
+		if global.invertWeapon{ 
+			keyWeapon1=keyWeapon2
+			keyWeapon2=keyWeaponAux
+		}
 	
 	keyLeftSec = keyboard_check_direct(vk_left) or gamepad_axis_value(0,gp_axisrh)<-0.01
 	keyRightSec = keyboard_check_direct(vk_right) or gamepad_axis_value(0,gp_axisrh)>0.01

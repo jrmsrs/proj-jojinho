@@ -25,9 +25,9 @@
 ## passos pra concluir os objetivos principais
 
 ### telas: menu, pause, etc _- trabalhando_
+- [x] criar tela de inicio
 - [ ] criar tela de pause (retornar ao menu de inicio, sair do jogo)
 - [ ] criar tela de morte
-- [ ] criar tela de inicio
 
 ### estagios simples (ao menos dois)
 - [ ] nada ainda
