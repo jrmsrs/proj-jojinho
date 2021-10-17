@@ -1,6 +1,3 @@
-/// @description Description
-if layer!=layer_get_id("PlayerBladeHitbox") exit
-
 //enviar dano
 switch(oPlayer.weapon1){
 	case "Blade Wu":
@@ -11,7 +8,7 @@ switch(oPlayer.weapon1){
 		break
 }
 	
-//if !other.invincible{
-	other.hSpeed = choose(1,2,3,4,5,6)*sign(x-oPlayer.x)
-	other.vSpeed = choose(1,2,3,4,5,6)*sign(y-oPlayer.y)
-//}
+if !other.invincible{
+	other.hSpeed = 2*sign(image_xscale)
+	other.vSpeed = 2*sign(image_xscale)
+}

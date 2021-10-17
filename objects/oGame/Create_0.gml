@@ -14,3 +14,7 @@ hasItem = [
 ]
 
 global.totItemTypes = hasItem[0]+hasItem[1]+hasItem[2]
+
+global.previRoom = noone
+
+exitStage=false

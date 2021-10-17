@@ -21,6 +21,8 @@ switch room{
 		break
 	
 	case rUIScreenPause:
+		if keyPause 
+			room_goto(global.previRoom)
 		if keyUp or keyDown
 			window_mouse_set(
 				display_get_gui_width()/2 + 70,

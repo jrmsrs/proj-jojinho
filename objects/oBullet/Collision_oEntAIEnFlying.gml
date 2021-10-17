@@ -1,7 +1,7 @@
 //enviar dano
 switch(oPlayer.weapon2){
 	case "Gun Revla":
-		other.hurt = choose(2,2,3,4)
+		other.hurt = choose(2,3)
 		break
 }
 	

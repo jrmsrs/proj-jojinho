@@ -87,6 +87,7 @@
     {"id":{"name":"oBtn","path":"objects/oBtn/oBtn.yy",},"order":12,},
     {"id":{"name":"sZombHurt","path":"sprites/sZombHurt/sZombHurt.yy",},"order":2,},
     {"id":{"name":"sDemoScout","path":"sprites/sDemoScout/sDemoScout.yy",},"order":0,},
+    {"id":{"name":"rStage","path":"rooms/rStage/rStage.yy",},"order":0,},
     {"id":{"name":"sPlayerDash","path":"sprites/sPlayerDash/sPlayerDash.yy",},"order":9,},
     {"id":{"name":"sZombHurtFallBack","path":"sprites/sZombHurtFallBack/sZombHurtFallBack.yy",},"order":4,},
     {"id":{"name":"sIBladeTempAtk1","path":"sprites/sIBladeTempAtk1/sIBladeTempAtk1.yy",},"order":3,},
@@ -95,7 +96,7 @@
     {"id":{"name":"sPlayerAirttack","path":"sprites/sPlayerAirttack/sPlayerAirttack.yy",},"order":3,},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"order":0,},
     {"id":{"name":"oEntAIEnFlying","path":"objects/oEntAIEnFlying/oEntAIEnFlying.yy",},"order":2,},
-    {"id":{"name":"rStage1","path":"rooms/rStage1/rStage1.yy",},"order":0,},
+    {"id":{"name":"rStage1","path":"rooms/rStage1/rStage1.yy",},"order":1,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -114,10 +115,11 @@
     {"roomId":{"name":"rInitialize","path":"rooms/rInitialize/rInitialize.yy",},},
     {"roomId":{"name":"rUIScreenTitle","path":"rooms/rUIScreenTitle/rUIScreenTitle.yy",},},
     {"roomId":{"name":"rStage1","path":"rooms/rStage1/rStage1.yy",},},
+    {"roomId":{"name":"rUIScreenPause","path":"rooms/rUIScreenPause/rUIScreenPause.yy",},},
     {"groupName":"template","children":[
         {"roomId":{"name":"rUI","path":"rooms/rUI/rUI.yy",},},
+        {"roomId":{"name":"rStage","path":"rooms/rStage/rStage.yy",},},
       ],},
-    {"roomId":{"name":"rUIScreenPause","path":"rooms/rUIScreenPause/rUIScreenPause.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -151,6 +153,7 @@
     {"folderPath":"folders/Sprites/Items/Guns.yy","order":1,"resourceVersion":"1.0","name":"Guns","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Projectiles.yy","order":9,"resourceVersion":"1.0","name":"Projectiles","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms/UI.yy","order":3,"resourceVersion":"1.0","name":"UI","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms/Stages.yy","order":5,"resourceVersion":"1.0","name":"Stages","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

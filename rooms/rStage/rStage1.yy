@@ -1,10 +1,7 @@
 {
   "isDnd": false,
   "volume": 1.0,
-  "parentRoom": {
-    "name": "rStage",
-    "path": "rooms/rStage/rStage.yy",
-  },
+  "parentRoom": null,
   "views": [
     {"inherit":false,"visible":true,"xview":340,"yview":0,"wview":640,"hview":480,"xport":0,"yport":0,"wport":1280,"hport":960,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":340,"yview":0,"wview":640,"hview":480,"xport":0,"yport":0,"wport":1280,"hport":960,"hborder":280,"vborder":140,"hspeed":4,"vspeed":4,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
@@ -1045,8 +1042,8 @@
       ],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"BackBgs","tags":[],"resourceType":"GMRLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}/rooms/rStage/RoomCreationCode.gml",
-  "inheritCode": true,
+  "creationCodeFile": "${project_dir}/rooms/rStage1/RoomCreationCode.gml",
+  "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_3ADFD961","path":"rooms/rStage1/rStage1.yy",},
     {"name":"inst_9D44298","path":"rooms/rStage1/rStage1.yy",},
@@ -1164,8 +1161,8 @@
     "PhysicsWorldPixToMetres": 0.01,
   },
   "parent": {
-    "name": "Stages",
-    "path": "folders/Rooms/Stages.yy",
+    "name": "Rooms",
+    "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
   "name": "rStage1",

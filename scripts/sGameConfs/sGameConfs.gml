@@ -1,14 +1,9 @@
 function keyInit(){
-	keyLeft = keyboard_check_direct(ord("A")) or gamepad_axis_value(0,gp_axislh)<0
-	keyRight = keyboard_check_direct(ord("D")) or gamepad_axis_value(0,gp_axislh)>0
+	keyLeft = keyboard_check_direct(ord("A")) or gamepad_axis_value(0,gp_axislh)<-.1
+	keyRight = keyboard_check_direct(ord("D")) or gamepad_axis_value(0,gp_axislh)>.1
 	
 	keyUp = keyboard_check_direct(ord("W")) or gamepad_axis_value(0,gp_axislv)<-.1
 	keyDown = keyboard_check_direct(ord("S")) or gamepad_axis_value(0,gp_axislv)>.1
-	
-	//axislvDead = gamepad_axis_value(0,gp_axislv)>-.01 and gamepad_axis_value(0,gp_axislv)<.1
-	//keyUpReleased = !keyboard_check_direct(ord("W")) and axislvDead
-	//keyDownReleased = !keyboard_check_direct(ord("S")) and axislvDead
-	
 	
 	keyJumpPressed = keyboard_check_pressed(ord("W")) or gamepad_button_check_pressed(0,gp_face1)
 	keyJumpHold = keyboard_check(ord("W")) or gamepad_button_check(0,gp_face1)
@@ -16,7 +11,6 @@ function keyInit(){
 	keyDash = keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0,gp_face2)
 	keyWeapon1 = mouse_check_button_pressed(mb_left) or gamepad_button_check_pressed(0,gp_face3)
 	keyWeapon2 = mouse_check_button_pressed(mb_right) or gamepad_button_check_pressed(0,gp_face4)
-	keyQuit = keyboard_check_pressed(ord("K"))
 	
 	//key invert weapon1/weapon2
 	keyInvert = keyboard_check_pressed(vk_tab) or gamepad_button_check(0,gp_shoulderr)
@@ -27,10 +21,10 @@ function keyInit(){
 			keyWeapon2=keyWeaponAux
 		}
 	
-	keyLeftSec = keyboard_check_direct(vk_left) or gamepad_axis_value(0,gp_axisrh)<-0.01
-	keyRightSec = keyboard_check_direct(vk_right) or gamepad_axis_value(0,gp_axisrh)>0.01
-	keyUpSec = keyboard_check_direct(vk_up) or gamepad_axis_value(0,gp_axisrv)<-0.01
-	keyDownSec = keyboard_check_direct(vk_down) or gamepad_axis_value(0,gp_axisrv)>0.01
+	keyLeftSec = keyboard_check_direct(vk_left) or gamepad_axis_value(0,gp_axisrh)<-.1
+	keyRightSec = keyboard_check_direct(vk_right) or gamepad_axis_value(0,gp_axisrh)>.1
+	keyUpSec = keyboard_check_direct(vk_up) or gamepad_axis_value(0,gp_axisrv)<-.1
+	keyDownSec = keyboard_check_direct(vk_down) or gamepad_axis_value(0,gp_axisrv)>.1
 	
 	keySetW1=mouse_wheel_up() or gamepad_button_check_pressed(0,gp_padu)
 	keySetW2=mouse_wheel_down() or gamepad_button_check_pressed(0,gp_padd)
@@ -46,6 +40,8 @@ function keyInit(){
 	]
 	gpAxisRNull = !(gpAxisRValues[0]+gpAxisRValues[1]+gpAxisRValues[2]+gpAxisRValues[3])
 	
+	keyPause = keyboard_check_pressed(vk_escape) or gamepad_button_check_pressed(0,gp_start)
+	keyQuit = keyboard_check_pressed(ord("K"))
 	keyDebug = keyboard_check_pressed(vk_f1)
 	keyRestart = keyboard_check_pressed(ord("R"))
 	
@@ -128,5 +124,19 @@ function drawInventory(n, quantityItems, yPos=70, scale=4, balloonStretchW=0, ba
 					default: break
 				}
 		}
+	}
+}
+
+function pause(i){
+	//show_message(i)
+	if i {
+		room_persistent = true
+		global.actualRoomType="pause"
+		room_goto(rUIScreenPause)
+		return false
+	}else{
+		global.actualRoomType="stage"
+		room_goto(global.previRoom)
+		return true
 	}
 }

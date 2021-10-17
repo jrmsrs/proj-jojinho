@@ -10,7 +10,7 @@ if collision_rectangle(x-width/2,y+height/2,x+width,y-height/2,oMouseCursor,0,1)
 				url_open("https://github.com/jrmsrs/proj-jojinho")
 				break
 			case "resume":
-				show_message("nada")
+				pause(!pause(0))
 				break
 			case "load":
 				show_message("nada")
@@ -22,7 +22,8 @@ if collision_rectangle(x-width/2,y+height/2,x+width,y-height/2,oMouseCursor,0,1)
 				show_message("nada")
 				break
 			case "menu":
-				room_goto(rUIScreenTitle)
+				room_goto(global.previRoom)
+				oGame.exitStage=true
 				break
 			case "quit":
 				game_end()

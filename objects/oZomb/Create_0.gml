@@ -18,5 +18,3 @@ sAirttack = sZombAirttack
 sHurt = sZombHurt
 sHurtFall = sZombHurtFall
 sHurtFallBack = sZombHurtFallBack
-
-//image_blend = c_red

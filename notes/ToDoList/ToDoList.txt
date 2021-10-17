@@ -26,7 +26,7 @@
 
 ### telas: menu, pause, etc _- trabalhando_
 - [x] criar tela de inicio
-- [ ] criar tela de pause (retornar ao menu de inicio, sair do jogo)
+- [x] criar tela de pause (retornar ao menu de inicio, sair do jogo)
 - [ ] criar tela de morte
 
 ### estagios simples (ao menos dois)
