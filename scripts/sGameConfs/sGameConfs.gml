@@ -2,6 +2,14 @@ function keyInit(){
 	keyLeft = keyboard_check_direct(ord("A")) or gamepad_axis_value(0,gp_axislh)<0
 	keyRight = keyboard_check_direct(ord("D")) or gamepad_axis_value(0,gp_axislh)>0
 	
+	keyUp = keyboard_check_direct(ord("W")) or gamepad_axis_value(0,gp_axislv)<-.1
+	keyDown = keyboard_check_direct(ord("S")) or gamepad_axis_value(0,gp_axislv)>.1
+	
+	//axislvDead = gamepad_axis_value(0,gp_axislv)>-.01 and gamepad_axis_value(0,gp_axislv)<.1
+	//keyUpReleased = !keyboard_check_direct(ord("W")) and axislvDead
+	//keyDownReleased = !keyboard_check_direct(ord("S")) and axislvDead
+	
+	
 	keyJumpPressed = keyboard_check_pressed(ord("W")) or gamepad_button_check_pressed(0,gp_face1)
 	keyJumpHold = keyboard_check(ord("W")) or gamepad_button_check(0,gp_face1)
 	keyJumpReleased = keyboard_check_released(ord("W")) or gamepad_button_check_released(0,gp_face1)

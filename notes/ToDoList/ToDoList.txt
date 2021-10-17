@@ -43,3 +43,6 @@
 - [ ] IA persegue o dash
 - [ ] IA pula pequenos abismos e ladeiras
 - [ ] IA pula (com ataque) quando o player pula, tentando impedir o player de fugir do combate
+
+### recursos
+- [ ] sons no jogo

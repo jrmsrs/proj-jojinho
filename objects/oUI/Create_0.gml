@@ -1,26 +1,54 @@
+keyInit()
+
+canSet=true
+
+global.keyUISelected=1000
+
 x=display_get_gui_width()/2
 y=display_get_gui_height()/2
 
 switch room{
 	case rUIScreenTitle:
+		window_mouse_set(
+			display_get_gui_width()/2 + 70,
+			display_get_gui_height()/2
+		)
 		//title
-		var _title = instance_create_depth(x,y-240,depth+100,oBtn)
-		_title.btnIndex="title"
+		btnTitle = instance_create_depth(x,y-240,depth+100,oBtn)
+		btnTitle.btnIndex="title"
 		//load
-		var _load =  instance_create_depth(x,y,    depth+100,oBtn)
-		_load.btnIndex="load"
+		btnLoad =  instance_create_depth(x,y,    depth+100,oBtn)
+		btnLoad.btnIndex="load"
 		//new
-		var _new =   instance_create_depth(x,y+80, depth+100,oBtn)
-		_new.btnIndex="new"
+		btnNew =   instance_create_depth(x,y+80, depth+100,oBtn)
+		btnNew.btnIndex="new"
 		//conf
-		var _conf =  instance_create_depth(x,y+160,depth+100,oBtn)
-		_conf.btnIndex="conf"
+		btnConf =  instance_create_depth(x,y+160,depth+100,oBtn)
+		btnConf.btnIndex="conf"
 		//quit
-		var _quit =  instance_create_depth(x,y+240,depth+100,oBtn)
-		_quit.btnIndex="quit"
-		
+		btnQuit =  instance_create_depth(x,y+240,depth+100,oBtn)
+		btnQuit.btnIndex="quit"
 		break
 	
 	case rUIScreenPause:
+		window_mouse_set(
+			display_get_gui_width()/2 + 70,
+			display_get_gui_height()/2 - 80
+		)
+		//resume
+		btnResume = instance_create_depth(x,y-80, depth+100,oBtn)
+		btnResume.btnIndex="resume"
+		//load
+		btnLoad =   instance_create_depth(x,y,    depth+100,oBtn)
+		btnLoad.btnIndex="load"
+		//conf
+		btnConf =   instance_create_depth(x,y+80, depth+100,oBtn)
+		btnConf.btnIndex="conf"
+		//menu
+		btnMenu =   instance_create_depth(x,y+160,depth+100,oBtn)
+		btnMenu.btnIndex="menu"
+		//quit
+		btnQuit =   instance_create_depth(x,y+240,depth+100,oBtn)
+		btnQuit.btnIndex="quit"
 		break
 }
