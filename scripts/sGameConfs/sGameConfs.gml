@@ -48,6 +48,32 @@ function keyInit(){
 	anyKeyPressed = keyLeft or keyRight or keyJumpPressed or keyDash or keyWeapon1 or keyWeapon2
 }
 
+function globalVarsInit(){
+	global.debug=false
+	//Initialize inventory
+	global.inventoryWeapon1 = ds_list_create();
+	global.inventoryWeapon2 = ds_list_create();
+	global.inventoryEquip = ds_list_create();
+	//Initial items
+	ds_list_add(global.inventoryWeapon1,"Blade Wu","Blade Draga")
+	ds_list_add(global.inventoryWeapon2,"Gun Revla")
+	//Store room types
+	global.roomTypeStage = ds_list_create();
+	global.roomTypeUI = ds_list_create();
+
+	var hasItem = [
+		ds_list_size(global.inventoryWeapon1)>0,
+		ds_list_size(global.inventoryWeapon2)>0,
+		ds_list_size(global.inventoryEquip)>0
+	]
+
+	global.totItemTypes = hasItem[0]+hasItem[1]+hasItem[2]
+
+	global.previRoom = noone
+
+	global.tempBuffer = buffer_create(1213579,buffer_grow,1)
+}
+
 function parallaxSetup(parallax){
 	if parallax==0 exit
 	
@@ -128,7 +154,6 @@ function drawInventory(n, quantityItems, yPos=70, scale=4, balloonStretchW=0, ba
 }
 
 function pause(i){
-	//show_message(i)
 	if i {
 		room_persistent = true
 		global.actualRoomType="pause"
@@ -136,7 +161,6 @@ function pause(i){
 		return false
 	}else{
 		global.actualRoomType="stage"
-		room_goto(global.previRoom)
 		return true
 	}
 }
