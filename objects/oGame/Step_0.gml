@@ -3,8 +3,6 @@ keyInit()
 if instance_exists(oPlayer) 
 	room_persistent=false
 
-show_debug_message(global.actualRoomType)
-
 if keyPause and (global.actualRoomType=="stage" or global.actualRoomType=="pause")
 	pause(!pause(global.actualRoomType=="stage"))
 

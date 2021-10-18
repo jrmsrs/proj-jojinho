@@ -16,11 +16,17 @@
 - [ ] estagios simples (ao menos dois)
 - [ ] boss
 
-## proximos bugs conhecidos a serem resolvidos
+## solucionar bugs conhecidos
+
+### proximos bugs conhecidos a serem resolvidos
 
 - [x] IA do objeto oDemo está ignorando o efeito knockback do tiro quando em estado de chase
 - [x] objeto oDemo está deslizando (provavelmente inerte) quando em estado de hurtfall
 - [x] corrigir modo return to origin da IA do objeto oDemo (funcionando ainda do jeito antigo)
+
+### bugs/problemas futuros a serem resolvidos
+
+- [ ] saves que ficam obsoletos a cada mínima revisao do codigo (provavelmente sera resolvido quando otimizar o sistema de save/load)
 
 ## passos pra concluir os objetivos principais
 
@@ -30,7 +36,9 @@
 - [ ] criar tela de morte
 
 ### estagios simples (ao menos dois)
-- [ ] nada ainda
+- [ ] recurso metroidvania de areas acessiveis apenas com itens específicos
+- [ ] estagio 1
+- [ ] estagio 2
 
 ### boss
 - [ ] nada ainda
@@ -45,4 +53,6 @@
 - [ ] IA pula (com ataque) quando o player pula, tentando impedir o player de fugir do combate
 
 ### recursos
+- [x] sistema de save/load simples
 - [ ] sons no jogo
+- [ ] sistema de save/load mais otimizado
