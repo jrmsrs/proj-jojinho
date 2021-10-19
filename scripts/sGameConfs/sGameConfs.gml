@@ -99,7 +99,7 @@ function parallaxSetup(parallax){
 
 function roomDefine(){
 	switch(room){
-		case rStage1: parallaxSetup(2); break
+		case rAreaA1: parallaxSetup(0); break
 		default: parallaxSetup(0)
 	}
 }

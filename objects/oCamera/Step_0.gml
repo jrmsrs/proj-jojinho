@@ -23,7 +23,5 @@ curY = camera_get_view_y(view_camera[0])
 newX = lerp(curX, xCam, 0.1)
 newY = lerp(curY, yCam, 0.1)
 
-
-
 camera_set_view_pos(view_camera[0], newX, newY)
 roomDefine()
