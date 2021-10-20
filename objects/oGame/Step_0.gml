@@ -12,8 +12,8 @@ if keyQuit
 if keyDebug 
 	global.debug = !global.debug
 	
-if global.debug and keyRestart 
-	room_restart()
+if global.debug and keyRestart
+	oSaveController.restart=1
 	
 if exitStage{
 	exitStage=false
@@ -22,13 +22,18 @@ if exitStage{
 
 if load{
 	load=false
-	var loadBuffer = buffer_load("save.save")
-	game_load_buffer(loadBuffer)
+	//var loadBuffer = buffer_load("save.save")
+	game_load_buffer(buffer_load("save.save"))
 }
 
-if ds_list_find_index(global.roomTypeStage,room)>-1
-	global.actualRoomType="stage"
-
-if ds_list_find_index(global.roomTypeUI,room)>-1
-	global.actualRoomType="ui"
-
+//da room rArea1 em diante
+if room!=rInitialize and room!=rUIScreenTitle{ 
+	if ds_list_find_index(global.roomTypeStage,room)>-1{
+		instance_activate_object(oSaveController)
+		global.actualRoomType="stage"
+	}
+	if ds_list_find_index(global.roomTypeUI,room)>-1{
+		instance_deactivate_object(oSaveController)
+		global.actualRoomType="ui"
+	}
+}

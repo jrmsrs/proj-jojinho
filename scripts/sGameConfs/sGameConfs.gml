@@ -70,8 +70,6 @@ function globalVarsInit(){
 	global.totItemTypes = hasItem[0]+hasItem[1]+hasItem[2]
 
 	global.previRoom = noone
-
-	global.tempBuffer = buffer_create(1213579,buffer_grow,1)
 }
 
 function parallaxSetup(parallax){

@@ -51,13 +51,15 @@ switch currentState {
 		if sprite_index != sDash
 			image_index=0
 		sprite_index = sDash
-		if image_index>=image_number-1{
+		vSpeed=0
+		jump()
+		if image_index>=image_number-1 or vSpeed!=0{
 			currentState=states.IDLE
 			dashing=0
 		}
 		hSpeed=7.5*sign(image_xscale)
-		if hurt hurt=0 //invencibilidade
-		vSpeed=0
+		if hurt 
+			hurt=0 //invencibilidade
 		break
 		
 	case states.RUN:

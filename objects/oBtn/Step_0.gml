@@ -13,16 +13,16 @@ if collision_rectangle(x-width/2,y+height/2,x+width,y-height/2,oMouseCursor,0,1)
 				room_goto(global.previRoom)
 				break
 			case "restart":
-				game_load_buffer(global.tempBuffer)
+				room_goto(global.previRoom)
+				oSaveController.restart=1
 				break
 			case "load":
-				room_goto_next()
-				oGame.load=true
+				room_goto(global.previRoom)
+				oSaveController.load=1
 				break
 			case "save":
-				var saveBuffer = buffer_create(buffer_get_size(global.tempBuffer),buffer_get_type(global.tempBuffer),buffer_get_alignment(global.tempBuffer))
-				buffer_copy(global.tempBuffer, 0, buffer_get_size(global.tempBuffer),saveBuffer,0)
-				buffer_save(saveBuffer,"save.save")
+				room_goto(global.previRoom)
+				oSaveController.save=1
 				break
 			case "new":
 				room_goto_next()

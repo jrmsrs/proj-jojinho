@@ -1,5 +1,16 @@
 keyInit()
-hAxis = round(keyRight-keyLeft)
+
+//Congelar rapidamente o player no inicio das rooms
+if roomStartLag-- <= 0 {
+	roomStartLag=0
+	//Movimentacao
+	hAxis = round(keyRight-keyLeft)
+}else{
+	//Congelar a sprite 
+	image_index=image_number-1
+	hSpeed=0
+	hAxis=0
+}
 if keyInvert
 	global.invertWeapon=!global.invertWeapon
 if keyWeapon1 

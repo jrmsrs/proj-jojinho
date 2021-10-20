@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Level",
-    "path": "folders/Objects/Level.yy",
+    "name": "_debug",
+    "path": "folders/Objects/_debug.yy",
   },
   "resourceVersion": "1.0",
   "name": "oGround",
