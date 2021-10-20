@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "_debug1",
-    "path": "sprites/_debug1/_debug1.yy",
+    "name": "sDebugWall",
+    "path": "sprites/sDebugWall/sDebugWall.yy",
   },
   "solid": true,
   "visible": false,
@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Level",
+    "path": "folders/Objects/Level.yy",
   },
   "resourceVersion": "1.0",
   "name": "oWall",

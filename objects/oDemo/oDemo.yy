@@ -33,8 +33,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Creatures",
-    "path": "folders/Objects/Creatures.yy",
+    "name": "NPC",
+    "path": "folders/Objects/Creatures/NPC.yy",
   },
   "resourceVersion": "1.0",
   "name": "oDemo",

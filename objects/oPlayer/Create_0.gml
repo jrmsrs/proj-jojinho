@@ -4,8 +4,6 @@ event_inherited();
 alignment = "player"
 name="player"
 
-instance_create_layer(x,y,"Game",oCamera)
-
 //individual specie values
 walljumpForce=3
 movSpeed=3

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "_debug2hitbox",
-    "path": "sprites/_debug2hitbox/_debug2hitbox.yy",
+    "name": "sDebugHitbox",
+    "path": "sprites/sDebugHitbox/sDebugHitbox.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Level",
+    "path": "folders/Objects/Level.yy",
   },
   "resourceVersion": "1.0",
   "name": "oHitbox",

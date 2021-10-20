@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Projectiles",
-    "path": "folders/Objects/Projectiles.yy",
+    "path": "folders/Objects/Level/Projectiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "oBullet",
