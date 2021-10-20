@@ -22,13 +22,21 @@
             {"propertyId":{"name":"destinationX","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"2380","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"destinationY","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"384","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":1.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":1008.0,"resourceVersion":"1.0","name":"inst_5634595D","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":3.25,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":1016.0,"resourceVersion":"1.0","name":"inst_2A230BA1","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"destinationX","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"destinationY","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"336","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"destination","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"rAreaA4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":1008.0,"resourceVersion":"1.0","name":"inst_2A230BA1","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"destinationY","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"384","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"destinationX","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"2380","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"destination","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"rAreaA3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":1.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":384.0,"resourceVersion":"1.0","name":"inst_7AD6F330","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":1.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":240.0,"resourceVersion":"1.0","name":"inst_59BBBD5B","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"destination","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"rAreaA5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"destinationX","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"destinationY","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"1056","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":1.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":240.0,"resourceVersion":"1.0","name":"inst_59BBBD5B","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Level","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Game","tags":[],"resourceType":"GMRInstanceLayer",},
     {"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
@@ -1035,8 +1043,8 @@
     "PhysicsWorldPixToMetres": 0.01,
   },
   "parent": {
-    "name": "Stages",
-    "path": "folders/Rooms/Stages.yy",
+    "name": "Stages_AreaA",
+    "path": "folders/Rooms/Stages_AreaA.yy",
   },
   "resourceVersion": "1.0",
   "name": "rAreaA2",

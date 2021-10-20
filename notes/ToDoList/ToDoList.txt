@@ -13,7 +13,7 @@
 - [x] sistema de itens: weapons (ao menos duas melee e uma ranged)
 - [x] HUD 
 - [ ] telas: menu, pause, etc _- trabalhando_
-- [ ] estagios simples (ao menos dois)
+- [ ] estagios simples (ao menos dois) _- trabalhando_
 - [ ] boss
 
 ## solucionar bugs conhecidos
@@ -23,6 +23,7 @@
 - [x] IA do objeto oDemo está ignorando o efeito knockback do tiro quando em estado de chase
 - [x] objeto oDemo está deslizando (provavelmente inerte) quando em estado de hurtfall
 - [x] corrigir modo return to origin da IA do objeto oDemo (funcionando ainda do jeito antigo)
+- [x] dash impede player de pular
 
 ### bugs/problemas futuros a serem resolvidos
 
@@ -30,15 +31,15 @@
 
 ## passos pra concluir os objetivos principais
 
-### telas: menu, pause, etc _- trabalhando_
+### telas: menu, pause, etc 
 - [x] criar tela de inicio
 - [x] criar tela de pause (retornar ao menu de inicio, sair do jogo)
 - [ ] criar tela de morte
 
 ### estagios simples (ao menos dois)
-- [ ] recurso metroidvania de areas acessiveis apenas com itens específicos
-- [ ] estagio 1
-- [ ] estagio 2
+- [ ] recurso metroidvania de areas acessiveis apenas com itens específicos _- trabalhando_
+- [ ] estagio 1 (Area A) _- trabalhando_
+- [ ] estagio 2 (Area B)
 
 ### boss
 - [ ] nada ainda
@@ -49,10 +50,40 @@
 - [ ] oGameCursor vinculado ao mouse estar se movendo
 - [ ] IA desvia de ataques
 - [ ] IA persegue o dash
-- [ ] IA pula pequenos abismos e ladeiras
-- [ ] IA pula (com ataque) quando o player pula, tentando impedir o player de fugir do combate
+- [ ] IA pula pequenos abismos e ladeiras (inutil no momento)
+- [ ] IA pula (atacando) quando o player pula, tentando impedir o player de fugir do combate
 
 ### recursos
 - [x] sistema de save/load simples
 - [ ] sons no jogo
 - [ ] sistema de save/load mais otimizado
+
+## mapa do jogo (objetivo)
+
+```
+-------------       ------
+|           |       | B0 |
+| BOSS (B4) |       ------
+-------------         ^v                        SURFACE
+        ^  ------------------       
+        |->|       B3       | < v  
+___________----------------------------------- __________________________
+                            |       B2       |
+                            ------------------
+                                   ^
+                                   v                           ----------
+                           ------------          GROUND        |        |
+                           |          |                        |        |
+                           |          |                        |   A5   |
+                           | B1 |------                        |        |
+                           |    |                              |        |
+                           |    |                        ----- ----------
+                           |    |   ------------------   |   |   ^
+                           |    |<->|       A3       |<->|   |<--|
+                           ------   ------------------   | A |
+                                                         | 2 |   --------
+                           ------   ------------------   |   |   |      |
+                           | A0 |<->|       A1       |<->|   |<->|  A4  |
+                           ------   ------------------   -----   |      |
+                                                                 --------
+```
