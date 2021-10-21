@@ -139,7 +139,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Blades",
-    "path": "folders/Sprites/Items/Blades.yy",
+    "path": "folders/Sprites/Level/Items/Blades.yy",
   },
   "resourceVersion": "1.0",
   "name": "sIBladeDragaAtk2",

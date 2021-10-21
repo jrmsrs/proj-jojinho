@@ -23,8 +23,9 @@ switch(currentState){
 		if sprite_index!=sIdle and sprite_index!=sHurt and sprite_index!=sHurtFallBack
 			alert=false
 		hAxis=0
-		if iaTimer++ >= 300 or chase() or alert{
+		if iaTimer++ >= iaDelay or chase() or alert{
 			iaTimer=0
+			iaDelay=choose(100,200,300,400)
 			currentState = states.RUN
 			if !oPlayer.invincible hAxis=sign(image_xscale)
 			else hAxis=-sign(image_xscale)

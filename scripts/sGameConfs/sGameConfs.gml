@@ -55,19 +55,13 @@ function globalVarsInit(){
 	global.inventoryWeapon2 = ds_list_create();
 	global.inventoryEquip = ds_list_create();
 	//Initial items
-	ds_list_add(global.inventoryWeapon1,"Blade Wu","Blade Draga")
-	ds_list_add(global.inventoryWeapon2,"Gun Revla")
+	//ds_list_add(global.inventoryWeapon1,"Blade Wu","Blade Draga")
+	//ds_list_add(global.inventoryWeapon2,"Gun Revla")
 	//Store room types
 	global.roomTypeStage = ds_list_create();
 	global.roomTypeUI = ds_list_create();
-
-	var hasItem = [
-		ds_list_size(global.inventoryWeapon1)>0,
-		ds_list_size(global.inventoryWeapon2)>0,
-		ds_list_size(global.inventoryEquip)>0
-	]
-
-	global.totItemTypes = hasItem[0]+hasItem[1]+hasItem[2]
+	
+	global.totItemTypes = 0
 
 	global.previRoom = noone
 }
@@ -119,7 +113,6 @@ function drawInventory(n, quantityItems, yPos=70, scale=4, balloonStretchW=0, ba
 		draw_sprite_ext(sInventory,3,x-(balloonStretchW/2)*n+(balloonStretchW*i),y-yPos-balloonStretchH,scale,scale,0,c_white,1)
 		for (j=0;j<quantityItems[i];j++){
 			draw_sprite_ext(sInventory, 5, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale,scale,0,$E9E9E9,1)
-			
 		}
 	}
 	
@@ -129,18 +122,18 @@ function drawInventory(n, quantityItems, yPos=70, scale=4, balloonStretchW=0, ba
 				switch ds_list_find_value(global.inventoryWeapon1,j){
 					case "Blade Wu":
 						if sel[i]="Blade Wu" draw_sprite_ext(sISelect, 0, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale/4,scale/4,0,c_white,1)
-						draw_sprite_ext(sIAllBlades, 0, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale/4,scale/4,0,c_white,1)
+						draw_sprite_ext(sIAllBlades, 0, (x-(balloonStretchW/2)*n+(balloonStretchW*i))+29, (y-yPos-balloonStretchH+itemFrameSize*j)+30, scale/4,scale/4,0,c_white,1)
 						break
 					case "Blade Draga":
 						if sel[i]="Blade Draga" draw_sprite_ext(sISelect, 0, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale/4,scale/4,0,c_white,1)
-						draw_sprite_ext(sIAllBlades, 1, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale/4,scale/4,0,c_white,1)
+						draw_sprite_ext(sIAllBlades, 1, (x-(balloonStretchW/2)*n+(balloonStretchW*i))+29, (y-yPos-balloonStretchH+itemFrameSize*j)+30, scale/4,scale/4,0,c_white,1)
 						break
 				}
 			if i==1
 				switch ds_list_find_value(global.inventoryWeapon2,j){
 					case "Gun Revla":
 						if sel[i]="Gun Revla" draw_sprite_ext(sISelect, 0, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale/4,scale/4,0,c_white,1)
-						draw_sprite_ext(sIAllGuns, 0, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale/4,scale/4,0,c_white,1)
+						draw_sprite_ext(sIAllGuns, 0, (x-(balloonStretchW/2)*n+(balloonStretchW*i))+26, (y-yPos-balloonStretchH+itemFrameSize*j*scale)+27, scale/4,scale/4,0,c_white,1)
 						break
 				}
 			if i==2

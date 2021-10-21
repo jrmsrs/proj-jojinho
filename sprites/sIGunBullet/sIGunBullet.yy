@@ -80,7 +80,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Guns",
-    "path": "folders/Sprites/Items/Guns.yy",
+    "path": "folders/Sprites/Level/Items/Guns.yy",
   },
   "resourceVersion": "1.0",
   "name": "sIGunBullet",

@@ -7,3 +7,5 @@ iaTimer = 0
 distanceSensor = 0
 
 alert=false
+
+iaDelay=0

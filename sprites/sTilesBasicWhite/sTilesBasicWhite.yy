@@ -100,7 +100,7 @@
   },
   "parent": {
     "name": "Tiles",
-    "path": "folders/Sprites/Tiles.yy",
+    "path": "folders/Sprites/Level/Tiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "sTilesBasicWhite",

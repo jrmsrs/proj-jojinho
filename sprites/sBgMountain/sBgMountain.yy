@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Backgrounds",
-    "path": "folders/Sprites/Backgrounds.yy",
+    "path": "folders/Sprites/Level/Backgrounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "sBgMountain",

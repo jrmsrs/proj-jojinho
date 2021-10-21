@@ -25,11 +25,11 @@
   "gridY": 2,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"57373ef3-905a-4bf6-91c4-8cbda2a8228f","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"57373ef3-905a-4bf6-91c4-8cbda2a8228f","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"LayerId":{"name":"fc5bdca8-f195-49a6-b9fe-5616f637b5e8","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"57373ef3-905a-4bf6-91c4-8cbda2a8228f","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"LayerId":{"name":"a1a6cbba-79dd-4393-80e6-7579a181f287","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"57373ef3-905a-4bf6-91c4-8cbda2a8228f","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"LayerId":{"name":"9d269620-02d1-41d7-bfc5-35a37f026e70","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"57373ef3-905a-4bf6-91c4-8cbda2a8228f","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"LayerId":{"name":"a10d1206-5be9-4c59-bda7-36e53cdbb640","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"57373ef3-905a-4bf6-91c4-8cbda2a8228f","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"LayerId":{"name":"3f719cc7-444c-48fe-98c3-4b34095e2cd8","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"57373ef3-905a-4bf6-91c4-8cbda2a8228f","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"LayerId":{"name":"fc5bdca8-f195-49a6-b9fe-5616f637b5e8","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sTilesDarkViolet","path":"sprites/sTilesDarkViolet/sTilesDarkViolet.yy",},"resourceVersion":"1.0","name":"57373ef3-905a-4bf6-91c4-8cbda2a8228f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -102,7 +102,7 @@
   },
   "parent": {
     "name": "Tiles",
-    "path": "folders/Sprites/Tiles.yy",
+    "path": "folders/Sprites/Level/Tiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "sTilesDarkViolet",

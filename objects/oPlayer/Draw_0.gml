@@ -57,8 +57,11 @@ draw_self()
 
 event_inherited();
 
-inventoryTurnOn = gamepad_button_check_pressed(0,gp_padu) or gamepad_button_check_pressed(0,gp_padd) or keyboard_check(ord("H")) or mouse_wheel_down() or mouse_wheel_up()
-if inventoryTimer<=0 inventoryTimer=0
+
+if global.totItemTypes 
+	inventoryTurnOn = gamepad_button_check_pressed(0,gp_padu) or gamepad_button_check_pressed(0,gp_padd) or keyboard_check(ord("H")) or mouse_wheel_down() or mouse_wheel_up()
+if inventoryTimer<=0 
+	inventoryTimer=0
 
 if inventoryTurnOn
 	inventoryTimer=50

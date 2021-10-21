@@ -13,9 +13,9 @@ if roomStartLag-- <= 0 {
 }
 if keyInvert
 	global.invertWeapon=!global.invertWeapon
-if keyWeapon1 
+if keyWeapon1 and weapon1!=noone
 	attacking=1
-if keyWeapon2
+if keyWeapon2 and weapon2!=noone
 	shooting=1
 if keyDash and dashLimiter{
 	dashing=1
@@ -25,15 +25,17 @@ if keyDash and dashLimiter{
 event_inherited();
 
 //Opções individuais do oPlayer
-if keyJumpPressed jumpPressTime=jumpPressTimeMax
-if jumpPressTime>0 and !keyJumpHold jumpPressTime--
+if keyJumpPressed 
+	jumpPressTime=jumpPressTimeMax
+if jumpPressTime>0 and !keyJumpHold 
+	jumpPressTime--
 //Pulo medio
-if jumping and keyJumpReleased vSpeed = vSpeed/2
+if jumping and keyJumpReleased 
+	vSpeed = vSpeed/2
 
 //recupera possibilidade de dash quando esta no chao ou quando faz walljump
-if onFloor or (place_meeting(x+6,y,oWall) and keyJumpPressed) dashLimiter = 1
-
-
+if onFloor or (place_meeting(x+6,y,oWall) and keyJumpPressed) 
+	dashLimiter = 1
 
 if !gpAxisRNull{
 	cursor = instance_create_layer(x,y-17,"Game",oGamePadCursor)
@@ -52,8 +54,10 @@ if lockCursor
 
 
 if initialPlayerDir
-	if image_xscale>0 global.playerDir=0
-	else global.playerDir=180
+	if image_xscale>0 
+		global.playerDir=0
+	else 
+		global.playerDir=180
 
 if keyLockCursor and instance_exists(global.lockTarget)
 	lockCursor = true
@@ -66,3 +70,13 @@ if keyUnlockCursor
 
 if ds_list_size(global.selectedCreatures)>0
 	global.lockTarget=ds_list_find_value(global.selectedCreatures,ds_list_size(global.selectedCreatures)-1)
+
+var hasItem = [
+	ds_list_size(global.inventoryWeapon1)>0,
+	ds_list_size(global.inventoryWeapon2)>0,
+	ds_list_size(global.inventoryEquip)>0
+]
+global.totItemTypes = hasItem[0]+hasItem[1]+hasItem[2]
+
+if global.totItemTypes==0 instance_deactivate_object(oZomb)
+else instance_activate_object(oZomb)

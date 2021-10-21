@@ -13,9 +13,9 @@ dashLimiter=1
 
 inventoryTurnOn=false
 inventoryTimer=0
-weapon1="Blade Wu"
+weapon1=noone
 selWeapon1=1
-weapon2="Gun Revla"
+weapon2=noone
 selWeapon2=1
 
 //sprites

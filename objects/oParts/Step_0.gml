@@ -1,4 +1,3 @@
-/// @description Description
 if !runOnce{
 	switch owner{
 		case "player":
