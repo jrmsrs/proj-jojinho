@@ -270,9 +270,6 @@
           ],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":1.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2400.0,"y":384.0,"resourceVersion":"1.0","name":"inst_4C156E1","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oBlockBreakable","path":"objects/oBlockBreakable/oBlockBreakable.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":16.0,"y":368.0,"resourceVersion":"1.0","name":"inst_3DC14E6D","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oBlockBreakable","path":"objects/oBlockBreakable/oBlockBreakable.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":48.0,"y":352.0,"resourceVersion":"1.0","name":"inst_69C0AC2B","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"itemName","path":"objects/oItem/oItem.yy",},"objectId":{"name":"oItem","path":"objects/oItem/oItem.yy",},"value":"Gun Revla","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"oItem","path":"objects/oItem/oItem.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":168.0,"y":392.0,"resourceVersion":"1.0","name":"inst_2E0B64D3","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Level","tags":[],"resourceType":"GMRInstanceLayer",},
     {"visible":true,"depth":1000,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"tilesetId":{"name":"tBasicBlue","path":"tilesets/tBasicBlue/tBasicBlue.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":150,"SerialiseHeight":44,"TileSerialiseData":[
@@ -710,7 +707,6 @@
     {"name":"inst_4C156E1","path":"rooms/rAreaA1/rAreaA1.yy",},
     {"name":"inst_3DC14E6D","path":"rooms/rAreaA1/rAreaA1.yy",},
     {"name":"inst_69C0AC2B","path":"rooms/rAreaA1/rAreaA1.yy",},
-    {"name":"inst_2E0B64D3","path":"rooms/rAreaA1/rAreaA1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
