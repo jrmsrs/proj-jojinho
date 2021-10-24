@@ -18,7 +18,7 @@ switch currentState {
 			currentState=states.IDLE
 			idleTimer=0
 		}
-		gravity()
+		applyGravity()
 		idleTimer++
 		break
 	
@@ -43,7 +43,7 @@ switch currentState {
 			currentState=states.SHOOTTACK
 		accelDecel()
 		jump()
-		gravity()
+		applyGravity()
 		idleTimer++
 		break
 		
@@ -81,7 +81,7 @@ switch currentState {
 		flipToDirection()
 		accelDecel()
 		jump()
-		gravity()
+		applyGravity()
 		break
 		
 	case states.AIR:
@@ -104,7 +104,7 @@ switch currentState {
 		flipToDirection()
 		accelDecel()
 		wallJump()
-		gravity()
+		applyGravity()
 		break
 	
 	case states.ATTACK: 
@@ -141,7 +141,7 @@ switch currentState {
 			currentState=states.DASH
 		if hurt 
 			currentState=states.HURT
-		gravity()
+		applyGravity()
 		break
 		
 	case states.RUNTTACK:
@@ -163,7 +163,7 @@ switch currentState {
 		if hurt 
 			currentState=states.HURT
 		accelDecel()
-		gravity()
+		applyGravity()
 		break
 		
 	case states.AIRTTACK:
@@ -190,7 +190,7 @@ switch currentState {
 		flipToDirection()
 		accelDecel()
 		wallJump()
-		gravity()
+		applyGravity()
 		break
 		
 	case states.SHOOTTACK:
@@ -213,7 +213,7 @@ switch currentState {
 			currentState=states.DASH
 		if hurt 
 			currentState=states.HURT
-		gravity()
+		applyGravity()
 		break
 		
 	case states.HURT:
@@ -246,7 +246,7 @@ switch currentState {
 				game_restart()
 			}
 		}
-		gravity()
+		applyGravity()
 		break
 		
 	case states.HURTFALL:
@@ -260,7 +260,7 @@ switch currentState {
 				currentState=states.FAINT
 			}
 		}
-		gravity()
+		applyGravity()
 		if onFloor hSpeed=0
 		break
 		
@@ -271,7 +271,7 @@ switch currentState {
 		if image_index>=image_number-1{
 			currentState=states.IDLE
 		}
-		gravity()
+		applyGravity()
 		break
 		
 	case states.FAINT:
@@ -288,7 +288,7 @@ switch currentState {
 		if onFloor 
 			hSpeed=0
 		faintTimer++
-		gravity()
+		applyGravity()
 		break
 }
 

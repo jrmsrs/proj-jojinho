@@ -96,7 +96,7 @@ if timer++ >= 400
 if timer >= 600
 	instance_destroy()
 	
-gravity()
+applyGravity()
 wallCollision()
 
 if place_meeting(x,y+6,oWall){

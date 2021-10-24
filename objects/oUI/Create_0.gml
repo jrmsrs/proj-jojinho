@@ -8,7 +8,7 @@ x=display_get_gui_width()/2
 y=display_get_gui_height()/2
 
 switch room{
-	case rUIScreenTitle:
+	case rUITitle:
 		window_mouse_set(
 			display_get_gui_width()/2 + 70,
 			display_get_gui_height()/2
@@ -30,7 +30,7 @@ switch room{
 		btnQuit.btnIndex="quit"
 		break
 	
-	case rUIScreenPause:
+	case rUIGame:
 		window_mouse_set(
 			display_get_gui_width()/2 + 70,
 			display_get_gui_height()/2 - 80

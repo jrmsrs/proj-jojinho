@@ -23,10 +23,10 @@
     {"spriteId":null,"colour":4281545523,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": true,
-  "creationCodeFile": "${project_dir}/rooms/rUIScreenPause/RoomCreationCode.gml",
-  "inheritCode": false,
+  "creationCodeFile": "${project_dir}/rooms/rUI/RoomCreationCode.gml",
+  "inheritCode": true,
   "instanceCreationOrder": [
-    {"name":"inst_308A6880","path":"rooms/rUIScreenPause/rUIScreenPause.yy",},
+    {"name":"inst_308A6880","path":"rooms/rUITitle/rUITitle.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,
@@ -54,7 +54,7 @@
     "path": "folders/Rooms/UI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rUIScreenPause",
+  "name": "rUITitle",
   "tags": [],
   "resourceType": "GMRoom",
 }

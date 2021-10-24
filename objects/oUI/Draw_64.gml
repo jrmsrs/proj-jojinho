@@ -2,7 +2,7 @@ draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 
 switch room{
-	case rUIScreenTitle:
+	case rUITitle:
 		draw_text(x,y-240,"proj-jojinho")
 		draw_text(x,y,    "load game")
 		draw_text(x,y+80, "new game")
@@ -10,7 +10,7 @@ switch room{
 		draw_text(x,y+240,"quit game")
 		break
 	
-	case rUIScreenPause:
+	case rUIGame:
 		draw_text(x,y-240,"resume")
 		draw_text(x,y-160,"restart")
 		draw_text(x,y-80, "load")

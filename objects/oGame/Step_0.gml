@@ -17,7 +17,7 @@ if global.debug and keyRestart
 	
 if exitStage{
 	exitStage=false
-	room_goto(rUIScreenTitle)
+	room_goto(rUITitle)
 }
 
 if load{
@@ -27,7 +27,7 @@ if load{
 }
 
 //da room rArea1 em diante
-if room!=rInitialize and room!=rUIScreenTitle{ 
+if room!=rInitialize and room!=rUITitle{ 
 	if ds_list_find_index(global.roomTypeStage,room)>-1{
 		instance_activate_object(oSaveController)
 		global.actualRoomType="stage"

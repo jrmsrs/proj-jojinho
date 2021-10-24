@@ -113,7 +113,7 @@ switch currentState{
 				currentState=aiFlyingStates.FAINT
 			}
 		}
-		gravity()
+		applyGravity()
 		break
 		
 	case aiFlyingStates.FAINT:
@@ -125,7 +125,7 @@ switch currentState{
 			currentState=aiFlyingStates.HURTFALLBACK
 		faintTimer++
 		hSpeed = lerp(hSpeed,0,accel)
-		gravity()
+		applyGravity()
 		break
 	
 	case aiFlyingStates.HURTFALLBACK:
@@ -134,7 +134,7 @@ switch currentState{
 		sprite_index = sHurtFallBack
 		if image_index>=image_number-1
 			currentState=aiFlyingStates.SCOUT
-		gravity()
+		applyGravity()
 		break
 	
 }
