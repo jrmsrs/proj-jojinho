@@ -80,7 +80,8 @@ function wallCollision(){
 function wallJump(){
 	if place_meeting(x+6,y,oWall) or place_meeting(x-6,y,oWall) {
 		if walljumpForce==0 exit
-	    if jumpPressTime>0 and !onFloor {
+		var isOnOppositeDirection = !place_meeting(x+hAxis,y,oWall)
+	    if jumpPressTime>0 and !onFloor and isOnOppositeDirection {
 	        vSpeed=-jumpHeight   
 	        if place_meeting(x-6,y,oWall) hSpeed=walljumpForce
 	        else hSpeed=-walljumpForce
