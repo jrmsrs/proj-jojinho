@@ -5,9 +5,9 @@ alignment = "player"
 name="player"
 
 //individual specie values
-walljumpForce=3
-movSpeed=3
-//debug=0
+walljumpForce=8
+movSpeed=3.5
+jumpHeight=10.5
 
 dashLimiter=1
 
