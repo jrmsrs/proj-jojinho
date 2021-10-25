@@ -25,8 +25,8 @@
 - [x] corrigir modo return to origin da IA do objeto oDemo (funcionando ainda do jeito antigo)
 - [x] dash impede player de pular
 - [x] dificultar menos o platforming da area A1
-- [ ] acesso a area A5 requerindo dashs e walljumps complicados e pouco intuitivo para o começo de game 
-- [ ] primeira plataforma da area A5 não muito intuitiva de se acessar
+- [x] acesso a area A5 requerindo dashs e walljumps complicados e pouco intuitivo para o começo de game 
+- [x] primeira plataforma da area A5 não muito intuitiva de se acessar
 
 ### bugs/problemas futuros a serem resolvidos
 
