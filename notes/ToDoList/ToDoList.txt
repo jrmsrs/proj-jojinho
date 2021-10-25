@@ -1,8 +1,8 @@
 # proj-jojinho
 
 - [objectivos](#objectivos)
-- [proximos bugs conhecidos a serem resolvidos](#proximos-bugs-conhecidos-a-serem-resolvidos)
-- [passos pra concluir os objetivos principais](#passos-pra-concluir-os-objetivos-principais)
+- [bugs e problemas](#bugs-ou-problemas-conhecidos-a-serem-resolvidos)
+- [passos para o objetivo final](#passos-pra-concluir-os-objetivos-principais)
 - [objetivos futuros](#objetivos-futuros)
 
 
@@ -12,33 +12,36 @@
 - [x] inimigos (ao menos dois tipos)
 - [x] sistema de itens: weapons (ao menos duas melee e uma ranged)
 - [x] HUD 
-- [ ] telas: menu, pause, etc _- trabalhando_
+- [x] telas: menu, pause, etc
 - [ ] estagios simples (ao menos dois) _- trabalhando_
 - [ ] boss
 
 ## solucionar bugs conhecidos
 
-### proximos bugs conhecidos a serem resolvidos
+### bugs ou problemas conhecidos a serem resolvidos
 
 - [x] IA do objeto oDemo está ignorando o efeito knockback do tiro quando em estado de chase
 - [x] objeto oDemo está deslizando (provavelmente inerte) quando em estado de hurtfall
 - [x] corrigir modo return to origin da IA do objeto oDemo (funcionando ainda do jeito antigo)
 - [x] dash impede player de pular
+- [ ] dificultar menos o platforming da area A1
+- [ ] acesso a area A5 requerindo dashs e walljumps complicados e pouco intuitivo para o começo de game 
+- [ ] primeira plataforma da area A5 não muito intuitiva de se acessar
 
 ### bugs/problemas futuros a serem resolvidos
 
-- [ ] saves que ficam obsoletos a cada mínima revisao do codigo (provavelmente sera resolvido quando otimizar o sistema de save/load)
+- [x] saves que ficam obsoletos a cada mínima revisao do codigo (provavelmente sera resolvido quando otimizar o sistema de save/load)
 
 ## passos pra concluir os objetivos principais
 
 ### telas: menu, pause, etc 
 - [x] criar tela de inicio
 - [x] criar tela de pause (retornar ao menu de inicio, sair do jogo)
-- [ ] criar tela de morte
+- [x] criar tela de morte (apenas transiçao)
 
 ### estagios simples (ao menos dois)
-- [ ] recurso metroidvania de areas acessiveis apenas com itens específicos _- trabalhando_
-- [ ] estagio 1 (Area A) _- trabalhando_
+- [x] recurso metroidvania de areas acessiveis apenas com itens específicos _- trabalhando_
+- [x] estagio 1 (Area A)
 - [ ] estagio 2 (Area B)
 
 ### boss
@@ -47,7 +50,8 @@
 ## objetivos futuros
 
 ### jogabilidade
-- [ ] oGameCursor vinculado ao mouse estar se movendo
+- [ ] triggers de tutoriais
+- [ ] vinculado oGameCursor ao mouse se movendo (não precisar clicar com mb_middle)
 - [ ] IA desvia de ataques
 - [ ] IA persegue o dash
 - [ ] IA pula pequenos abismos e ladeiras (inutil no momento)
@@ -56,7 +60,8 @@
 ### recursos
 - [x] sistema de save/load simples
 - [ ] sons no jogo
-- [ ] sistema de save/load mais otimizado
+- [x] sistema de save/load mais otimizado
+- [x] pequeno buffer de pulo nas plataformas
 
 ## mapa do jogo (objetivo)
 
@@ -68,22 +73,26 @@
         ^  ------------------       
         |->|       B3       | < v  
 ___________----------------------------------- __________________________
-                            |       B2       |
+                            |       B2    C  |
                             ------------------
-                                   ^
+                                   ^                               *
                                    v                           ----------
                            ------------          GROUND        |        |
                            |          |                        |        |
                            |          |                        |   A5   |
                            | B1 |------                        |        |
-                           |    |                              |        |
-                           |    |                        ----- ----------
+                           |    |                          *   |        |
+                           |    |         *              ----- ----------
                            |    |   ------------------   |   |   ^
                            |    |<->|       A3       |<->|   |<--|
-                           ------   ------------------   | A |
+                           ------   ------------------   | A |       *
                                                          | 2 |   --------
                            ------   ------------------   |   |   |      |
-                           | A0 |<->|       A1       |<->|   |<->|  A4  |
+                           | A0 |<->| S     A1       |<->| C |<->|  A4  |
                            ------   ------------------   -----   |      |
-                                                                 --------
+                             *             *                     --------
+S começo do jogo
+C porta para o checkpoint
+* concluido
+<-> conexões das rooms
 ```
