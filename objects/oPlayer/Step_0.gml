@@ -1,7 +1,5 @@
 keyInit()
 
-
-
 //Congelar rapidamente o player no inicio das rooms
 if roomStartLag-- <= 0 {
 	roomStartLag=0
@@ -25,6 +23,13 @@ if keyDash and dashLimiter{
 }
 
 event_inherited();
+
+if currentState==states.DEAD{
+	if global.transitionState==0
+		transitionCreate()
+	if global.transitionState==1 
+		startPosition()
+}
 
 //Opções individuais do oPlayer
 if keyJumpPressed 
@@ -82,3 +87,4 @@ global.totItemTypes = hasItem[0]+hasItem[1]+hasItem[2]
 
 if global.totItemTypes==0 instance_deactivate_object(oZomb)
 else instance_activate_object(oZomb)
+

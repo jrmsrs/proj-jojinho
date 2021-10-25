@@ -24,3 +24,15 @@ switch itemName{
 		break
 
 }
+
+switch sprite_index{
+	case sIAllBlades:
+		itemType="weapon1"
+	break
+	case sIAllGuns:
+		itemType="weapon2"
+	break
+	default:
+		itemType="equip"
+	break
+}

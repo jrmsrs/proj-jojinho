@@ -1,6 +1,7 @@
 globalVarsInit()
 
 exitStage=false
+restart=false
 load=false
 
 //methods

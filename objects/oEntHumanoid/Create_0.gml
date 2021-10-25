@@ -21,6 +21,8 @@ hAxis = 0
 walljumpForce = 0
 idleTimer = 0
 
+canJumpDelay=0
+
 currentState = states.IDLE;
 defaultScale = image_xscale
 
@@ -50,4 +52,3 @@ sHurt = sPlayerHurt
 sHurtFall = sPlayerHurtFall
 sHurtFallBack = sPlayerHurtFallBack
 
-//showHealthTimer=0

@@ -63,4 +63,6 @@ function globalVarsInit(){
 	global.totItemTypes = 0
 
 	global.previRoom = noone
+	
+	global.transitionState=0 //no transition
 }

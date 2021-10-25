@@ -1,6 +1,10 @@
 event_inherited();
 
 onFloor = place_meeting(x,y+6,oWall)
+
+if onFloor canJumpDelay=0
+else canJumpDelay++
+
 jumping = vSpeed<0 or (vSpeed==0 and !onFloor)
 invincible = currentState==states.FAINT or currentState==states.HURT or currentState==states.HURTFALL or currentState==states.HURTFALLBACK
 
@@ -103,6 +107,7 @@ switch currentState {
 			image_index=image_number-1
 		flipToDirection()
 		accelDecel()
+		jump()
 		wallJump()
 		applyGravity()
 		break
@@ -239,12 +244,7 @@ switch currentState {
 			corpse.owner=name
 			corpse.variant=choose(0,1,2)
 			corpse.part=0
-			if object_index!=oPlayer{
-				instance_destroy(self)
-				exit
-			}else{
-				game_restart()
-			}
+			currentState=states.DEAD
 		}
 		applyGravity()
 		break
@@ -290,7 +290,14 @@ switch currentState {
 		faintTimer++
 		applyGravity()
 		break
+		
+	case states.DEAD:
+		if alignment != "player"{
+			instance_destroy(self)
+		}
+		break
+	
 }
 
+ifOut()
 wallCollision()
-resetIfOut()

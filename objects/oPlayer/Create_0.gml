@@ -39,6 +39,8 @@ maxLife=life
 
 global.invertWeapon=false
 
+global.checkPoint="AC"
+
 cursor=0
 cursorMoved=false
 initialPlayerDir=1
@@ -48,6 +50,7 @@ global.lockTarget=noone
 shootDir=0
 lockCursor=false
 
+//methods
 drawInventory = function(n, quantityItems, yPos=70, scale=4, balloonStretchW=0, balloonStretchH=0, itemFrameSize=0, sel=[oPlayer.weapon1,oPlayer.weapon2]){
 	balloonStretchW=12*scale
 	balloonStretchH=26*scale
@@ -95,4 +98,26 @@ drawInventory = function(n, quantityItems, yPos=70, scale=4, balloonStretchW=0, 
 		}
 	}
 
+}
+startPosition = function(){
+	life=maxLife
+	currentState=states.IDLE
+	vSpeed = 0
+	hSpeed = 0
+	persistent=true
+	switch global.checkPoint{
+		case "0":
+			room_goto(rAreaA1)
+			break
+		case "AC":
+			room_goto(rAreaAC)
+			break
+	}
+	if global.checkPoint=="0"{
+		x = xstart
+		y = ystart
+	}else{
+		x = 312
+		y = 336
+	}
 }

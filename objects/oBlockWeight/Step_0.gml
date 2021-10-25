@@ -5,4 +5,4 @@ if place_meeting(x,y+vSpeed,oWall) {
 }
 y+=vSpeed 
 
-if !tied gravity()
+if !tied applyGravity()

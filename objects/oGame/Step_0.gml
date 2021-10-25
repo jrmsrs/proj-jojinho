@@ -19,12 +19,19 @@ if exitStage{
 	exitStage=false
 	room_goto(rUITitle)
 }
-
-if load{
-	load=false
-	//var loadBuffer = buffer_load("save.save")
-	game_load_buffer(buffer_load("save.save"))
+if restart{
+	if global.actualRoomType=="stage"{
+		oPlayer.startPosition()
+		restart=false
+	}
 }
+if load{
+	if global.actualRoomType=="stage"{
+		oSaveController.loadGame=true
+		load=false
+	}
+}
+
 
 //da room rArea1 em diante
 if room!=rInitialize and room!=rUITitle{ 

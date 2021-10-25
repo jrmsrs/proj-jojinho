@@ -18,7 +18,8 @@ statesInit=function(){
 		HURT,
 		HURTFALL,
 		HURTFALLBACK,
-		FAINT
+		FAINT,
+		DEAD
 	}
 }
 aiFlyingStatesInit=function(){
@@ -46,7 +47,7 @@ accelDecel=function(){
 	}
 }
 jump=function(){
-	if onFloor and jumpPressTime>0 {
+	if (onFloor or canJumpDelay<=5) and jumpPressTime>0 {
 		vSpeed = -jumpHeight
 		jumpPressTime = 0
 	}
@@ -54,7 +55,7 @@ jump=function(){
 wallJump=function(){
 	if place_meeting(x+6,y,oWall) or place_meeting(x-6,y,oWall) {
 		if walljumpForce==0 exit
-		var isOnOppositeDirection = !place_meeting(x+hAxis,y,oWall)
+		var isOnOppositeDirection = place_meeting(x-image_xscale,y,oWall)
 	    if jumpPressTime>0 and !onFloor and isOnOppositeDirection {
 	        vSpeed=-jumpHeight   
 	        if place_meeting(x-6,y,oWall) hSpeed=walljumpForce
@@ -63,12 +64,7 @@ wallJump=function(){
 	    }
 	}
 }
-resetIfOut=function(){
-	//Reset after outside screen
-	if x < 0 or x > room_width or y > room_height {
-		vSpeed = 0
-		hSpeed = 0
-	    x = xstart
-	    y = ystart
-	}
+ifOut=function(){
+	if x < -20 or x > room_width+20 or y > room_height+40
+		currentState=states.DEAD
 }

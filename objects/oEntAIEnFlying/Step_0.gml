@@ -113,6 +113,7 @@ switch currentState{
 				currentState=aiFlyingStates.FAINT
 			}
 		}
+		hSpeed = lerp(hSpeed,0,accel)
 		applyGravity()
 		break
 		
