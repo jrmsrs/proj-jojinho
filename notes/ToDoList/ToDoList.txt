@@ -24,7 +24,7 @@
 - [x] objeto oDemo está deslizando (provavelmente inerte) quando em estado de hurtfall
 - [x] corrigir modo return to origin da IA do objeto oDemo (funcionando ainda do jeito antigo)
 - [x] dash impede player de pular
-- [ ] dificultar menos o platforming da area A1
+- [x] dificultar menos o platforming da area A1
 - [ ] acesso a area A5 requerindo dashs e walljumps complicados e pouco intuitivo para o começo de game 
 - [ ] primeira plataforma da area A5 não muito intuitiva de se acessar
 

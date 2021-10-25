@@ -39,7 +39,7 @@ maxLife=life
 
 global.invertWeapon=false
 
-global.checkPoint="AC"
+global.checkPoint="0"
 
 cursor=0
 cursorMoved=false
