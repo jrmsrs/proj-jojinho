@@ -28,8 +28,11 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oBlockBreakable","path":"objects/oBlockBreakable/oBlockBreakable.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":480.0,"resourceVersion":"1.0","name":"inst_405EE315","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oBlockBreakable","path":"objects/oBlockBreakable/oBlockBreakable.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":512.0,"resourceVersion":"1.0","name":"inst_222AA6EB","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
-            {"propertyId":{"name":"dialogue","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"direito ou gpY para slot2 de arma / botao do meio ou gpAXIS direito para mirar","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":528.0,"y":528.0,"resourceVersion":"1.0","name":"inst_482AF74E","tags":[],"resourceType":"GMRInstance",},
+            {"propertyId":{"name":"dialogue","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"attack1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.75,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":564.0,"y":528.0,"resourceVersion":"1.0","name":"inst_482AF74E","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"dialogue","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"attack1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.75,"scaleY":1.25,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":52.0,"y":336.0,"resourceVersion":"1.0","name":"inst_48CE4BD3","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Level","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Game","tags":[],"resourceType":"GMRInstanceLayer",},
     {"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
@@ -719,6 +722,7 @@
     {"name":"inst_405EE315","path":"rooms/rAreaA4/rAreaA4.yy",},
     {"name":"inst_222AA6EB","path":"rooms/rAreaA4/rAreaA4.yy",},
     {"name":"inst_482AF74E","path":"rooms/rAreaA4/rAreaA4.yy",},
+    {"name":"inst_48CE4BD3","path":"rooms/rAreaA4/rAreaA4.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

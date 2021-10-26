@@ -7,3 +7,7 @@ changeRoom = function(){
 	roomChange.destinationX = destinationX
 	roomChange.destinationY = destinationY-1
 }
+
+dialogSprite=sprite_index
+dialogSpriteImg=0
+dialogSpriteImgTimer=0

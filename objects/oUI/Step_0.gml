@@ -26,7 +26,7 @@ switch room{
 		if keyUp or keyDown
 			window_mouse_set(
 				display_get_gui_width()/2 + 70,
-				display_get_gui_height()/2 + 80 * abs(global.keyUISelected%7) - 240
+				display_get_gui_height()/2 + 80 * abs(global.keyUISelected%5) - 80
 			)
 		break
 }

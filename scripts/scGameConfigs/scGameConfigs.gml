@@ -51,13 +51,26 @@ function keyInit(){
 function globalVarsInit(){
 	global.debug=false
 	//Initialize inventory
-	global.inventoryWeapon1 = ds_list_create();
-	global.inventoryWeapon2 = ds_list_create();
-	global.inventoryEquip = ds_list_create();
+	global.inventoryWeapon1 = ds_list_create()
+	global.inventoryWeapon2 = ds_list_create()
+	global.inventoryEquip = ds_list_create()
+	
+	global.progress = ds_map_create()
+	
+	//area A
+	global.progress[? "Area A done"] = false
+	global.progress[? "Area A active1"] = false
+	//global.progress[? "Area A secretboss"] = false
+	
+	//area B
+	//global.progress[? "Area B done"] = false
+	//global.progress[? "Area B active1"] = false
+	//global.progress[? "Area B boss"] = false
+
 
 	//Store room types
-	global.roomTypeStage = ds_list_create();
-	global.roomTypeUI = ds_list_create();
+	global.roomTypeStage = ds_list_create()
+	global.roomTypeUI = ds_list_create()
 	
 	global.totItemTypes = 0
 

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "mouseCursor",
-    "path": "sprites/mouseCursor/mouseCursor.yy",
+    "name": "sMouseCursor",
+    "path": "sprites/sMouseCursor/sMouseCursor.yy",
   },
   "solid": false,
   "visible": true,

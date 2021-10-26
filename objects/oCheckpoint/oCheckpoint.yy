@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sCheckpointBreak",
+    "path": "sprites/sCheckpointBreak/sCheckpointBreak.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

@@ -30,3 +30,10 @@ if keyUp canChange=false
 else canChange=true
 
 if global.debug image_alpha=1 else image_alpha=0
+
+dialogSpriteImgTimer++
+if dialogSpriteImgTimer >= 10{
+	dialogSpriteImg++
+	dialogSpriteImg %= sprite_get_number(dialogSprite)
+	dialogSpriteImgTimer=0
+}

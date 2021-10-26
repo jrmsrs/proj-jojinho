@@ -16,16 +16,12 @@ if collision_rectangle(x-width/2,y+height/2,x+width,y-height/2,oMouseCursor,0,1)
 				room_goto(global.previRoom)
 				oGame.restart=true
 				break
-			case "load":
+			case "continue":
 				if room==rUITitle
 					room_goto_next()
 				if room==rUIGame
 					room_goto(global.previRoom)
 				oSaveController.loadGame=true
-				break
-			case "save":
-				room_goto(global.previRoom)
-				oSaveController.saveGame=true
 				break
 			case "new":
 				room_goto_next()

@@ -18,7 +18,7 @@ switch room{
 		btnTitle.btnIndex="title"
 		//load
 		btnLoad =  instance_create_depth(x,y,    depth+100,oBtn)
-		btnLoad.btnIndex="load"
+		btnLoad.btnIndex="continue"
 		//new
 		btnNew =   instance_create_depth(x,y+80, depth+100,oBtn)
 		btnNew.btnIndex="new"
@@ -36,17 +36,11 @@ switch room{
 			display_get_gui_height()/2 - 80
 		)
 		//resume
-		btnResume = instance_create_depth(x,y-240, depth+100,oBtn)
+		btnResume = instance_create_depth(x,y-80,  depth+100,oBtn)
 		btnResume.btnIndex="resume"
 		//restart
-		btnRestart =instance_create_depth(x,y-160, depth+100,oBtn)
+		btnRestart =instance_create_depth(x,y,     depth+100,oBtn)
 		btnRestart.btnIndex="restart"
-		//load
-		btnLoad =   instance_create_depth(x,y-80,  depth+100,oBtn)
-		btnLoad.btnIndex="load"
-		//save
-		btnSave =   instance_create_depth(x,y,     depth+100,oBtn)
-		btnSave.btnIndex="save"
 		//conf
 		btnConf =   instance_create_depth(x,y+80,  depth+100,oBtn)
 		btnConf.btnIndex="conf" 

@@ -7,8 +7,13 @@ save = function(slot="gs1"){
 	var invWeapon1_stringify = ds_list_write(global.inventoryWeapon1)
 	var invWeapon2_stringify = ds_list_write(global.inventoryWeapon2)
 	var invEquip_stringify = ds_list_write(global.inventoryEquip)
+	var gameProgress_stringify = ds_map_write(global.progress)
 
+	//save checkpoint
 	ini_write_string(slot,"cp",global.checkPoint)
+	//save progress 
+	ini_write_string(slot,"gp",gameProgress_stringify)
+	//save items
 	if ds_list_size(global.inventoryWeapon1)>0
 		ini_write_string(slot,"invw1",invWeapon1_stringify)
 	else
@@ -30,10 +35,13 @@ load = function(slot="gs1"){
 	var invWeapon1_stringify = ini_read_string(slot, "invw1", "")
 	var invWeapon2_stringify = ini_read_string(slot, "invw2", "")
 	var invEquip_stringify = ini_read_string(slot, "inveq", "")
+	var gameProgress_stringify = ini_read_string(slot, "gp", "")
+	
 
 	ds_list_clear(global.inventoryWeapon1)
 	ds_list_clear(global.inventoryWeapon2)
 	ds_list_clear(global.inventoryEquip)
+	ds_list_clear(global.progress)
 
 	global.checkPoint = ini_read_string(slot,"cp","0")
 	if invWeapon1_stringify != "" {
@@ -47,6 +55,8 @@ load = function(slot="gs1"){
 	if invEquip_stringify != "" {
 		ds_list_read(global.inventoryEquip, invEquip_stringify)
 	}
+	
+	ds_list_read(global.progress, gameProgress_stringify)
 
 	ini_close();
 }

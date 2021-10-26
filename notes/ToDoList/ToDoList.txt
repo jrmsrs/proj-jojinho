@@ -11,7 +11,7 @@
 - [x] jogabilidade okay de action platformer/metroidvania
 - [x] inimigos (ao menos dois tipos)
 - [x] sistema de itens: weapons (ao menos duas melee e uma ranged)
-- [x] HUD 
+- [x] HUD
 - [x] telas: menu, pause, etc
 - [ ] estagios simples (ao menos dois) _- trabalhando_
 - [ ] boss
@@ -19,7 +19,6 @@
 ## solucionar bugs conhecidos
 
 ### bugs ou problemas conhecidos a serem resolvidos
-
 - [x] IA do objeto oDemo está ignorando o efeito knockback do tiro quando em estado de chase
 - [x] objeto oDemo está deslizando (provavelmente inerte) quando em estado de hurtfall
 - [x] corrigir modo return to origin da IA do objeto oDemo (funcionando ainda do jeito antigo)
@@ -29,7 +28,6 @@
 - [x] primeira plataforma da area A5 não muito intuitiva de se acessar
 
 ### bugs/problemas futuros a serem resolvidos
-
 - [x] saves que ficam obsoletos a cada mínima revisao do codigo (provavelmente sera resolvido quando otimizar o sistema de save/load)
 
 ## passos pra concluir os objetivos principais
