@@ -115,8 +115,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sPlayerShoot",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

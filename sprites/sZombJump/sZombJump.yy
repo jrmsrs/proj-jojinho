@@ -76,8 +76,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sZombJump",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

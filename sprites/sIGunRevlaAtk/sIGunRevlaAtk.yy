@@ -121,8 +121,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sIGunRevlaAtk",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

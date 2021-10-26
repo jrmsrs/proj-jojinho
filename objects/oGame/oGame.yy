@@ -32,8 +32,6 @@
   },
   "resourceVersion": "1.0",
   "name": "oGame",
-  "tags": [
-    "game",
-  ],
+  "tags": [],
   "resourceType": "GMObject",
 }

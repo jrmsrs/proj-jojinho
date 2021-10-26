@@ -169,8 +169,6 @@
   },
   "resourceVersion": "1.0",
   "name": "tBasicWhite",
-  "tags": [
-    "world",
-  ],
+  "tags": [],
   "resourceType": "GMTileSet",
 }

@@ -101,8 +101,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sPlayerAttack2",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

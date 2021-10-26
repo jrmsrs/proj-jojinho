@@ -91,8 +91,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sZombAirttack",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

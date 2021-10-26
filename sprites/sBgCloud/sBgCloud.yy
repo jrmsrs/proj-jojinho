@@ -106,8 +106,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sBgCloud",
-  "tags": [
-    "world",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

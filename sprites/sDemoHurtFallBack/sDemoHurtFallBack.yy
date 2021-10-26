@@ -132,8 +132,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sDemoHurtFallBack",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

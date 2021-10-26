@@ -86,8 +86,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sPlayerAirFall",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

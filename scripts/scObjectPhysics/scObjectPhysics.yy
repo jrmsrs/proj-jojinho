@@ -7,10 +7,6 @@
   },
   "resourceVersion": "1.0",
   "name": "scObjectPhysics",
-  "tags": [
-    "player",
-    "enemies",
-    "game",
-  ],
+  "tags": [],
   "resourceType": "GMScript",
 }

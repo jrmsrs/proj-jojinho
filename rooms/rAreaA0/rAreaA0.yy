@@ -622,9 +622,6 @@
   },
   "resourceVersion": "1.0",
   "name": "rAreaA0",
-  "tags": [
-    "world",
-    "game",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

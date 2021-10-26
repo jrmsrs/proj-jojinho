@@ -115,8 +115,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sIBladeTempAtk1",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

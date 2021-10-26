@@ -164,8 +164,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sIBladeDragaAtk1",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

@@ -7,8 +7,6 @@
   },
   "resourceVersion": "1.0",
   "name": "scGameConfigs",
-  "tags": [
-    "game",
-  ],
+  "tags": [],
   "resourceType": "GMScript",
 }

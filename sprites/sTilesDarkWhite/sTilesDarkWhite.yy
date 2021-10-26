@@ -106,8 +106,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sTilesDarkWhite",
-  "tags": [
-    "world",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

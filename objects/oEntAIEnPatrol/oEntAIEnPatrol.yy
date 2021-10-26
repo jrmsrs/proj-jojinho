@@ -33,8 +33,6 @@
   },
   "resourceVersion": "1.0",
   "name": "oEntAIEnPatrol",
-  "tags": [
-    "enemies",
-  ],
+  "tags": [],
   "resourceType": "GMObject",
 }

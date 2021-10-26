@@ -153,8 +153,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sDemoParts",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

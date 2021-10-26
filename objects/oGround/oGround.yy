@@ -34,8 +34,6 @@
   },
   "resourceVersion": "1.0",
   "name": "oGround",
-  "tags": [
-    "world",
-  ],
+  "tags": [],
   "resourceType": "GMObject",
 }

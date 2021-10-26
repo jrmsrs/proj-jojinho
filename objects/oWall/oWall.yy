@@ -36,8 +36,6 @@
   },
   "resourceVersion": "1.0",
   "name": "oWall",
-  "tags": [
-    "world",
-  ],
+  "tags": [],
   "resourceType": "GMObject",
 }

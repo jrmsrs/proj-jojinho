@@ -1,7 +1,7 @@
 {
   "parent": {
-    "name": "Notes",
-    "path": "folders/Notes.yy",
+    "name": "proj-jojinho",
+    "path": "proj-jojinho.yyp",
   },
   "resourceVersion": "1.1",
   "name": "ToDoList",

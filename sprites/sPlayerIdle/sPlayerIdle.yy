@@ -125,8 +125,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sPlayerIdle",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

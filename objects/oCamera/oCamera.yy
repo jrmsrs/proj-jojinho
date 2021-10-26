@@ -29,8 +29,6 @@
   },
   "resourceVersion": "1.0",
   "name": "oCamera",
-  "tags": [
-    "game",
-  ],
+  "tags": [],
   "resourceType": "GMObject",
 }

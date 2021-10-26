@@ -101,8 +101,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sPlayerRunttack",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

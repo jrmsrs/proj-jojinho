@@ -25,9 +25,9 @@
   "gridY": 2,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"2ce022b2-210e-495b-bc29-bc5d9bfe8631","path":"sprites/sZombHurtFall/sZombHurtFall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2ce022b2-210e-495b-bc29-bc5d9bfe8631","path":"sprites/sZombHurtFall/sZombHurtFall.yy",},"LayerId":{"name":"4fb062f7-ff49-45cf-810a-6c93a2660ba5","path":"sprites/sZombHurtFall/sZombHurtFall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"2ce022b2-210e-495b-bc29-bc5d9bfe8631","path":"sprites/sZombHurtFall/sZombHurtFall.yy",},"LayerId":{"name":"c3e50918-8e9d-4716-8047-cc0c3d67d63c","path":"sprites/sZombHurtFall/sZombHurtFall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"2ce022b2-210e-495b-bc29-bc5d9bfe8631","path":"sprites/sZombHurtFall/sZombHurtFall.yy",},"LayerId":{"name":"e5b6748e-8059-40dc-9eb0-fe0f4fd32010","path":"sprites/sZombHurtFall/sZombHurtFall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"2ce022b2-210e-495b-bc29-bc5d9bfe8631","path":"sprites/sZombHurtFall/sZombHurtFall.yy",},"LayerId":{"name":"4fb062f7-ff49-45cf-810a-6c93a2660ba5","path":"sprites/sZombHurtFall/sZombHurtFall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sZombHurtFall","path":"sprites/sZombHurtFall/sZombHurtFall.yy",},"resourceVersion":"1.0","name":"2ce022b2-210e-495b-bc29-bc5d9bfe8631","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"afc8f4c1-a472-49ed-aa28-992e48abd657","path":"sprites/sZombHurtFall/sZombHurtFall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"afc8f4c1-a472-49ed-aa28-992e48abd657","path":"sprites/sZombHurtFall/sZombHurtFall.yy",},"LayerId":{"name":"4fb062f7-ff49-45cf-810a-6c93a2660ba5","path":"sprites/sZombHurtFall/sZombHurtFall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -108,8 +108,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sZombHurtFall",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

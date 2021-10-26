@@ -101,8 +101,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sZombHurtFallBack",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

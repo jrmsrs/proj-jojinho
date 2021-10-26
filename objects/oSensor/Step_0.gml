@@ -3,9 +3,14 @@ keyInit()
 var doorChange = keyUp and canChange
 
 if place_meeting(x,y,oPlayer) and (!door or doorChange){
-	oPlayer.persistent=true
-	change=true
-}
+	if destination!=noone{
+		oPlayer.persistent=true
+		change=true
+	}
+	if dialogue!="nada"{
+		draw=true
+	}
+}else draw=false
 
 if change {
 	if door{
@@ -24,4 +29,4 @@ if change {
 if keyUp canChange=false
 else canChange=true
 
-if global.debug visible=true else visible=false
+if global.debug image_alpha=1 else image_alpha=0

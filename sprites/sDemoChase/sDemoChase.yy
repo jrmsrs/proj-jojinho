@@ -132,8 +132,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sDemoChase",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

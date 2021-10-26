@@ -139,8 +139,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sDemoHurt",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

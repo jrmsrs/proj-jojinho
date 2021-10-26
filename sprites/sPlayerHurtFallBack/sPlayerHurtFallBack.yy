@@ -125,8 +125,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sPlayerHurtFallBack",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

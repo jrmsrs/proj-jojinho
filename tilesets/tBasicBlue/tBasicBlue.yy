@@ -169,8 +169,6 @@
   },
   "resourceVersion": "1.0",
   "name": "tBasicBlue",
-  "tags": [
-    "world",
-  ],
+  "tags": [],
   "resourceType": "GMTileSet",
 }

@@ -40,17 +40,17 @@
 - [x] criar tela de morte (apenas transiçao)
 
 ### estagios simples (ao menos dois)
-- [x] recurso metroidvania de areas acessiveis apenas com itens específicos _- trabalhando_
+- [x] recurso metroidvania de areas acessiveis apenas com itens específicos 
 - [x] estagio 1 (Area A)
 - [ ] estagio 2 (Area B)
 
 ### boss
-- [ ] nada ainda
+- [ ] criar sprites _- trabalhando_
 
 ## objetivos futuros
 
 ### jogabilidade
-- [ ] triggers de tutoriais
+- [x] dialogos de tutoriais
 - [ ] vinculado oGameCursor ao mouse se movendo (não precisar clicar com mb_middle)
 - [ ] IA desvia de ataques
 - [ ] IA persegue o dash
@@ -62,6 +62,7 @@
 - [ ] sons no jogo
 - [x] sistema de save/load mais otimizado
 - [x] pequeno buffer de pulo nas plataformas
+- [ ] tornar os dialogos de tutorias menores (e deixar boa parte na propria tela de pause) e visuais
 
 ## mapa do jogo (objetivo)
 

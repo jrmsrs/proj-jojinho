@@ -3647,8 +3647,6 @@
   },
   "resourceVersion": "1.0",
   "name": "tBasicPurple",
-  "tags": [
-    "world",
-  ],
+  "tags": [],
   "resourceType": "GMTileSet",
 }

@@ -32,9 +32,6 @@
   },
   "resourceVersion": "1.0",
   "name": "oEntHumanoid",
-  "tags": [
-    "player",
-    "enemies",
-  ],
+  "tags": [],
   "resourceType": "GMObject",
 }

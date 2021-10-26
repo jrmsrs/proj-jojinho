@@ -66,9 +66,6 @@
   },
   "resourceVersion": "1.0",
   "name": "rStage",
-  "tags": [
-    "world",
-    "game",
-  ],
+  "tags": [],
   "resourceType": "GMRoom",
 }

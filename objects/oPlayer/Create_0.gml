@@ -109,7 +109,7 @@ startPosition = function(){
 		case "0":
 			room_goto(rAreaA1)
 			break
-		case "AC":
+		case "A":
 			room_goto(rAreaAC)
 			break
 	}
@@ -117,7 +117,7 @@ startPosition = function(){
 		x = xstart
 		y = ystart
 	}else{
-		x = 312
+		x = 456
 		y = 336
 	}
 }

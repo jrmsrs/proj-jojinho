@@ -132,8 +132,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sZombParts",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

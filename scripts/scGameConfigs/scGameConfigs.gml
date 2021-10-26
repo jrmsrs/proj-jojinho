@@ -5,10 +5,10 @@ function keyInit(){
 	keyUp = keyboard_check_direct(ord("W")) or gamepad_axis_value(0,gp_axislv)<-.1
 	keyDown = keyboard_check_direct(ord("S")) or gamepad_axis_value(0,gp_axislv)>.1
 	
-	keyJumpPressed = keyboard_check_pressed(ord("W")) or gamepad_button_check_pressed(0,gp_face1)
-	keyJumpHold = keyboard_check(ord("W")) or gamepad_button_check(0,gp_face1)
-	keyJumpReleased = keyboard_check_released(ord("W")) or gamepad_button_check_released(0,gp_face1)
-	keyDash = keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0,gp_face2)
+	keyJumpPressed = keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0,gp_face1)
+	keyJumpHold = keyboard_check(vk_space) or gamepad_button_check(0,gp_face1)
+	keyJumpReleased = keyboard_check_released(vk_space) or gamepad_button_check_released(0,gp_face1)
+	keyDash = keyboard_check_pressed(vk_lshift) or gamepad_button_check_pressed(0,gp_face2)
 	keyWeapon1 = mouse_check_button_pressed(mb_left) or gamepad_button_check_pressed(0,gp_face3)
 	keyWeapon2 = mouse_check_button_pressed(mb_right) or gamepad_button_check_pressed(0,gp_face4)
 	
@@ -42,8 +42,9 @@ function keyInit(){
 	
 	keyPause = keyboard_check_pressed(vk_escape) or gamepad_button_check_pressed(0,gp_start)
 	keyQuit = keyboard_check_pressed(ord("K"))
+	
 	keyDebug = keyboard_check_pressed(vk_f1)
-	keyRestart = keyboard_check_pressed(ord("R"))
+	keyRestart = keyboard_check_pressed(ord("R")) //debug
 	
 	anyKeyPressed = keyLeft or keyRight or keyJumpPressed or keyDash or keyWeapon1 or keyWeapon2
 }
@@ -53,9 +54,7 @@ function globalVarsInit(){
 	global.inventoryWeapon1 = ds_list_create();
 	global.inventoryWeapon2 = ds_list_create();
 	global.inventoryEquip = ds_list_create();
-	//Initial items
-	//ds_list_add(global.inventoryWeapon1,"Blade Wu","Blade Draga")
-	//ds_list_add(global.inventoryWeapon2,"Gun Revla")
+
 	//Store room types
 	global.roomTypeStage = ds_list_create();
 	global.roomTypeUI = ds_list_create();
@@ -64,5 +63,5 @@ function globalVarsInit(){
 
 	global.previRoom = noone
 	
-	global.transitionState=0 //no transition
+	global.transitionState=0 //0=no transition, 1=ready, 2=fadein, 3=fadeout
 }

@@ -74,8 +74,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sDebugWall",
-  "tags": [
-    "game",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

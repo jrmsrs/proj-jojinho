@@ -84,8 +84,6 @@
   },
   "resourceVersion": "1.0",
   "name": "mouseCursor",
-  "tags": [
-    "game",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

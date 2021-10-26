@@ -115,8 +115,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sPlayerItempos2427",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

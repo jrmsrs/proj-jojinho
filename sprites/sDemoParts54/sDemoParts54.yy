@@ -132,8 +132,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sDemoParts54",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

@@ -129,8 +129,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sIBladeWuAtk3",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

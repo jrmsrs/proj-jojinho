@@ -25,16 +25,16 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"943d933d-e964-49b3-b646-67679a7a7695","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"943d933d-e964-49b3-b646-67679a7a7695","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"LayerId":{"name":"5d33bfd8-d576-492e-9929-bd966dc71da2","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"943d933d-e964-49b3-b646-67679a7a7695","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"LayerId":{"name":"67f6f964-5ff0-4dd3-ad5c-6009191484b3","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"943d933d-e964-49b3-b646-67679a7a7695","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"LayerId":{"name":"5d33bfd8-d576-492e-9929-bd966dc71da2","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sPlayerAirJump","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"resourceVersion":"1.0","name":"943d933d-e964-49b3-b646-67679a7a7695","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"b5004bc5-4af3-45b4-a9b4-699cb07fd01a","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b5004bc5-4af3-45b4-a9b4-699cb07fd01a","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"LayerId":{"name":"5d33bfd8-d576-492e-9929-bd966dc71da2","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"b5004bc5-4af3-45b4-a9b4-699cb07fd01a","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"LayerId":{"name":"67f6f964-5ff0-4dd3-ad5c-6009191484b3","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"b5004bc5-4af3-45b4-a9b4-699cb07fd01a","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"LayerId":{"name":"5d33bfd8-d576-492e-9929-bd966dc71da2","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sPlayerAirJump","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"resourceVersion":"1.0","name":"b5004bc5-4af3-45b4-a9b4-699cb07fd01a","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"b3500885-fa42-49e5-b640-af6f4911940b","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b3500885-fa42-49e5-b640-af6f4911940b","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"LayerId":{"name":"5d33bfd8-d576-492e-9929-bd966dc71da2","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"b3500885-fa42-49e5-b640-af6f4911940b","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"LayerId":{"name":"67f6f964-5ff0-4dd3-ad5c-6009191484b3","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"b3500885-fa42-49e5-b640-af6f4911940b","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"LayerId":{"name":"5d33bfd8-d576-492e-9929-bd966dc71da2","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sPlayerAirJump","path":"sprites/sPlayerAirJump/sPlayerAirJump.yy",},"resourceVersion":"1.0","name":"b3500885-fa42-49e5-b640-af6f4911940b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -86,8 +86,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sPlayerAirJump",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

@@ -74,8 +74,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sDebugHitbox",
-  "tags": [
-    "game",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

@@ -102,8 +102,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sTilesBasicPurple",
-  "tags": [
-    "world",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

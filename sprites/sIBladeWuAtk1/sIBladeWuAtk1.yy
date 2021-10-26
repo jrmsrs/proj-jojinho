@@ -150,8 +150,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sIBladeWuAtk1",
-  "tags": [
-    "player",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }

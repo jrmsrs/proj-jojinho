@@ -42,8 +42,6 @@
   },
   "resourceVersion": "1.0",
   "name": "oZomb",
-  "tags": [
-    "enemies",
-  ],
+  "tags": [],
   "resourceType": "GMObject",
 }

@@ -104,8 +104,6 @@
   },
   "resourceVersion": "1.0",
   "name": "sTilesBasicWhite",
-  "tags": [
-    "world",
-  ],
+  "tags": [],
   "resourceType": "GMSprite",
 }
