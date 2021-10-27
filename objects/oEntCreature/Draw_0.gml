@@ -16,5 +16,6 @@ if selected{
 if global.debug{
 	draw_set_halign(fa_center)
 	draw_text(x,y-70,string(debugValues))
+	//draw_text(x,y-70,string(hSpeed))
 	draw_set_halign(fa_left)
 }

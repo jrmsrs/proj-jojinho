@@ -76,6 +76,7 @@ switch currentState{
 		selected=1
 		scoutCounter=100
 		if sprite_index != sHurt{
+			shakeScreen(3)
 			image_index=0
 			if alert{
 				hSpeed=0; vSpeed=0

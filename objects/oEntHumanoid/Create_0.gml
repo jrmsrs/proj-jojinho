@@ -18,6 +18,8 @@ jumpPressTime = 0
 accelAir = 0.08
 decelAir = 0.08
 hAxis = 0
+hAxisLock = 0
+hAxisLockTimer = 10
 walljumpForce = 0
 idleTimer = 0
 

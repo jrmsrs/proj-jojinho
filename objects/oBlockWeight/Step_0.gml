@@ -3,10 +3,7 @@ bottom_y = y + sprite_height/2
 //to persist
 if ds_map_exists(global.progress,progressName){
 	if global.progress[? "Area A active1"]{
-		tied=false
-		y=1008-sprite_height/2
-		mask_index=_sMinimumCollisionMask
-		exit
+		instance_destroy()
 	}
 }
 

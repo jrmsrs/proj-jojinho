@@ -6,20 +6,21 @@ target=false
 statesInit=function(){
 	enum states{
 		//humanoid
-		IDLEBY,
-		IDLE,
-		ATTACK,
-		SHOOTTACK,
-		DASH,
-		RUN,
-		RUNTTACK,
-		AIR,
-		AIRTTACK,
-		HURT,
-		HURTFALL,
-		HURTFALLBACK,
-		FAINT,
-		DEAD
+		IDLEBY, //0
+		IDLE, //1
+		ATTACK, //2
+		SHOOTTACK, //3
+		DASH, //4
+		RUN, //5
+		RUNTTACK, //6
+		AIR, //7
+		AIRTTACK, //8
+		WALLSLIDE, //9
+		HURT, //10
+		HURTFALL, //11
+		HURTFALLBACK, //12
+		FAINT,//13
+		DEAD//14
 	}
 }
 aiFlyingStatesInit=function(){
@@ -33,9 +34,10 @@ aiFlyingStatesInit=function(){
 		FAINT
 	}
 }
-flipToDirection=function(){
+flipToDirection=function(inverse=false){
 	if hAxis==1 or hAxis==-1 
-		image_xscale = hAxis*defaultScale
+		if !inverse image_xscale = hAxis*defaultScale
+		else image_xscale = -hAxis*defaultScale
 }
 accelDecel=function(){
 	if onFloor {
@@ -53,11 +55,19 @@ jump=function(){
 	}
 }
 wallJump=function(){
-	if place_meeting(x+15*-sign(image_xscale),y,oWall) {
-		if walljumpForce==0 exit
-		var isOnOppositeDirection = place_meeting(x-image_xscale,y,oWall)
-	    if jumpPressTime>0 and !onFloor and isOnOppositeDirection {
-	        vSpeed=-jumpHeight   
+	var canWallJump=false
+	if walljumpForce==0 exit
+	if place_meeting(x+8*-hSpeed,y,oWall) {
+		if place_meeting(x-image_xscale,y,oWall){
+			canWallJump=true
+		}
+	}else if currentState==states.WALLSLIDE{
+		canWallJump=true
+	}
+	if canWallJump{
+		if jumpPressTime>0 and !onFloor {
+	        vSpeed=-jumpHeight
+			hAxisLock=true
 	        if place_meeting(x-6,y,oWall) hSpeed=walljumpForce
 	        else hSpeed=-walljumpForce
 	        jumpPressTime=0

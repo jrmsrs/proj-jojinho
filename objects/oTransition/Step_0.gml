@@ -14,6 +14,7 @@ switch global.transitionState{
 		if image <= 0{
 			global.transitionState = trans.NONE
 			instance_destroy(self)
+			oPlayer.currentState=states.IDLE
 		}
 	break
 }

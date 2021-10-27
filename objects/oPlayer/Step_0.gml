@@ -23,11 +23,20 @@ if keyDash and dashLimiter{
 
 event_inherited();
 
-if currentState==states.DEAD{
-	if global.transitionState==0
-		transitionCreate()
-	if global.transitionState==1 
-		startPosition()
+switch currentState{
+	case states.HURT:
+		if object_index!=oPlayer selected=1
+		if sprite_index != sHurt
+			shakeScreen(5)
+		break
+	case states.DEAD:
+		sprite_index=sHurtFall
+		image_index=image_number-1
+		if global.transitionState==0
+			transitionCreate()
+		if global.transitionState==1
+			startPosition()
+		break
 }
 
 //Opções individuais do oPlayer

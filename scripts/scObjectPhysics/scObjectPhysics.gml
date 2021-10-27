@@ -1,8 +1,8 @@
-function applyGravity(){
+function applyGravity(gf=gravityForce,vm=vSpeedMax){
 	//Gravity
-	vSpeed += gravityForce
+	vSpeed += gf
 	//limit max falling speed
-	if vSpeed>=vSpeedMax vSpeed=vSpeedMax
+	if vSpeed>=vm vSpeed=vm
 	
 }
 	

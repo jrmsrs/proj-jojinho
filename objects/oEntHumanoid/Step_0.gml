@@ -1,9 +1,29 @@
 event_inherited();
 
 onFloor = place_meeting(x,y+6,oWall)
+onWall = place_meeting(x+1,y,oWall) or place_meeting(x-1,y,oWall)
 
-if onFloor canJumpDelay=0
+if hAxisLock{
+	if hAxisLockTimer--<=0{
+		hAxisLock=false
+		hAxisLockTimer=10
+	}
+} else {
+	hAxisLockTimer=10
+}
+
+if onFloor{ 
+	canJumpDelay=0 
+	if hAxisLock 
+		hAxisLock=false
+}
 else canJumpDelay++
+
+if onWall{
+	if hAxisLock
+		hAxisLock=false
+}
+
 
 jumping = vSpeed<0 or (vSpeed==0 and !onFloor)
 invincible = currentState==states.FAINT or currentState==states.HURT or currentState==states.HURTFALL or currentState==states.HURTFALLBACK
@@ -99,6 +119,8 @@ switch currentState {
 			currentState=states.AIRTTACK
 		if dashing
 			currentState=states.DASH
+		if place_meeting(x+hAxis,y,oWall) and vSpeed>0 and alignment=="player"
+			currentState=states.WALLSLIDE
 		if hurt 
 			currentState=states.HURT
 		if shooting
@@ -106,7 +128,7 @@ switch currentState {
 		if image_index>=image_number-1
 			image_index=image_number-1
 		flipToDirection()
-		accelDecel()
+		if !hAxisLock accelDecel()
 		jump()
 		wallJump()
 		applyGravity()
@@ -221,9 +243,31 @@ switch currentState {
 		applyGravity()
 		break
 		
+	case states.WALLSLIDE:
+		if sprite_index != sPlayerWallSlide{
+			image_index=0
+			sprite_index=sPlayerWallSlide
+		}
+		if (vSpeed==0 and onFloor) or !onWall
+			currentState=states.IDLE
+		if attacking
+			currentState=states.AIRTTACK
+		if dashing
+			currentState=states.DASH
+		if hurt 
+			currentState=states.HURT
+		if shooting
+			shooting=0
+		flipToDirection(true)//reverse
+		accelDecel()
+		wallJump()
+		applyGravity(.1,1)
+		break
+		
 	case states.HURT:
 		if object_index!=oPlayer selected=1
 		if sprite_index != sHurt{
+			shakeScreen(3)
 			image_index=0
 			life -= hurt - hurt*def 
 			lifeTillFaint -= hurt - hurt*def 
@@ -292,9 +336,8 @@ switch currentState {
 		break
 		
 	case states.DEAD:
-		if alignment != "player"{
-			instance_destroy(self)
-		}
+		if alignment == "player" exit
+		instance_destroy()
 		break
 	
 }

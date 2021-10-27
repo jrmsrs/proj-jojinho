@@ -4,6 +4,7 @@ switch itemName{
 		break
 
 	case "Blade Wu":
+		shakeScreen(30)
 	case "Blade Draga":
 		ds_list_add(global.inventoryWeapon1,itemName)
 		other.weapon1=itemName

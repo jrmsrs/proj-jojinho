@@ -3,11 +3,11 @@ loadGame=false
 //methods
 save = function(slot="gs1"){
 	ini_open("save.s")
-
+	
+	var gameProgress_stringify = ds_map_write(global.progress)
 	var invWeapon1_stringify = ds_list_write(global.inventoryWeapon1)
 	var invWeapon2_stringify = ds_list_write(global.inventoryWeapon2)
-	var invEquip_stringify = ds_list_write(global.inventoryEquip)
-	var gameProgress_stringify = ds_map_write(global.progress)
+	var invEquip_stringify = ds_list_write(global.inventoryEquip)	
 
 	//save checkpoint
 	ini_write_string(slot,"cp",global.checkPoint)
@@ -32,18 +32,20 @@ save = function(slot="gs1"){
 load = function(slot="gs1"){
 	ini_open("save.s")
 
+	var gameProgress_stringify = ini_read_string(slot, "gp", "")
 	var invWeapon1_stringify = ini_read_string(slot, "invw1", "")
 	var invWeapon2_stringify = ini_read_string(slot, "invw2", "")
 	var invEquip_stringify = ini_read_string(slot, "inveq", "")
-	var gameProgress_stringify = ini_read_string(slot, "gp", "")
-	
 
+	ds_map_clear(global.progress)
 	ds_list_clear(global.inventoryWeapon1)
 	ds_list_clear(global.inventoryWeapon2)
 	ds_list_clear(global.inventoryEquip)
-	ds_list_clear(global.progress)
 
 	global.checkPoint = ini_read_string(slot,"cp","0")
+
+	ds_map_read(global.progress, gameProgress_stringify)
+
 	if invWeapon1_stringify != "" {
 		ds_list_read(global.inventoryWeapon1, invWeapon1_stringify)
 		oPlayer.weapon1 = ds_list_find_value(global.inventoryWeapon1,0)
@@ -55,8 +57,6 @@ load = function(slot="gs1"){
 	if invEquip_stringify != "" {
 		ds_list_read(global.inventoryEquip, invEquip_stringify)
 	}
-	
-	ds_list_read(global.progress, gameProgress_stringify)
 
 	ini_close();
 }

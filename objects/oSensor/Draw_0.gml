@@ -8,6 +8,12 @@ if draw{
 		case "up":
 			dialogSprite=sHintUp
 			break
+		case "jump":
+			dialogSprite=sHintJump
+			break
+		case "highjump":
+			dialogSprite=sHintHighJump
+			break
 		case "dash":
 			dialogSprite=sHintDash
 			break

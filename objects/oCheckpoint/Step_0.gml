@@ -38,3 +38,9 @@ if active{
 		sprite_index=sCheckpointAvailable
 	}
 }
+
+if place_meeting(x,y,oPlayer){
+	oPlayer.life+=oPlayer.maxLife/100
+	if oPlayer.life>=oPlayer.maxLife
+		oPlayer.life=oPlayer.maxLife
+}

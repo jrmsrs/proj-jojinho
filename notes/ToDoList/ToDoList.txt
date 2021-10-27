@@ -49,7 +49,7 @@
 
 ### jogabilidade
 - [x] dialogos de tutoriais
-- [ ] vinculado oGameCursor ao mouse se movendo (não precisar clicar com mb_middle)
+- [ ] vincular o oGameCursor ao mouse se movendo (não precisar clicar com mb_middle)
 - [ ] IA desvia de ataques
 - [ ] IA persegue o dash
 - [ ] IA pula pequenos abismos e ladeiras (inutil no momento)
@@ -60,7 +60,7 @@
 - [ ] sons no jogo
 - [x] sistema de save/load mais otimizado
 - [x] pequeno buffer de pulo nas plataformas
-- [ ] tornar os dialogos de tutorias menores (e deixar boa parte na propria tela de pause) e visuais
+- [x] tornar os dialogos de tutoriais menores (e deixar boa parte na propria tela de pause) e visuais
 
 ## mapa do jogo (objetivo)
 
