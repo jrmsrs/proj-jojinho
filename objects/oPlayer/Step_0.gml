@@ -1,5 +1,4 @@
-keyInit()
-
+keyInit(kbDashDelay(keyLeftPressed),kbDashDelay(keyRightPressed))
 //Congelar rapidamente o player no inicio das rooms
 if roomStartLag-- <= 0 {
 	roomStartLag=0

@@ -25,6 +25,7 @@ if collision_rectangle(x-width/2,y+height/2,x+width,y-height/2,oMouseCursor,0,1)
 				break
 			case "new":
 				room_goto_next()
+				globalVarsInit()
 				break
 			case "conf":
 				show_message("nada")

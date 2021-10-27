@@ -1,6 +1,9 @@
-function keyInit(){
+function keyInit(kbDashL=false,kbDashR=false){
 	keyLeft = keyboard_check_direct(ord("A")) or gamepad_axis_value(0,gp_axislh)<-.1
 	keyRight = keyboard_check_direct(ord("D")) or gamepad_axis_value(0,gp_axislh)>.1
+	
+	keyLeftPressed = keyboard_check_pressed(ord("A"))
+	keyRightPressed = keyboard_check_pressed(ord("D"))
 	
 	keyUp = keyboard_check_direct(ord("W")) or gamepad_axis_value(0,gp_axislv)<-.1
 	keyDown = keyboard_check_direct(ord("S")) or gamepad_axis_value(0,gp_axislv)>.1
@@ -8,7 +11,8 @@ function keyInit(){
 	keyJumpPressed = keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0,gp_face1)
 	keyJumpHold = keyboard_check(vk_space) or gamepad_button_check(0,gp_face1)
 	keyJumpReleased = keyboard_check_released(vk_space) or gamepad_button_check_released(0,gp_face1)
-	keyDash = keyboard_check_pressed(vk_lshift) or gamepad_button_check_pressed(0,gp_face2)
+	
+	keyDash = (keyLeft and kbDashL) or (keyRight and kbDashR) or gamepad_button_check_pressed(0,gp_face2)
 	keyWeapon1 = mouse_check_button_pressed(mb_left) or gamepad_button_check_pressed(0,gp_face3)
 	keyWeapon2 = mouse_check_button_pressed(mb_right) or gamepad_button_check_pressed(0,gp_face4)
 	

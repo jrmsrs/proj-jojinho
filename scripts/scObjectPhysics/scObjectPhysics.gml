@@ -23,3 +23,9 @@ function wallCollision(){
 	
 	y+=vSpeed 
 }
+
+function shakeScreen(force,dir=all){
+	var shake = instance_create_layer(x,y,layer,oShake)
+	shake.force=force
+	shake.dir=dir
+}

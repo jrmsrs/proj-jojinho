@@ -50,6 +50,12 @@ global.lockTarget=noone
 shootDir=0
 lockCursor=false
 
+keyInit()
+kbDash = false
+KbDash_maxDelay = 20
+kbDash_timerOn = false
+kbDash_timer = 0
+
 //methods
 drawInventory = function(n, quantityItems, yPos=70, scale=4, balloonStretchW=0, balloonStretchH=0, itemFrameSize=0, sel=[oPlayer.weapon1,oPlayer.weapon2]){
 	balloonStretchW=12*scale
@@ -120,4 +126,17 @@ startPosition = function(){
 		x = 456
 		y = 336
 	}
+}
+kbDashDelay=function(key){
+	//keyboard dash when double press right/left
+	if kbDash_timerOn {
+		kbDash = key
+		if kbDash_timer++ >= KbDash_maxDelay{
+			kbDash_timer=0
+			kbDash_timerOn = false
+		}
+	}
+	if key 
+		kbDash_timerOn = true
+	return kbDash
 }

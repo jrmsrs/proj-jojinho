@@ -53,7 +53,7 @@ jump=function(){
 	}
 }
 wallJump=function(){
-	if place_meeting(x+6,y,oWall) or place_meeting(x-6,y,oWall) {
+	if place_meeting(x+15*-sign(image_xscale),y,oWall) {
 		if walljumpForce==0 exit
 		var isOnOppositeDirection = place_meeting(x-image_xscale,y,oWall)
 	    if jumpPressTime>0 and !onFloor and isOnOppositeDirection {
