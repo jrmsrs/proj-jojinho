@@ -40,7 +40,7 @@
 ### estagios simples (ao menos dois)
 - [x] recurso metroidvania de areas acessiveis apenas com itens específicos 
 - [x] estagio 1 (Area A)
-- [ ] estagio 2 (Area B)
+- [ ] estagio 2 (Area B) _- trabalhando_
 
 ### boss
 - [ ] criar sprites _- trabalhando_
