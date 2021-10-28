@@ -1,20 +1,22 @@
 //parent values
+originalScale=image_xscale
 event_inherited();
 
-name="zomb"
+name="sniper"
 
 //individual specie values
-movSpeed = 0.5
+movSpeed = .5
 
 //sprites
-sIdleby = sZombIdle
-sIdle = sZombIdle
-sAttack = [sZombAttack,sZombAttack,sZombAttack]
-sDash = sZombIdle
-sRun = sZombRun 
-sRunttack = sZombAttack
-sAir = [sZombJump, sZombJump]
-sAirttack = sZombAirttack
-sHurt = sZombHurt
-sHurtFall = sZombHurtFall
-sHurtFallBack = sZombHurtFallBack
+sIdleby = sSniperIdle
+sIdle = sSniperIdle
+sAttack = [sSniperAttack,sSniperAttack,sSniperAttack]
+sShoot = sSniperAttack
+sDash = sSniperIdle
+sRun = sSniperRun 
+sRunttack = sSniperAttack
+sAir = [sSniperRun, sSniperRun]
+sAirttack = sSniperAttack
+sHurt = sSniperHurt
+sHurtFall = sSniperHurt
+sHurtFallBack = sSniperHurt

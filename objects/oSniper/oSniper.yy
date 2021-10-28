@@ -1,18 +1,18 @@
 {
   "spriteId": {
-    "name": "sZombIdle",
-    "path": "sprites/sZombIdle/sZombIdle.yy",
+    "name": "sSniperIdle",
+    "path": "sprites/sSniperIdle/sSniperIdle.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "sZombIdle",
-    "path": "sprites/sZombIdle/sZombIdle.yy",
+    "name": "sSniperIdle",
+    "path": "sprites/sSniperIdle/sSniperIdle.yy",
   },
   "persistent": false,
   "parentObjectId": {
-    "name": "oEntAIEnPatrol",
-    "path": "objects/oEntAIEnPatrol/oEntAIEnPatrol.yy",
+    "name": "oEntAIEnShooter",
+    "path": "objects/oEntAIEnShooter/oEntAIEnShooter.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

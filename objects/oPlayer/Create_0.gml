@@ -1,3 +1,5 @@
+invincible=false
+
 //parent values
 event_inherited();
 

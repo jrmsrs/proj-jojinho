@@ -41,7 +41,7 @@
 - [x] recurso metroidvania de areas acessiveis apenas com itens específicos 
 - [x] estagio 1 (Area A)
 - [ ] estagio 2 (Area B) _- trabalhando_
-- [ ] novo inimigo para Area B _- trabalhando_
+- [x] novo inimigo para Area B 
 
 ### boss
 - [ ] criar sprites _- trabalhando_

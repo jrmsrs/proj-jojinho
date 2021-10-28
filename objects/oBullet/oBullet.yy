@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sIGunBullet",
-    "path": "sprites/sIGunBullet/sIGunBullet.yy",
+    "name": "sProjectile",
+    "path": "sprites/sProjectile/sProjectile.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,6 +28,7 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oEntAIEnPatrol","path":"objects/oEntAIEnPatrol/oEntAIEnPatrol.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oBlockWeight","path":"objects/oBlockWeight/oBlockWeight.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oEntAIEnShooter","path":"objects/oEntAIEnShooter/oEntAIEnShooter.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

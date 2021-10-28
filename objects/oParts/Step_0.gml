@@ -12,6 +12,10 @@ if !runOnce{
 			sprite_index=sZombParts
 			image_xscale=2
 			break
+		case "sniper":
+			sprite_index=sSniperParts
+			image_xscale=3
+			break
 	}
 	image_yscale=image_xscale
 

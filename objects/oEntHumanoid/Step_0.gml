@@ -229,13 +229,15 @@ switch currentState {
 		shooting=0
 		if image_index>=image_number-1
 			currentState=states.IDLE
-		if image_index==image_number-2
-			instance_create_layer(
-				x+(global.playerDir>=62 and (global.playerDir<=90))*10*-sign(image_xscale)
-				+(global.playerDir>=270 and (global.playerDir<=308))*10*sign(image_xscale),
-				y - 30,
-				"Creatures",oBullet
-			)
+		if alignment=="player"{
+			if image_index==image_number-2
+				instance_create_layer(
+					x+(global.playerDir>=62 and (global.playerDir<=90))*10*-sign(image_xscale)
+					+(global.playerDir>=270 and (global.playerDir<=308))*10*sign(image_xscale),
+					y - 30,
+					"Creatures",oBullet
+				)
+		}
 		if dashing
 			currentState=states.DASH
 		if hurt 

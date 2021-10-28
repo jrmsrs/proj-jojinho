@@ -1,5 +1,6 @@
 if distance_to_point(oPlayer.x,oPlayer.y-30)>15 image_alpha=1
 
+image_index=0
 image_angle=dir
 
 if bulletTimer++<1 {
