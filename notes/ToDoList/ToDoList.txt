@@ -54,6 +54,7 @@
 - [ ] IA persegue o dash
 - [ ] IA pula pequenos abismos e ladeiras (inutil no momento)
 - [ ] IA pula (atacando) quando o player pula, tentando impedir o player de fugir do combate
+- [ ] Area B0 (update para Blade Draga)
 
 ### recursos
 - [x] sistema de save/load simples

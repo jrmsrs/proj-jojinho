@@ -870,8 +870,8 @@
     "PhysicsWorldPixToMetres": 0.01,
   },
   "parent": {
-    "name": "AreaB",
-    "path": "folders/Rooms/AreaB.yy",
+    "name": "Stages_AreaB",
+    "path": "folders/Rooms/Stages_AreaB.yy",
   },
   "resourceVersion": "1.0",
   "name": "rAreaB1",
