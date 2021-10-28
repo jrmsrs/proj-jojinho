@@ -41,6 +41,7 @@
 - [x] recurso metroidvania de areas acessiveis apenas com itens específicos 
 - [x] estagio 1 (Area A)
 - [ ] estagio 2 (Area B) _- trabalhando_
+- [ ] novo inimigo para Area B _- trabalhando_
 
 ### boss
 - [ ] criar sprites _- trabalhando_
@@ -71,12 +72,12 @@
 | BOSS (B4) |       ------
 -------------         ^v                        SURFACE
         ^  ------------------       
-        |->|       B3       | < v  
+        |->|       B3       | < v     ~
 ___________----------------------------------- __________________________
                             |       B2    C  |
                             ------------------
                                    ^                               *
-                                   v                           ----------
+                             *     v                           ----------
                            ------------          GROUND        |        |
                            |          |                        |        |
                            |          |                        |   A5   |
@@ -94,5 +95,6 @@ ___________----------------------------------- __________________________
 S começo do jogo
 C porta para o checkpoint
 * concluido
+~ trabalhando
 <-> conexões das rooms
 ```
