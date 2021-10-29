@@ -30,3 +30,5 @@ maxChaseRange = 130
 maxAlertChaseRange = 450
 alert=false
 dir=0
+
+image_xscale=choose(image_xscale,-image_xscale)

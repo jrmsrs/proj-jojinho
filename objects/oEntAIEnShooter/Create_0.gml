@@ -19,3 +19,5 @@ chase = function(){
 	}
 	return false
 }
+
+image_xscale=choose(image_xscale,-image_xscale)
