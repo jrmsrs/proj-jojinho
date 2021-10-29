@@ -103,13 +103,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"79037b1d-23cd-4437-b63a-5967df36287c","path":"sprites/sMDoor/sMDoor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"79037b1d-23cd-4437-b63a-5967df36287c","path":"sprites/sMDoor/sMDoor.yy",},"LayerId":{"name":"31e8d470-f997-4cd0-8bfe-d96a7293fca3","path":"sprites/sMDoor/sMDoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"79037b1d-23cd-4437-b63a-5967df36287c","path":"sprites/sMDoor/sMDoor.yy",},"LayerId":{"name":"5b789925-492e-4669-9c76-d92591e8ea2b","path":"sprites/sMDoor/sMDoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sMDoor","path":"sprites/sMDoor/sMDoor.yy",},"resourceVersion":"1.0","name":"79037b1d-23cd-4437-b63a-5967df36287c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"79037b1d-23cd-4437-b63a-5967df36287c","path":"sprites/sMechanismDoor/sMechanismDoor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"79037b1d-23cd-4437-b63a-5967df36287c","path":"sprites/sMechanismDoor/sMechanismDoor.yy",},"LayerId":{"name":"5b789925-492e-4669-9c76-d92591e8ea2b","path":"sprites/sMechanismDoor/sMechanismDoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"79037b1d-23cd-4437-b63a-5967df36287c","path":"sprites/sMechanismDoor/sMechanismDoor.yy",},"LayerId":{"name":"31e8d470-f997-4cd0-8bfe-d96a7293fca3","path":"sprites/sMechanismDoor/sMechanismDoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sMechanismDoor","path":"sprites/sMechanismDoor/sMechanismDoor.yy",},"resourceVersion":"1.0","name":"79037b1d-23cd-4437-b63a-5967df36287c","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sMDoor","path":"sprites/sMDoor/sMDoor.yy",},
+    "spriteId": {"name":"sMechanismDoor","path":"sprites/sMechanismDoor/sMechanismDoor.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 8.0,
@@ -121,7 +121,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a73631d0-b329-4f4b-a27b-2620e226198a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"79037b1d-23cd-4437-b63a-5967df36287c","path":"sprites/sMDoor/sMDoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a73631d0-b329-4f4b-a27b-2620e226198a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"79037b1d-23cd-4437-b63a-5967df36287c","path":"sprites/sMechanismDoor/sMechanismDoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -138,9 +138,9 @@
     "yorigin": 29,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sMDoor","path":"sprites/sMDoor/sMDoor.yy",},
+    "parent": {"name":"sMechanismDoor","path":"sprites/sMechanismDoor/sMechanismDoor.yy",},
     "resourceVersion": "1.3",
-    "name": "sMDoor",
+    "name": "sMechanismDoor",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -154,7 +154,7 @@
     "path": "folders/Sprites/Level.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sMDoor",
+  "name": "sMechanismDoor",
   "tags": [],
   "resourceType": "GMSprite",
 }

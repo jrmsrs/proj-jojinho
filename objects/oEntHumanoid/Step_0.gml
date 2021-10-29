@@ -246,6 +246,11 @@ switch currentState {
 		break
 		
 	case states.WALLSLIDE:
+		var canSlide = instance_nearest(x,y,oWall).canSlide
+		if alignment != "player" or !canSlide {
+			currentState=states.AIR
+			exit
+		}
 		if sprite_index != sPlayerWallSlide{
 			image_index=0
 			sprite_index=sPlayerWallSlide

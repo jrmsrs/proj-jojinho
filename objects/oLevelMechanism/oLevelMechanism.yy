@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sMDoor",
-    "path": "sprites/sMDoor/sMDoor.yy",
+    "name": "sMechanismDoor",
+    "path": "sprites/sMechanismDoor/sMechanismDoor.yy",
   },
   "solid": false,
   "visible": true,
@@ -32,8 +32,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Level",
-    "path": "folders/Objects/Level.yy",
+    "name": "Assets",
+    "path": "folders/Objects/Level/Assets.yy",
   },
   "resourceVersion": "1.0",
   "name": "oLevelMechanism",

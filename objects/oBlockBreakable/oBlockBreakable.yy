@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Level",
-    "path": "folders/Objects/Level.yy",
+    "name": "Assets",
+    "path": "folders/Objects/Level/Assets.yy",
   },
   "resourceVersion": "1.0",
   "name": "oBlockBreakable",
