@@ -33,7 +33,7 @@ switch currentState{
 			currentState=aiFlyingStates.RETURN
 		if hurt 
 			currentState=aiFlyingStates.HURT
-		if hSpeed!=0 image_xscale = sign(hSpeed)*scale
+		if hSpeed!=0 image_xscale = sign(hSpeed)*defaultScale
 		break
 		
 	case aiFlyingStates.CHASE:
@@ -51,7 +51,7 @@ switch currentState{
 		if hurt 
 			currentState=aiFlyingStates.HURT
 		if hSpeed!=0 
-			image_xscale = sign(hSpeed)*scale
+			image_xscale = sign(hSpeed)*defaultScale
 		break
 		
 	case aiFlyingStates.RETURN:
@@ -69,7 +69,7 @@ switch currentState{
 		if y-originX>3 or y-originX<-3 
 			vSpeed = lengthdir_y(movSpeed, dirToOrigin)
 		if hSpeed!=0 
-			image_xscale = sign(hSpeed)*scale
+			image_xscale = sign(hSpeed)*defaultScale
 		break
 		
 	case aiFlyingStates.HURT:

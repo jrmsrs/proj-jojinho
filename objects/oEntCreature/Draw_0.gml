@@ -1,5 +1,3 @@
-draw_self()
-
 var debugValues=[
 	"state",
 	currentState,
@@ -19,3 +17,5 @@ if global.debug{
 	//draw_text(x,y-70,string(hSpeed))
 	draw_set_halign(fa_left)
 }
+
+draw_self()

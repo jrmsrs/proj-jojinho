@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oBlockBreakable",
-    "path": "objects/oBlockBreakable/oBlockBreakable.yy",
+    "name": "oWall",
+    "path": "objects/oWall/oWall.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

@@ -1,5 +1,4 @@
 //parent values
-originalScale=image_xscale
 event_inherited();
 
 name="sniper"

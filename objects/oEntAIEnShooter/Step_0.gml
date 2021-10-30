@@ -48,7 +48,7 @@ switch(currentState){
 	case states.SHOOTTACK:
 		if sign(x-oPlayer.x)==sign(image_xscale) currentState=states.IDLE
 		if image_index==image_number-2{
-			var bull=instance_create_layer(x,y-19*originalScale,"Game",oEnemyBullet)
+			var bull=instance_create_layer(x,y-19*defaultScale,"Game",oEnemyBullet)
 			bull.owner = object_index 
 		}
 		break
