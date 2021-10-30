@@ -19,13 +19,16 @@
 ## solucionar bugs conhecidos
 
 ### bugs ou problemas conhecidos a serem resolvidos
-- [x] IA do objeto oDemo está ignorando o efeito knockback do tiro quando em estado de chase
+- [x] IA do objeto oDemo ignorando o efeito knockback do tiro quando em estado de chase
 - [x] objeto oDemo está deslizando (provavelmente inerte) quando em estado de hurtfall
 - [x] corrigir modo return to origin da IA do objeto oDemo (funcionando ainda do jeito antigo)
 - [x] dash impede player de pular
 - [x] dificultar menos o platforming da area A1
 - [x] acesso a area A5 requerindo dashs e walljumps complicados e pouco intuitivo para o começo de game 
 - [x] primeira plataforma da area A5 não muito intuitiva de se acessar
+- [ ] gun revla/bullet parou de funcionar para o lado esquerdo
+- [ ] IA do objeto Sniper bugando os movimentos ou mesmo fazendo animacao de tiro mas sem sair nada (desconhecido)
+- [ ] oSpawner para de funcionar provavelmente após preeencher a lista até a quantidade "maxInsts"
 
 ### bugs/problemas futuros a serem resolvidos
 - [x] saves que ficam obsoletos a cada mínima revisao do codigo (provavelmente sera resolvido quando otimizar o sistema de save/load)

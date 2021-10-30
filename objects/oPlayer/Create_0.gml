@@ -126,6 +126,9 @@ startPosition = function(){
 		case "A":
 			room_goto(rAreaAC)
 			break
+		case "B":
+			room_goto(rAreaBC)
+			break
 	}
 	if global.checkPoint=="0"{
 		x = xstart

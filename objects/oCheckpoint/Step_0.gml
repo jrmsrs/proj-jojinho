@@ -1,6 +1,6 @@
 //check if checkpoint are the same as room (for every existing checkpoint and respective room)
 if (global.checkPoint=="A" and room==rAreaAC) or 
-   (global.checkPoint=="B" and false){
+   (global.checkPoint=="B" and room==rAreaBC){
 	active=true
 }
 

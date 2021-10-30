@@ -38,6 +38,11 @@
         {"properties":[
             {"propertyId":{"name":"itemName","path":"objects/oItem/oItem.yy",},"objectId":{"name":"oItem","path":"objects/oItem/oItem.yy",},"value":"Gun Launcher","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oItem","path":"objects/oItem/oItem.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2407.0,"y":209.0,"resourceVersion":"1.0","name":"inst_124EE6F3","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"destinationY","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"240","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"destinationX","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"destination","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"rAreaB2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3552.0,"y":480.0,"resourceVersion":"1.0","name":"inst_56058B69","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Level","tags":[],"resourceType":"GMRInstanceLayer",},
     {"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"tilesetId":{"name":"tBasicBlue","path":"tilesets/tBasicBlue/tBasicBlue.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":222,"SerialiseHeight":48,"TileSerialiseData":[
@@ -246,7 +251,7 @@
             {"properties":[],"isDnd":false,"objectId":{"name":"oSniper","path":"objects/oSniper/oSniper.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-3.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3024.0,"y":576.0,"resourceVersion":"1.0","name":"inst_7DF1A01C","tags":[],"resourceType":"GMRInstance",},
             {"properties":[],"isDnd":false,"objectId":{"name":"oSniper","path":"objects/oSniper/oSniper.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2976.0,"y":576.0,"resourceVersion":"1.0","name":"inst_3EDF4CAA","tags":[],"resourceType":"GMRInstance",},
             {"properties":[],"isDnd":false,"objectId":{"name":"oZomb","path":"objects/oZomb/oZomb.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2336.0,"y":224.0,"resourceVersion":"1.0","name":"inst_4EAC1E89","tags":[],"resourceType":"GMRInstance",},
-            {"properties":[],"isDnd":false,"objectId":{"name":"oSpawner","path":"objects/oSpawner/oSpawner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2136.0,"y":430.0,"resourceVersion":"1.0","name":"inst_18DC98AF","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"oSpawner","path":"objects/oSpawner/oSpawner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2136.0,"y":423.0,"resourceVersion":"1.0","name":"inst_18DC98AF","tags":[],"resourceType":"GMRInstance",},
           ],"visible":true,"depth":800,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Creatures","tags":[],"resourceType":"GMRInstanceLayer",},
         {"instances":[
             {"properties":[],"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":52.5,"scaleY":2.25,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":624.0,"resourceVersion":"1.0","name":"inst_73EC2198","tags":[],"resourceType":"GMRInstance",},
@@ -728,6 +733,7 @@
     {"name":"inst_3EDF4CAA","path":"rooms/rAreaB3/rAreaB3.yy",},
     {"name":"inst_4EAC1E89","path":"rooms/rAreaB3/rAreaB3.yy",},
     {"name":"inst_18DC98AF","path":"rooms/rAreaB3/rAreaB3.yy",},
+    {"name":"inst_56058B69","path":"rooms/rAreaB3/rAreaB3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
