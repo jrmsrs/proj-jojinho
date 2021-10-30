@@ -39,6 +39,9 @@ switch weapon2 {
 	case "Gun Revla":
 		weapon2Sprite = sIGunRevla
 		break
+	case "Gun Launcher":
+		weapon2Sprite = sIGunLauncher
+		break
 }
 
 if image_xscale==defaultScale
@@ -51,7 +54,7 @@ else
 	else shootDir = 0
 
 if sprite_index == sShoot
-		draw_sprite_ext(weapon2Sprite,image_index,x,y-20,sign(image_xscale),sign(image_yscale),shootDir,c_white,1)
+	draw_sprite_ext(weapon2Sprite,image_index,x,y-20,sign(image_xscale),sign(image_yscale),shootDir,c_white,1)
 
 draw_self()
 

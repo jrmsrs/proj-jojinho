@@ -221,22 +221,49 @@ switch currentState {
 		break
 		
 	case states.SHOOTTACK:
+	
+		if instance_exists(oBomb) and alignment=="player"{
+			sprite_index=sIdle
+			currentState=states.IDLE
+			exit
+		}
+		
 		hSpeed=0
 		if sprite_index != sShoot{
 			image_index=0
 		}
 		sprite_index = sShoot
 		shooting=0
-		if image_index>=image_number-1
-			currentState=states.IDLE
+		
 		if alignment=="player"{
-			if image_index==image_number-2
-				instance_create_layer(
-					x+(global.playerDir>=62 and (global.playerDir<=90))*10*-sign(image_xscale)
-					+(global.playerDir>=270 and (global.playerDir<=308))*10*sign(image_xscale),
-					y - 30,
-					"Creatures",oBullet
-				)
+			if image_index==image_number-1{
+				if weapon2=="Gun Revla"{
+					instance_create_layer(
+						x+(global.playerDir>=62 and (global.playerDir<=90))*10*-sign(image_xscale)
+						+(global.playerDir>=270 and (global.playerDir<=308))*10*sign(image_xscale),
+						y - 30,
+						"Creatures",oBullet
+					)
+				}
+				if weapon2=="Gun Launcher"{
+					if global.playerDir<270 and global.playerDir>90 and image_xscale<0 or
+					   !(global.playerDir<270 and global.playerDir>90) and image_xscale>0 { 
+						instance_create_layer(
+							x+lengthdir_x(50, global.playerDir),
+							y+lengthdir_y(50, global.playerDir) - 25,
+							"Creatures",oBomb
+						)
+					}
+					else
+						instance_create_layer(
+							x+50*sign(image_xscale),
+							y - 25,
+							"Creatures",oBomb
+						)
+				}
+			}
+			if image_index>=image_number-1
+				currentState=states.IDLE
 		}
 		if dashing
 			currentState=states.DASH

@@ -5,8 +5,8 @@ if cursorTimer++<1
 
 
 if variable_instance_exists(oCamera,"xCam")
-	if  x <= camera_get_view_width(view_camera[0]) +oCamera.xCam
-	and x > oCamera.xCam
+	if  x <= camera_get_view_width(view_camera[0]) +oCamera.xCam + 300
+	and x > oCamera.xCam - 300
 	and y <= camera_get_view_height(view_camera[0])+oCamera.yCam
 	and y > oCamera.yCam{
 		x += lengthdir_x(30, dir)

@@ -52,6 +52,7 @@ function keyInit(kbDashL=false,kbDashR=false){
 	
 	anyKeyPressed = keyLeft or keyRight or keyJumpPressed or keyDash or keyWeapon1 or keyWeapon2
 }
+
 function globalVarsInit(){
 	global.debug=false
 	//Initialize inventory

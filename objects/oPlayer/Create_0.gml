@@ -84,20 +84,25 @@ drawInventory = function(n, quantityItems, yPos=70, scale=4, balloonStretchW=0, 
 			if i==0 
 				switch ds_list_find_value(global.inventoryWeapon1,j){
 					case "Blade Wu":
-						if sel[i]="Blade Wu" draw_sprite_ext(sISelect, 0, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale/4,scale/4,0,c_white,1)
+						if sel[i]="Blade Wu"     draw_sprite_ext(sISelect, 0, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale/4,scale/4,0,c_white,1)
 						draw_sprite_ext(sIAllBlades, 0, (x-(balloonStretchW/2)*n+(balloonStretchW*i))+29, (y-yPos-balloonStretchH+itemFrameSize*j)+30, scale/4,scale/4,0,c_white,1)
 						break
 					case "Blade Draga":
-						if sel[i]="Blade Draga" draw_sprite_ext(sISelect, 0, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale/4,scale/4,0,c_white,1)
+						if sel[i]="Blade Draga"  draw_sprite_ext(sISelect, 0, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale/4,scale/4,0,c_white,1)
 						draw_sprite_ext(sIAllBlades, 1, (x-(balloonStretchW/2)*n+(balloonStretchW*i))+29, (y-yPos-balloonStretchH+itemFrameSize*j)+30, scale/4,scale/4,0,c_white,1)
 						break
 				}
 			if i==1
 				switch ds_list_find_value(global.inventoryWeapon2,j){
 					case "Gun Revla":
-						if sel[i]="Gun Revla" draw_sprite_ext(sISelect, 0, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale/4,scale/4,0,c_white,1)
-						draw_sprite_ext(sIAllGuns, 0, (x-(balloonStretchW/2)*n+(balloonStretchW*i))+26, (y-yPos-balloonStretchH+itemFrameSize*j*scale)+27, scale/4,scale/4,0,c_white,1)
+						if sel[i]="Gun Revla"     draw_sprite_ext(sISelect, 0, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale/4,scale/4,0,c_white,1)
+						draw_sprite_ext(sIAllGuns, 0, (x-(balloonStretchW/2)*n+(balloonStretchW*i))+29, (y-yPos-balloonStretchH+itemFrameSize*j)+30, scale/4,scale/4,0,c_white,1)
 						break
+					case "Gun Launcher":
+						if sel[i]="Gun Launcher"  draw_sprite_ext(sISelect, 0, x-(balloonStretchW/2)*n+(balloonStretchW*i), y-yPos-balloonStretchH+itemFrameSize*j, scale/4,scale/4,0,c_white,1)
+						draw_sprite_ext(sIAllGuns, 1, (x-(balloonStretchW/2)*n+(balloonStretchW*i))+29, (y-yPos-balloonStretchH+itemFrameSize*j)+30, scale/4,scale/4,0,c_white,1)
+						break
+					
 				}
 			if i==2
 				switch ds_list_find_value(global.inventoryEquip,j){
@@ -107,6 +112,7 @@ drawInventory = function(n, quantityItems, yPos=70, scale=4, balloonStretchW=0, 
 	}
 
 }
+
 startPosition = function(){
 	life=maxLife
 	currentState=states.IDLE
@@ -129,6 +135,7 @@ startPosition = function(){
 		y = 336
 	}
 }
+
 kbDashDelay=function(key){
 	//keyboard dash when double press right/left
 	if kbDash_timerOn {
