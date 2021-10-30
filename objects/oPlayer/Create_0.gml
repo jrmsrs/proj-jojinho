@@ -152,3 +152,17 @@ kbDashDelay=function(key){
 		kbDash_timerOn = true
 	return kbDash
 }
+	
+boxCollision=function(){
+	if place_meeting(x+hSpeed,y,oBox) {
+	    //while(!place_meeting(x+sign(hSpeed),y,oBox))
+		//	x+=sign(hSpeed)
+	    hSpeed = 0
+	}
+	//Collision top/down and apply force
+	if place_meeting(x,y+vSpeed,oBox) {
+	    //while(!place_meeting(x,y+sign(vSpeed),oBox)) 
+		//	y+=sign(vSpeed)
+	    vSpeed = 0
+	}
+}

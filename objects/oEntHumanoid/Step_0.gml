@@ -1,6 +1,6 @@
 event_inherited();
 
-onFloor = place_meeting(x,y+6,oWall)
+onFloor = place_meeting(x,y+6,oWall) or place_meeting(x,y+6,oBox)
 onWall = place_meeting(x+1,y,oWall) or place_meeting(x-1,y,oWall)
 
 if hAxisLock{
@@ -377,4 +377,6 @@ switch currentState {
 }
 
 ifOut()
+if alignment=="player" 
+	boxCollision()
 wallCollision()

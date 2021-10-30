@@ -9,7 +9,7 @@ function applyGravity(gf=gravityForce,vm=vSpeedMax){
 function wallCollision(){
 	//Collision left/right and apply force
 	if place_meeting(x+hSpeed,y,oWall) {
-	    while(!place_meeting(x+sign(hSpeed),y,oWall)) 
+	    while(!place_meeting(x+sign(hSpeed),y,oWall))
 			x+=sign(hSpeed)
 	    hSpeed = 0
 	}

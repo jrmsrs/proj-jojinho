@@ -67,9 +67,11 @@ switch(currentState){
 		}
 		break
 	
-	for (i=0; i<ds_list_size(enemies); i++){
-		if ds_list_find_value(enemies,i).life<=0
-			ds_list_delete(enemies,i)
+}
+
+for (i=0; i<ds_list_size(enemies); i++){
+	if !instance_exists(ds_list_find_value(enemies,i)){
+		ds_list_delete(enemies,i)
 	}
 }
 

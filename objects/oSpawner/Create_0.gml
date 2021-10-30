@@ -9,4 +9,4 @@ currentName=""
 currentObj=noone
 
 enemies = ds_list_create()
-maxInsts = 4
+maxInsts = 2
