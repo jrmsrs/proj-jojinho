@@ -7,5 +7,5 @@
 - [x] sistema de itens: weapons (ao menos duas melee e uma ranged)
 - [x] HUD
 - [x] telas: menu, pause, etc
-- [ ] estagios simples (ao menos dois) _- trabalhando_
-- [ ] boss
+- [x] estagios simples (ao menos dois)
+- [ ] boss _- trabalhando_
