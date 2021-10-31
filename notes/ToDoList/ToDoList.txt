@@ -13,7 +13,7 @@
 - [x] sistema de itens: weapons (ao menos duas melee e uma ranged)
 - [x] HUD
 - [x] telas: menu, pause, etc
-- [ ] estagios simples (ao menos dois) _- trabalhando_
+- [x] estagios simples (ao menos dois) _- trabalhando_
 - [ ] boss
 
 ## solucionar bugs conhecidos
@@ -27,9 +27,9 @@
 - [x] acesso a area A5 requerindo dashs e walljumps complicados e pouco intuitivo para o começo de game 
 - [x] primeira plataforma da area A5 não muito intuitiva de se acessar
 - [x] gun revla/bullet parou de funcionar para o lado esquerdo
-- [ ] IA do objeto Sniper bugando os movimentos ou mesmo fazendo animacao de tiro mas sem sair nada (desconhecido)
+- [x] IA do objeto Sniper bugando os movimentos ou mesmo fazendo animacao de tiro mas sem sair nada (desconhecido) _-codigo refeito_
 - [x] oSpawner para de funcionar provavelmente após preeencher a lista até a quantidade "maxInsts"
-- [ ] dificil de pular sobre o objeto oBox
+- [x] dificil de pular sobre o objeto oBox
 
 ### bugs/problemas futuros a serem resolvidos
 - [x] saves que ficam obsoletos a cada mínima revisao do codigo (provavelmente sera resolvido quando otimizar o sistema de save/load)
@@ -44,7 +44,7 @@
 ### estagios simples (ao menos dois)
 - [x] recurso metroidvania de areas acessiveis apenas com itens específicos 
 - [x] estagio 1 (Area A)
-- [ ] estagio 2 (Area B) _- trabalhando_
+- [x] estagio 2 (Area B) _- trabalhando_
 - [x] novo inimigo para Area B 
 
 ### boss
@@ -60,6 +60,7 @@
 - [ ] IA pula pequenos abismos e ladeiras (inutil no momento)
 - [ ] IA pula (atacando) quando o player pula, tentando impedir o player de fugir do combate
 - [ ] Area B0 (update para Blade Draga)
+- [ ] refazer todas as sprites e tilesets
 
 ### recursos
 - [x] sistema de save/load simples

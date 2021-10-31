@@ -2,22 +2,12 @@ event_inherited();
 
 alignment = "enemy"
 
-shootRange=200
-
-maxRange = shootRange
+maxRange = 220
+shootRange = 200
 iaTimer = 0
 distanceSensor = 0
 
-//alert=false
+alert=false
 
-iaDelay=0
+iaDelay=irandom(300)+100
 
-chase = function(){
-	if distance_to_object(oPlayer) <= 30{
-		hAxis = sign(oPlayer.x-x) 
-		return true
-	}
-	return false
-}
-
-image_xscale=choose(image_xscale,-image_xscale)

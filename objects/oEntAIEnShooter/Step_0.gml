@@ -2,47 +2,56 @@ event_inherited();
 
 if !object_exists(oPlayer) exit
 
+var willCollide = place_meeting(x+10*sign(image_xscale),y,oWall)
+var floorAhead = place_meeting(x+10*sign(image_xscale),y+10,oWall)
+
+function sensor(){
+	if place_meeting(x+(distanceSensor*sign(image_xscale)),y,oPlayer){
+		return true
+	}
+	if distanceSensor>=maxRange 
+		distanceSensor=0
+	distanceSensor+=3
+	return false
+}
+
 switch(currentState){
 	case states.IDLE:
-		//if sprite_index!=sIdle and sprite_index!=sHurt
-			//alert=false
 		hAxis=0
-		if iaTimer++ >= iaDelay or chase(){// or chase() or alert{
+		if distance_to_object(oPlayer)<=shootRange and sign(image_xscale)==sign(oPlayer.x-x){
+			shooting=true
+		}
+		if iaTimer++ >= iaDelay or sensor(){
 			iaTimer=0
-			iaDelay=choose(100,200,300,400)
-			currentState = states.RUN
-			if !oPlayer.invincible hAxis=sign(image_xscale)
-			else hAxis=-sign(image_xscale)
+			iaDelay=irandom(400)+200
+			currentState=states.RUN
+			hAxis=sign(image_xscale)
 		}
-		if distance_to_object(oPlayer) <= shootRange and sign(oPlayer.x-x)==sign(image_xscale) and !oPlayer.invincible{
-			hAxis=0
-			shooting=1
-		}
+		
 		break
 		
 	case states.RUN:
-		if iaTimer++ >= iaDelay{//500{
+		
+		if iaTimer++ >= iaDelay{
 			iaTimer=0
-			currentState = states.IDLE
+			iaDelay=irandom(400)+200
+			currentState=states.IDLE
 			hAxis=0
-			break
 		}
-		
-		hAxis=sign(image_xscale)
-	
-		//se não houver um chão adiante ou se houver uma parede, inverta a direcao
-		if (!place_meeting(x+sign(image_xscale)*16,y+6,oWall) or place_meeting(x+sign(image_xscale)*4,y,oWall)) and onFloor{
-			hAxis = -hAxis
-		}
-		
-		if chase()
-			iaTimer=0
-		
-		if distance_to_object(oPlayer)<=shootRange and !oPlayer.invincible and sign(oPlayer.x-x)==sign(image_xscale){
+		if willCollide or !floorAhead
+			hAxis=-hAxis
+			
+		if distance_to_object(oPlayer)<=shootRange and sign(image_xscale)==sign(oPlayer.x-x){
+			currentState=states.IDLE
 			hAxis=0
-			currentState = states.IDLE
 		}
+		break
 		
+	case states.HURT:
+		if sprite_index!=sHurt{
+			if sign(image_xscale)!=sign(oPlayer.x-x)
+				image_xscale=-image_xscale
+		}
 		break
 		
 	case states.SHOOTTACK:
@@ -53,3 +62,7 @@ switch(currentState){
 		}
 		break
 }
+
+if distance_to_object(oPlayer)>15 and distance_to_object(oPlayer)<=50 
+	image_xscale=defaultScale*sign(oPlayer.x-x)
+	

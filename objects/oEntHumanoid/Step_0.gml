@@ -246,7 +246,7 @@ switch currentState {
 					)
 				}
 				if weapon2=="Gun Launcher"{
-					if global.playerDir<270 and global.playerDir>90 and image_xscale<0 or
+					if global.playerDir<=270 and global.playerDir>=90 and image_xscale<0 or
 					   !(global.playerDir<270 and global.playerDir>90) and image_xscale>0 { 
 						instance_create_layer(
 							x+lengthdir_x(50, global.playerDir),
@@ -262,9 +262,9 @@ switch currentState {
 						)
 				}
 			}
-			if image_index>=image_number-1
-				currentState=states.IDLE
 		}
+		if image_index>=image_number-1
+			currentState=states.IDLE
 		if dashing
 			currentState=states.DASH
 		if hurt 

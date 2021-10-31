@@ -26,7 +26,7 @@ idleTimer = 0
 canJumpDelay=0
 
 currentState = states.IDLE;
-defaultScale = image_xscale
+defaultScale = abs(image_xscale)
 
 shooting=0
 attacking=0
