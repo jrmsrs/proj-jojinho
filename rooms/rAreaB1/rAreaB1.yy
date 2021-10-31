@@ -30,6 +30,18 @@
             {"propertyId":{"name":"destinationY","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"624","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"door","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":648.0,"y":248.0,"resourceVersion":"1.0","name":"inst_6A390012","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"progressName","path":"objects/oLevelMechanism/oLevelMechanism.yy",},"objectId":{"name":"oLevelMechanism","path":"objects/oLevelMechanism/oLevelMechanism.yy",},"value":"Area A done","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"canSlide","path":"objects/oWall/oWall.yy",},"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oLevelMechanism","path":"objects/oLevelMechanism/oLevelMechanism.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":528.0,"y":864.0,"resourceVersion":"1.0","name":"inst_67692C68","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"destination","path":"objects/oLock/oLock.yy",},"objectId":{"name":"oLock","path":"objects/oLock/oLock.yy",},"value":"oLevelMechanism","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"progressName","path":"objects/oLock/oLock.yy",},"objectId":{"name":"oLock","path":"objects/oLock/oLock.yy",},"value":"Area A done","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oLock","path":"objects/oLock/oLock.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":552.0,"y":840.0,"resourceVersion":"1.0","name":"inst_1068B490","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"destination","path":"objects/oLock/oLock.yy",},"objectId":{"name":"oLock","path":"objects/oLock/oLock.yy",},"value":"oLevelMechanism","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"progressName","path":"objects/oLock/oLock.yy",},"objectId":{"name":"oLock","path":"objects/oLock/oLock.yy",},"value":"Area A done","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oLock","path":"objects/oLock/oLock.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":504.0,"y":840.0,"resourceVersion":"1.0","name":"inst_356FD2CE","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Level","tags":[],"resourceType":"GMRInstanceLayer",},
     {"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"tilesetId":{"name":"tBasicBlue","path":"tilesets/tBasicBlue/tBasicBlue.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":57,"SerialiseHeight":63,"TileSerialiseData":[
@@ -849,6 +861,9 @@
     {"name":"inst_7F1D9FD2","path":"rooms/rAreaB1/rAreaB1.yy",},
     {"name":"inst_6A390012","path":"rooms/rAreaB1/rAreaB1.yy",},
     {"name":"inst_31929FF0","path":"rooms/rAreaB1/rAreaB1.yy",},
+    {"name":"inst_67692C68","path":"rooms/rAreaB1/rAreaB1.yy",},
+    {"name":"inst_1068B490","path":"rooms/rAreaB1/rAreaB1.yy",},
+    {"name":"inst_356FD2CE","path":"rooms/rAreaB1/rAreaB1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

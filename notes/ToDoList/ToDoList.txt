@@ -13,7 +13,7 @@
 - [x] sistema de itens: weapons (ao menos duas melee e uma ranged)
 - [x] HUD
 - [x] telas: menu, pause, etc
-- [x] estagios simples (ao menos dois) _- trabalhando_
+- [x] estagios simples (ao menos dois)
 - [ ] boss
 
 ## solucionar bugs conhecidos
@@ -44,7 +44,7 @@
 ### estagios simples (ao menos dois)
 - [x] recurso metroidvania de areas acessiveis apenas com itens específicos 
 - [x] estagio 1 (Area A)
-- [x] estagio 2 (Area B) _- trabalhando_
+- [x] estagio 2 (Area B)
 - [x] novo inimigo para Area B 
 
 ### boss
@@ -60,7 +60,7 @@
 - [ ] IA pula pequenos abismos e ladeiras (inutil no momento)
 - [ ] IA pula (atacando) quando o player pula, tentando impedir o player de fugir do combate
 - [ ] Area B0 (update para Blade Draga)
-- [ ] refazer todas as sprites e tilesets
+- [ ] refazer a maioria das sprites e tilesets
 
 ### recursos
 - [x] sistema de save/load simples

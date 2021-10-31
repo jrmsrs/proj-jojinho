@@ -1,3 +1,5 @@
+///@description set item
+
 if keySetW1{
 	if ds_list_size(global.inventoryWeapon1)>1{ 
 		selWeapon1++

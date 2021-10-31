@@ -30,6 +30,7 @@ if active{
 			image_index=0
 		}
 		if image_index>=image_number-1{
+			global.checkPoint=checkpointName
 			override=true
 			active=true
 			oSaveController.saveGame=true

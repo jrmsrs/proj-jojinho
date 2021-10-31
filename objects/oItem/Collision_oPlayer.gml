@@ -1,6 +1,7 @@
 switch itemName{
 
-	case "Key":
+	case "Key Lab":
+		ds_list_add(global.inventoryEquip,itemName)
 		break
 
 	case "Blade Wu":

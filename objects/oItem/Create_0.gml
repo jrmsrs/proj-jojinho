@@ -4,7 +4,7 @@ multiply=-1
 
 switch itemName{
 
-	case "Key":
+	case "Key Lab":
 		sprite_index=sIKeys
 		rotate=false
 		break

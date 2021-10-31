@@ -31,10 +31,6 @@
         {"properties":[
             {"propertyId":{"name":"itemName","path":"objects/oItem/oItem.yy",},"objectId":{"name":"oItem","path":"objects/oItem/oItem.yy",},"value":"Blade Wu","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oItem","path":"objects/oItem/oItem.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":280.0,"y":400.0,"resourceVersion":"1.0","name":"inst_76CB493","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"oBlockWeight","path":"objects/oBlockWeight/oBlockWeight.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":40.0,"y":360.0,"resourceVersion":"1.0","name":"inst_65F85C1A","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"dialogue","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"area B não concluida","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.25,"scaleY":2.75,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":88.0,"y":408.0,"resourceVersion":"1.0","name":"inst_1BB6F77F","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"dialogue","path":"objects/oSensor/oSensor.yy",},"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"value":"attack1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oSensor","path":"objects/oSensor/oSensor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.75,"scaleY":2.75,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":180.0,"y":408.0,"resourceVersion":"1.0","name":"inst_6AC44549","tags":[],"resourceType":"GMRInstance",},
@@ -656,11 +652,9 @@
     {"name":"inst_1DD0A625","path":"rooms/rAreaA3/rAreaA3.yy",},
     {"name":"inst_23AFCFBE","path":"rooms/rAreaA3/rAreaA3.yy",},
     {"name":"inst_2DD7B08A","path":"rooms/rAreaA3/rAreaA3.yy",},
-    {"name":"inst_1BB6F77F","path":"rooms/rAreaA3/rAreaA3.yy",},
     {"name":"inst_6AC44549","path":"rooms/rAreaA3/rAreaA3.yy",},
-    {"name":"inst_6F9A7A19","path":"rooms/rAreaA3/rAreaA3.yy",},
     {"name":"inst_3467E65","path":"rooms/rAreaA3/rAreaA3.yy",},
-    {"name":"inst_65F85C1A","path":"rooms/rAreaA3/rAreaA3.yy",},
+    {"name":"inst_6F9A7A19","path":"rooms/rAreaA3/rAreaA3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
