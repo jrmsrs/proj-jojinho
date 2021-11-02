@@ -16,6 +16,10 @@ if !runOnce{
 			sprite_index=sSniperParts
 			image_xscale=3
 			break
+		case "boss":
+			sprite_index=sBossParts
+			image_xscale=1.5
+			break
 	}
 	image_yscale=image_xscale
 
@@ -67,7 +71,7 @@ if !runOnce{
 		
 		//Special cases
 		//Demo
-		if owner=="demo"{
+		if owner=="demo" or owner=="boss"{
 			if variant==0 or variant==2{
 				next = instance_create_layer(x+choose(1,-1),y+choose(1,-1),"Creatures",oParts)
 				next.owner = owner

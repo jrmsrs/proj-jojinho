@@ -49,8 +49,9 @@
 
 ### boss
 - [x] criar sprites
-- [ ] implementar IA da forma 1
-- [ ] implementar IA da forma 2
+- [x] implementar IA da forma 1
+- [x] implementar IA da forma 2
+- [ ] criar room
 
 ## objetivos futuros
 
@@ -78,7 +79,7 @@
 |           |       | B0 |
 | BOSS (B4) |       ------
 -------------         ^v                        SURFACE
-        ^  ------------------       
+    ~   ^  ------------------       
         |->|       B3       | < v     *
 ___________----------------------------------- __________________________
                   *         |       B2    C  |

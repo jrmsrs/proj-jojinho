@@ -30,11 +30,12 @@ aiFlyingStatesInit=function(){
 	enum aiFlyingStates{
 		SCOUT,
 		CHASE,
+		ATTACK,
 		RETURN,
 		HURT,
 		HURTFALL,
 		HURTFALLBACK,
-		FAINT
+		FAINT,
 	}
 }
 flipToDirection=function(inverse=false){
