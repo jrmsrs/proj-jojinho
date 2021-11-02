@@ -3,10 +3,9 @@ event_inherited();
 if name=="boss form 1"{
 	name="boss"
 	form="humanoid"
-	maxLife=100
+	maxLife=80
 	life=maxLife
 	lifeTillFaint=maxLife
-	def=.2
 	movSpeed = .5
 
 	//sprites
@@ -29,7 +28,7 @@ if name=="boss form 2"{
 	name="boss"
 	form="flying"
 	lifeTillFaint=15
-	movSpeed = 2
+	movSpeed = 1.5
 	chasing=true
 
 	currentState=aiFlyingStates.CHASE

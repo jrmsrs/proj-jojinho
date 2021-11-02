@@ -1,0 +1,1 @@
+distanceMeter=50

@@ -1,6 +1,16 @@
 event_inherited();
 if !object_exists(oPlayer) exit
 
+#region STATIC FORM
+if form=="static"{
+	instance_deactivate_object(oBossWall)
+	if distance_to_object(oPlayer)<=100{
+		name = "boss form 1"
+		instance_activate_object(oBossWall)
+	}
+}
+#endregion
+
 #region INHERIT HUMANOID (it's not AI)
 if form=="humanoid"{
 	onFloor = place_meeting(x,y+6,oWall) or place_meeting(x,y+6,oBox)
@@ -382,6 +392,7 @@ if form=="humanoid"{
 
 #region FLYING FORM (it's AI)
 if form=="flying"{
+	instance_deactivate_object(oBossWall)
 	invincible = currentState==aiFlyingStates.FAINT or currentState==aiFlyingStates.HURT or currentState==aiFlyingStates.HURTFALL or currentState==aiFlyingStates.HURTFALLBACK
 	onFloor = place_meeting(x,y+6,oWall)
 	if invincible and !currentState==aiFlyingStates.HURT hurt=0
@@ -710,5 +721,5 @@ switch form{
 		break
 }
 
-
+show_debug_message(form)
 	

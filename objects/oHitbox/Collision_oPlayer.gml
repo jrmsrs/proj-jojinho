@@ -9,7 +9,7 @@ if !other.invincible{
 }
 
 if layer==layer_get_id("BossHitbox"){
-	other.hurt = choose(3,4,5,6,7)
+	other.hurt = choose(1,2,3,3,3,4,5)
 
 	if !other.invincible{
 		other.hSpeed = choose(3,4,5)*sign(oPlayer.x-oBoss.x)

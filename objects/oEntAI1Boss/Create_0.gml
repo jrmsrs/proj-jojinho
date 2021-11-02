@@ -57,8 +57,8 @@ sHurtFallBack = sPlayerHurtFallBack
 #endregion
 
 alignment = "enemy"
-name = "boss form 1"
-form = "humanoid"
+name = "boss"
+form = "static"
 
 maxRange = 220
 iaTimer = 0
@@ -68,7 +68,7 @@ alert=false
 
 iaDelay=0
 
-image_xscale=choose(image_xscale,-image_xscale)
+//image_xscale=choose(image_xscale,-image_xscale)
 
 defending=0
 tiredTimer=0

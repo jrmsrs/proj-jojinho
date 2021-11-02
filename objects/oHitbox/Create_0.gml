@@ -17,7 +17,6 @@ if layer==layer_get_id("EnemyHitbox"){
 }
 
 if layer==layer_get_id("BossHitbox"){
-	//dir=sign(x-instance_nearest(x,y,oEntAI1Boss).x)
-	image_xscale = 1.6
-	image_yscale = 1.2
+	image_xscale = 1.35
+	image_yscale = 1
 }

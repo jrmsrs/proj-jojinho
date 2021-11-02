@@ -67,9 +67,9 @@ function globalVarsInit(){
 	//global.progress[? "Area A secretboss"] = false
 	
 	//area B
-	//global.progress[? "Area B done"] = false
-	//global.progress[? "Area B active1"] = false
-	//global.progress[? "Area B boss"] = false
+	global.progress[? "Area B done"] = false
+	global.progress[? "Area B active1"] = false //a caixa vai ficar no lugar quando for para o boss
+	global.progress[? "Area B boss"] = false
 
 
 	//Store room types

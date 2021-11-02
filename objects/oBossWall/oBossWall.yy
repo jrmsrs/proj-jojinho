@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "sBoss1Idle",
-    "path": "sprites/sBoss1Idle/sBoss1Idle.yy",
+    "name": "sBossWall",
+    "path": "sprites/sBossWall/sBossWall.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oEntAI1Boss",
-    "path": "objects/oEntAI1Boss/oEntAI1Boss.yy",
+    "name": "oWall",
+    "path": "objects/oWall/oWall.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,16 +24,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Boss",
-    "path": "folders/Objects/Creatures/Boss.yy",
+    "name": "Projectiles and Powers",
+    "path": "folders/Objects/Level/Projectiles and Powers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oBoss",
+  "name": "oBossWall",
   "tags": [],
   "resourceType": "GMObject",
 }
