@@ -48,7 +48,9 @@
 - [x] novo inimigo para Area B 
 
 ### boss
-- [ ] criar sprites _- trabalhando_
+- [x] criar sprites
+- [ ] implementar IA da forma 1
+- [ ] implementar IA da forma 2
 
 ## objetivos futuros
 

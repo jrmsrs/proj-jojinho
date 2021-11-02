@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 8,
+  "gridY": 8,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"1bec2a9b-91ac-40f2-b8b0-30ba4d6225f5","path":"sprites/sBossTransform/sBossTransform.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"1bec2a9b-91ac-40f2-b8b0-30ba4d6225f5","path":"sprites/sBossTransform/sBossTransform.yy",},"LayerId":{"name":"165774e1-2c7a-4b09-ba6d-02795bc4b287","path":"sprites/sBossTransform/sBossTransform.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -199,8 +199,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "proj-jojinho",
-    "path": "proj-jojinho.yyp",
+    "name": "Boss",
+    "path": "folders/Sprites/Creatures/Boss.yy",
   },
   "resourceVersion": "1.0",
   "name": "sBossTransform",
