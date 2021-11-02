@@ -1,4 +1,3 @@
-/// @description Description
 keyInit()
 
 if !object_exists(oPlayer) exit

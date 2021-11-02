@@ -37,6 +37,8 @@ parallaxSetup = function(parallax){
 roomDefine = function(){
 	switch(room){
 		case rAreaA1: parallaxSetup(0); break
+		case rAreaB2: parallaxSetup(2); break
+		case rAreaB4: parallaxSetup(2); break
 		default: parallaxSetup(0)
 	}
 }

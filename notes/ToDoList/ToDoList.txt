@@ -14,7 +14,8 @@
 - [x] HUD
 - [x] telas: menu, pause, etc
 - [x] estagios simples (ao menos dois)
-- [ ] boss
+- [ ] boss _- trabalhando_
+- [ ] sons e musiquetas do jogo
 
 ## solucionar bugs conhecidos
 
@@ -59,16 +60,15 @@
 ### jogabilidade
 - [x] dialogos de tutoriais
 - [ ] vincular o oGameCursor ao mouse se movendo (não precisar clicar com mb_middle)
-- [ ] IA desvia de ataques
-- [ ] IA persegue o dash
-- [ ] IA pula pequenos abismos e ladeiras (inutil no momento)
-- [ ] IA pula (atacando) quando o player pula, tentando impedir o player de fugir do combate
+- [ ] IA de oZomb desvia de ataques
+- [ ] IA de oZomb persegue o dash
+- [ ] IA de oZomb e oSniper pula pequenos abismos e ladeiras (inutil no momento)
+- [ ] IA de oZomb pula (atacando) quando o player pula, tentando impedir o player de fugir do combate
 - [ ] Area B0 (update para Blade Draga)
-- [ ] refazer a maioria das sprites e tilesets
+- [ ] refazer a maioria das sprites e tilesets iniciais
 
 ### recursos
 - [x] sistema de save/load simples
-- [ ] sons no jogo
 - [x] sistema de save/load mais otimizado
 - [x] pequeno buffer de pulo nas plataformas
 - [x] tornar os dialogos de tutoriais menores (e deixar boa parte na propria tela de pause) e visuais

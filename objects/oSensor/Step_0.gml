@@ -1,8 +1,9 @@
 keyInit()
 
 var doorChange = keyUp and canChange
+var platformChange = keyDown and canChange
 
-if place_meeting(x,y,oPlayer) and (!door or doorChange){
+if place_meeting(x,y,oPlayer) and (!door or doorChange) and (!platform or platformChange){
 	if destination!=noone{
 		oPlayer.persistent=true
 		change=true
@@ -26,8 +27,14 @@ if change {
 	}
 }
 
-if keyUp canChange=false
-else canChange=true
+if door{
+	if keyUp canChange=false
+	else canChange=true
+}
+if platform{
+	if keyDown canChange=false
+	else canChange=true
+}
 
 if global.debug image_alpha=1 else image_alpha=0
 
