@@ -20,7 +20,10 @@ statesInit=function(){
 		HURTFALL, //11
 		HURTFALLBACK, //12
 		FAINT,//13
-		DEAD//14
+		DEAD,//14
+		//boss-only
+		TIRED,//15
+		DEFEND//16
 	}
 }
 aiFlyingStatesInit=function(){

@@ -1,18 +1,12 @@
 {
-  "spriteId": {
-    "name": "sBoss1Idle",
-    "path": "sprites/sBoss1Idle/sBoss1Idle.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "sBoss1Idle",
-    "path": "sprites/sBoss1Idle/sBoss1Idle.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oEntAI1Boss",
-    "path": "objects/oEntAI1Boss/oEntAI1Boss.yy",
+    "name": "oEntHumanoid",
+    "path": "objects/oEntHumanoid/oEntHumanoid.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,7 +21,9 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oBomb","path":"objects/oBomb/oBomb.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,7 +32,7 @@
     "path": "folders/Objects/Creatures/Boss.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oBoss",
+  "name": "oEntAI1Boss",
   "tags": [],
   "resourceType": "GMObject",
 }
