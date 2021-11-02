@@ -30,6 +30,7 @@
 - [x] IA do objeto Sniper bugando os movimentos ou mesmo fazendo animacao de tiro mas sem sair nada (desconhecido) _-codigo refeito_
 - [x] oSpawner para de funcionar provavelmente após preeencher a lista até a quantidade "maxInsts"
 - [x] dificil de pular sobre o objeto oBox
+- [ ] estado pre luta do boss (já que ele vai ficar perseguindo o player o tempo todo)
 
 ### bugs/problemas futuros a serem resolvidos
 - [x] saves que ficam obsoletos a cada mínima revisao do codigo (provavelmente sera resolvido quando otimizar o sistema de save/load)
