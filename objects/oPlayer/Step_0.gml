@@ -95,3 +95,5 @@ global.totItemTypes = hasItem[0]+hasItem[1]+hasItem[2]
 
 if global.totItemTypes==0 instance_deactivate_object(oZomb)
 else instance_activate_object(oZomb)
+
+show_debug_message(audio_is_playing(sndBladeSlashMiss))

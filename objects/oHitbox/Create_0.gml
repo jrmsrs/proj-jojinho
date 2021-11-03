@@ -3,6 +3,7 @@ if !global.debug image_alpha = 0
 frames=0
 
 if layer==layer_get_id("PlayerBladeHitbox"){
+	//audio_play_sound(sndBladeSlashMiss,1,0)
 	dir=sign(x-oPlayer.x)
 	image_xscale = .25*dir
 	image_yscale = .45

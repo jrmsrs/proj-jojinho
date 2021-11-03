@@ -25,12 +25,12 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"cc5059a0-e1f1-40e1-a120-9af010992e8e","path":"sprites/sHealthBar/sHealthBar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cc5059a0-e1f1-40e1-a120-9af010992e8e","path":"sprites/sHealthBar/sHealthBar.yy",},"LayerId":{"name":"bf790ad3-4877-4a47-8900-236970a6d066","path":"sprites/sHealthBar/sHealthBar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"cc5059a0-e1f1-40e1-a120-9af010992e8e","path":"sprites/sHealthBar/sHealthBar.yy",},"LayerId":{"name":"efd92e69-d9e6-4218-9909-5e59033b411f","path":"sprites/sHealthBar/sHealthBar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"cc5059a0-e1f1-40e1-a120-9af010992e8e","path":"sprites/sHealthBar/sHealthBar.yy",},"LayerId":{"name":"bf790ad3-4877-4a47-8900-236970a6d066","path":"sprites/sHealthBar/sHealthBar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sHealthBar","path":"sprites/sHealthBar/sHealthBar.yy",},"resourceVersion":"1.0","name":"cc5059a0-e1f1-40e1-a120-9af010992e8e","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"b4cce48c-589e-4c15-8e3e-de29424e00b9","path":"sprites/sHealthBar/sHealthBar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b4cce48c-589e-4c15-8e3e-de29424e00b9","path":"sprites/sHealthBar/sHealthBar.yy",},"LayerId":{"name":"bf790ad3-4877-4a47-8900-236970a6d066","path":"sprites/sHealthBar/sHealthBar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"b4cce48c-589e-4c15-8e3e-de29424e00b9","path":"sprites/sHealthBar/sHealthBar.yy",},"LayerId":{"name":"efd92e69-d9e6-4218-9909-5e59033b411f","path":"sprites/sHealthBar/sHealthBar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"b4cce48c-589e-4c15-8e3e-de29424e00b9","path":"sprites/sHealthBar/sHealthBar.yy",},"LayerId":{"name":"bf790ad3-4877-4a47-8900-236970a6d066","path":"sprites/sHealthBar/sHealthBar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sHealthBar","path":"sprites/sHealthBar/sHealthBar.yy",},"resourceVersion":"1.0","name":"b4cce48c-589e-4c15-8e3e-de29424e00b9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
