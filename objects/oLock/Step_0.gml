@@ -5,7 +5,7 @@ if ds_map_exists(global.progress,progressName){
 	}
 }
 
-if place_meeting(x,y,oEntHumanoid) and global.inventoryEquip{
+if place_meeting(x,y,oEntHumanoid) and ds_list_find_index(global.inventoryEquip,"Key Lab")>-1{
 	image_index=1
 	destination.active=true
 }

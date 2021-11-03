@@ -1,9 +1,19 @@
+hSpeed=0
+vSpeed=0
+vSpeedMax=12
+gravityForce=.5
+
 rotate=true
+levitate=true
 color=255
 multiply=-1
+postCreation=false
+
+defaultScale=image_xscale
 
 switch itemName{
-
+	
+	//equip
 	case "Key Lab":
 		sprite_index=sIKeys
 		rotate=false

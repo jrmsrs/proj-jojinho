@@ -1,4 +1,4 @@
-///@description set item
+event_inherited()
 
 if keySetW1{
 	if ds_list_size(global.inventoryWeapon1)>1{ 

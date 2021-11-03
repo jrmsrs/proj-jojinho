@@ -76,6 +76,7 @@
 - [x] sistema de save/load mais otimizado
 - [x] pequeno buffer de pulo nas plataformas
 - [x] tornar os dialogos de tutoriais menores (e deixar boa parte na propria tela de pause) e visuais
+- [x] drops de vida
 
 ## mapa do jogo (objetivo)
 

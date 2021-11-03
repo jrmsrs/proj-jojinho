@@ -1,5 +1,4 @@
 if _explode{
-	show_debug_message("explodindo")
 	image_speed=1
 	image_index=3
 	_explode=false

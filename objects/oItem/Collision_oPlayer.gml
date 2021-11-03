@@ -19,6 +19,10 @@ switch itemName{
 		other.shooting=1
 		break
 	
+	case "Life Heart 3": other.life+=15
+	case "Life Heart 2": other.life+=10
+	case "Life Heart 1": other.life+=5
+		break
 }
 
 instance_destroy()

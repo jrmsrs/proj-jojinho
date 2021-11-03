@@ -392,7 +392,6 @@ if form=="humanoid"{
 
 #region FLYING FORM (it's AI)
 if form=="flying"{
-	instance_deactivate_object(oBossWall)
 	invincible = currentState==aiFlyingStates.FAINT or currentState==aiFlyingStates.HURT or currentState==aiFlyingStates.HURTFALL or currentState==aiFlyingStates.HURTFALLBACK
 	onFloor = place_meeting(x,y+6,oWall)
 	if invincible and !currentState==aiFlyingStates.HURT hurt=0
@@ -678,8 +677,11 @@ switch form{
 					sprite_index = sBossTransform
 					image_index=0
 				}
-				if image_index>=image_number-1
+				if image_index>=image_number-1{
 					name="boss form 2"
+					instance_deactivate_object(instance_nearest(240,384,oBossWall))
+					instance_deactivate_object(instance_nearest(624,384,oBossWall))
+				}
 				break
 		}
 		if oPlayer.currentState==states.ATTACK and distance_to_object(oPlayer) <= 50
@@ -720,6 +722,4 @@ switch form{
 				chasing=true
 		break
 }
-
-show_debug_message(form)
 	

@@ -11,6 +11,7 @@
     {"id":{"name":"oBox","path":"objects/oBox/oBox.yy",},"order":5,},
     {"id":{"name":"sBgMountainDown","path":"sprites/sBgMountainDown/sBgMountainDown.yy",},"order":2,},
     {"id":{"name":"oItem","path":"objects/oItem/oItem.yy",},"order":0,},
+    {"id":{"name":"sILifeHeart","path":"sprites/sILifeHeart/sILifeHeart.yy",},"order":7,},
     {"id":{"name":"sBoss2Scout","path":"sprites/sBoss2Scout/sBoss2Scout.yy",},"order":11,},
     {"id":{"name":"sMouseCursor","path":"sprites/sMouseCursor/sMouseCursor.yy",},"order":3,},
     {"id":{"name":"sPlayerAttack1","path":"sprites/sPlayerAttack1/sPlayerAttack1.yy",},"order":14,},

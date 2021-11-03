@@ -24,3 +24,10 @@ switch itemType{
 			instance_destroy(self)
 	break
 }
+
+if !levitate{
+	applyGravity()
+	wallCollision()
+	if place_meeting(x,y+1,oWall)
+		hSpeed=0
+}
