@@ -1,0 +1,1 @@
+audio_play_sound(sfPlayerBladeSlash,1,0)

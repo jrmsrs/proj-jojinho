@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.57,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfBossDefend.wav",
-  "duration": 0.879864,
+  "soundFile": "sfDemoHurt.wav",
+  "duration": 1.482404,
   "parent": {
-    "name": "boss",
-    "path": "folders/Sounds/sfx/boss.yy",
+    "name": "demo",
+    "path": "folders/Sounds/sfx/demo.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfBossDefend",
+  "name": "sfDemoHurt",
   "tags": [],
   "resourceType": "GMSound",
 }

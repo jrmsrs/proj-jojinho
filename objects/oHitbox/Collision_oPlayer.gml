@@ -1,4 +1,3 @@
-//evento ativa somente se o hitbox for criado por inimigos
 if layer!=layer_get_id("EnemyHitbox") and layer!=layer_get_id("BossHitbox") exit
 
 other.hurt = choose(2,3,4,5,6)

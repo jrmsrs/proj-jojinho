@@ -1,6 +1,8 @@
 if distance_to_point(oPlayer.x,oPlayer.y-30)>40 image_alpha=1
 
 if exploding{
+	if !instance_exists(oShake)
+		audio_play_sound(sfPlayerBombExplo1,1,false)
 	image_xscale+=.1
 	image_yscale+=.1
 	shakeScreen(10)

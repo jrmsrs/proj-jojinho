@@ -1,14 +1,14 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.75,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
-  "type": 0,
+  "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "sfx",
-    "path": "audiogroups/sfx",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfPlayerGunShoot.wav",
   "duration": 0.730794,

@@ -1,4 +1,3 @@
-//evento ativa somente se o hitbox for criado pelo player
 if layer!=layer_get_id("PlayerBladeHitbox") exit
 
 //enviar dano

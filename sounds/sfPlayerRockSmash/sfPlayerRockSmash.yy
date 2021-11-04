@@ -7,8 +7,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "sfx",
-    "path": "audiogroups/sfx",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfPlayerRockSmash.wav",
   "duration": 2.04585,

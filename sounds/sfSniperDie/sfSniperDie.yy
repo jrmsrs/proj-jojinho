@@ -1,14 +1,14 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.36,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "sfx",
-    "path": "audiogroups/sfx",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfSniperDie.wav",
   "duration": 2.858118,
