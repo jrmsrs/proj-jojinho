@@ -7,14 +7,14 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "agSfx",
+    "path": "audiogroups/agSfx",
   },
   "soundFile": "sfSniperDie.wav",
   "duration": 2.858118,
   "parent": {
-    "name": "sniper",
-    "path": "folders/Sounds/sfx/sniper.yy",
+    "name": "Sniper",
+    "path": "folders/Sounds/SFX/Sniper.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfSniperDie",

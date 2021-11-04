@@ -7,14 +7,14 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "agSfx",
+    "path": "audiogroups/agSfx",
   },
   "soundFile": "sfPlayerBombExplo2.wav",
   "duration": 1.505283,
   "parent": {
-    "name": "player",
-    "path": "folders/Sounds/sfx/player.yy",
+    "name": "Player",
+    "path": "folders/Sounds/SFX/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfPlayerBombExplo2",

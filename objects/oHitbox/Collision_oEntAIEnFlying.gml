@@ -9,6 +9,6 @@ switch(oPlayer.weapon1){
 }
 	
 if !other.invincible{
-	other.hSpeed = 2*sign(image_xscale)
-	other.vSpeed = 2*sign(image_xscale)
+	other.hSpeed = lengthdir_x(4, point_direction(oPlayer.x,oPlayer.y-20,oDemo.x,oDemo.y-20))
+	other.vSpeed = lengthdir_y(4, point_direction(oPlayer.x,oPlayer.y-20,oDemo.x,oDemo.y-20))
 }

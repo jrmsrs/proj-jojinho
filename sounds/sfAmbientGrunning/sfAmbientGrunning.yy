@@ -7,14 +7,14 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "agSfx",
+    "path": "audiogroups/agSfx",
   },
   "soundFile": "sfAmbientGrunning.wav",
   "duration": 3.730794,
   "parent": {
-    "name": "ambient",
-    "path": "folders/Sounds/sfx/ambient.yy",
+    "name": "Ambient",
+    "path": "folders/Sounds/SFX/Ambient.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfAmbientGrunning",

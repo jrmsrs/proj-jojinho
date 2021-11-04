@@ -5,7 +5,6 @@
 - [passos para o objetivo final](#passos-pra-concluir-os-objetivos-principais)
 - [objetivos futuros](#objetivos-futuros)
 
-
 ## objectivos
 
 - [x] jogabilidade okay de action platformer/metroidvania
@@ -63,8 +62,7 @@
 - [x] adicionar sound effects
 - [x] implementar sfx no jogo
 - [x] adicionar musicas
-- [ ] implementar musicas no jogo
-
+- [x] implementar musicas no jogo
 
 
 ## objetivos futuros
