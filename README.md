@@ -9,4 +9,5 @@
 - [x] telas: menu, pause, etc
 - [x] estagios simples (ao menos dois)
 - [x] boss 
-- [ ] sons e musiquetas do jogo _- trabalhando_
+- [x] sons e musiquetas do jogo
+- [ ] acabamento, resolver principais bugs _- trabalhando_
