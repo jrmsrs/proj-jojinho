@@ -5,6 +5,8 @@ aiFlyingStatesInit()
 #region FIRST FORM (humanoid)
 statesInit()
 
+invincible=true
+
 hSpeed = 0
 vSpeed = 0
 vSpeedMax = 12

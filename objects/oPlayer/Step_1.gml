@@ -27,6 +27,6 @@ switch currentState{
 	case states.HURT:
 		if sprite_index!=sHurt
 			audio_play_sound(sfPlayerBladeSlashHit,1,false)
+		audio_sound_gain(global.actualMusic,global.musicVolume,1000)
 		break
-
 }

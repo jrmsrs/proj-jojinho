@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0d428765-472d-4b36-a52f-b200467146d1","path":"sprites/sDebugWall/sDebugWall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0d428765-472d-4b36-a52f-b200467146d1","path":"sprites/sDebugWall/sDebugWall.yy",},"LayerId":{"name":"3f76e4af-0723-4837-a298-20b975478653","path":"sprites/sDebugWall/sDebugWall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDebugWall","path":"sprites/sDebugWall/sDebugWall.yy",},"resourceVersion":"1.0","name":"0d428765-472d-4b36-a52f-b200467146d1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0d428765-472d-4b36-a52f-b200467146d1","path":"sprites/sBtn/sBtn.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0d428765-472d-4b36-a52f-b200467146d1","path":"sprites/sBtn/sBtn.yy",},"LayerId":{"name":"3f76e4af-0723-4837-a298-20b975478653","path":"sprites/sBtn/sBtn.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sBtn","path":"sprites/sBtn/sBtn.yy",},"resourceVersion":"1.0","name":"0d428765-472d-4b36-a52f-b200467146d1","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sDebugWall","path":"sprites/sDebugWall/sDebugWall.yy",},
+    "spriteId": {"name":"sBtn","path":"sprites/sBtn/sBtn.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6dd2866f-61ed-4688-988e-e2b6a54e9ab2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d428765-472d-4b36-a52f-b200467146d1","path":"sprites/sDebugWall/sDebugWall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"06ff101a-070c-4f2e-9cd5-5200c849698a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d428765-472d-4b36-a52f-b200467146d1","path":"sprites/sBtn/sBtn.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sDebugWall","path":"sprites/sDebugWall/sDebugWall.yy",},
+    "parent": {"name":"sBtn","path":"sprites/sBtn/sBtn.yy",},
     "resourceVersion": "1.3",
-    "name": "sDebugWall",
+    "name": "sBtn",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":13.0,"displayName":"default","resourceVersion":"1.0","name":"3f76e4af-0723-4837-a298-20b975478653","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":85.0,"displayName":"default","resourceVersion":"1.0","name":"3f76e4af-0723-4837-a298-20b975478653","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Game",
-    "path": "folders/Sprites/Game.yy",
+    "name": "UI",
+    "path": "folders/Sprites/Game/UI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sDebugWall",
+  "name": "sBtn",
   "tags": [],
   "resourceType": "GMSprite",
 }

@@ -4,10 +4,11 @@ if !object_exists(oPlayer) exit
 #region STATIC FORM
 if form=="static"{
 	instance_deactivate_object(oBossWall)
-	if distance_to_object(oPlayer)<=100{
+	if distance_to_object(oPlayer)<=200{
 		name = "boss form 1"
 		instance_activate_object(oBossWall)
 	}
+	hurt=0
 }
 #endregion
 
@@ -596,7 +597,7 @@ switch form{
 				if chase()
 					iaTimer=0 //temporizador zera enquanto está perseguindo
 		
-				if distance_to_object(oPlayer)<=40 and !oPlayer.invincible {
+				if distance_to_object(oPlayer)<=30 and !oPlayer.invincible {
 					hAxis=0
 					currentState = states.IDLE
 				}

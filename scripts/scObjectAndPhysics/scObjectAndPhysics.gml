@@ -29,3 +29,19 @@ function shakeScreen(force,dir=all){
 	shake.force=force
 	shake.dir=dir
 }
+
+function setMusicInit(){
+	enum music{
+		TITLE,
+		A,
+		B,
+		PRE_BOSS,
+		BOSS,
+		END
+	}
+}
+
+function setMusic(music){
+	global.previMusic=global.actualMusic
+	oMusic.mus=music
+}

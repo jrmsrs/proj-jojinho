@@ -32,7 +32,6 @@ if load{
 	}
 }
 
-
 //da room rArea1 em diante
 if room!=rInitialize and room!=rUITitle{ 
 	if ds_list_find_index(global.roomTypeStage,room)>-1{

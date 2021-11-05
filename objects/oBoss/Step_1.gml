@@ -1,6 +1,8 @@
 event_inherited();
 
 if name=="boss form 1"{
+	audio_play_sound(sfBossGrunning,0,1)
+	audio_pause_sound(sfBossGrunning)
 	name="boss"
 	form="humanoid"
 	maxLife=80
