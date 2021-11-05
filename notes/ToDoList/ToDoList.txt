@@ -33,12 +33,9 @@
 - [x] dificil de pular sobre o objeto oBox
 - [x] estado pre luta do boss (já que ele vai ficar perseguindo o player o tempo todo)
 - [x] boss cai pra fora das tiles _- agora prende o player dificultando movimentação_
-- [ ] oPlayer pode dar infinitos dashs quando faz walljump para a direita (a esquerda funciona normal)
+- [x] oPlayer pode dar infinitos dashs quando faz walljump para a direita (a esquerda funciona normal)
 - [ ] IA do objeto oDemo deveria subir apos atacar e dar espaço pro jogador não ficar travado
 - [x] IA do objeto oDemo fica para um lado e para outro proximo do oSpawner e precisa que o jogador se aproxime muito para perseguir
-
-### bugs/problemas futuros a serem resolvidos
-- [x] saves que ficam obsoletos a cada mínima revisao do codigo (provavelmente sera resolvido quando otimizar o sistema de save/load)
 
 ## passos pra concluir os objetivos principais
 
@@ -46,6 +43,7 @@
 - [x] criar tela de inicio
 - [x] criar tela de pause (retornar ao menu de inicio, sair do jogo)
 - [x] criar tela de morte (apenas transiçao)
+- [ ] criar tela de settings (volume da musica e SFX apenas)
 
 ### estagios simples (ao menos dois)
 - [x] recurso metroidvania de areas acessiveis apenas com itens específicos 
@@ -70,19 +68,13 @@
 
 ### jogabilidade
 - [x] dialogos de tutoriais
+- [ ] facilitar o walljump e dash principalmente para teclado+mouse _- trabalhando_
 - [ ] tutorial aparece só até concluir progressos especificos do jogo
+- [ ] vincular o oGameCursor ao mouse se movendo (não precisar clicar com mb_middle)
 - [ ] melhorar o collisor de ataque (oHitbox)
 - [ ] agradecimento pos jogo
-- [ ] facilitar o walljump e dash principalmente para teclado+mouse
-- [ ] vincular o oGameCursor ao mouse se movendo (não precisar clicar com mb_middle)
-- [ ] IA de oZomb desvia de ataques
-- [ ] IA de oZomb persegue o dash
-- [ ] IA de oZomb e oSniper pula pequenos abismos e ladeiras (inutil no momento)
-- [ ] IA de oZomb pula (atacando) quando o player pula, tentando impedir o player de fugir do combate
 - [ ] Area B0 (update para Blade Draga)
 - [ ] refazer a maioria das sprites e tilesets iniciais
-- [ ] boss na forma 1 se teletransporta em ponto especificos do estagio (ao inves de prender o player em distancia curta)
-
 
 ### recursos
 - [x] sistema de save/load simples
@@ -120,7 +112,7 @@ ___________----------------------------------- __________________________
                            ------   ------------------   -----   |      |
                              *             *                     --------
 S começo do jogo
-C porta para o checkpoint
+C porta para o checkpoint (rooms AC, BC, etc)
 * concluido
 ~ trabalhando
 <-> conexões das rooms

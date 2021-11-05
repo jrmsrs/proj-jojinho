@@ -1,7 +1,7 @@
 if _break{
 	image_speed=1
-	image_index=2
-	_break=false
+	//image_index=2
+	
 }
 
 if image_speed>=1{
