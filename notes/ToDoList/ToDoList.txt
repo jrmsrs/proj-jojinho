@@ -14,7 +14,8 @@
 - [x] telas: menu, pause, etc
 - [x] estagios simples (ao menos dois)
 - [x] boss
-- [x] sons e musiquetas do jogo _- ainda trabalhando_
+- [x] sons e musiquetas do jogo
+- [ ] acabamento, resolver principais bugs _- trabalhando_
 
 ## solucionar bugs conhecidos
 
@@ -34,7 +35,7 @@
 - [x] boss cai pra fora das tiles _- agora prende o player dificultando movimentação_
 - [ ] oPlayer pode dar infinitos dashs quando faz walljump para a direita (a esquerda funciona normal)
 - [ ] IA do objeto oDemo deveria subir apos atacar e dar espaço pro jogador não ficar travado
-- [ ] IA do objeto oDemo fica para um lado e para outro proximo do oSpawner e precisa que o jogador se aproxime muito para perseguir
+- [x] IA do objeto oDemo fica para um lado e para outro proximo do oSpawner e precisa que o jogador se aproxime muito para perseguir
 
 ### bugs/problemas futuros a serem resolvidos
 - [x] saves que ficam obsoletos a cada mínima revisao do codigo (provavelmente sera resolvido quando otimizar o sistema de save/load)

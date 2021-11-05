@@ -45,9 +45,10 @@ switch(currentState){
 			if ds_list_size(enemies) < maxInsts{
 				var en = instance_create_layer(x,y,layer,currentObj)
 				en.defaultScale = currentObj==oZomb ? 2:3
-				en.image_xscale=en.defaultScale*sign(oPlayer.x-en.x)
+				en.image_xscale=en.defaultScale//*sign(oPlayer.x-en.x)
 				en.image_yscale=en.defaultScale
-				en.hSpeed = sign(oPlayer.x-en.x)*en.movSpeed
+				//en.hSpeed = sign(oPlayer.x-en.x)*en.movSpeed
+				en.fullChase = true
 				ds_list_add(enemies,en)
 				currentState="outro"
 			}else{

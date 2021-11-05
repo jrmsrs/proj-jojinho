@@ -23,16 +23,27 @@ switch(currentState){
 		if sprite_index!=sIdle and sprite_index!=sHurt and sprite_index!=sHurtFallBack
 			alert=false
 		hAxis=0
-		if iaTimer++ >= iaDelay or chase() or alert{
-			iaTimer=0
-			iaDelay=choose(100,200,300,400)
-			currentState = states.RUN
-			if !oPlayer.invincible hAxis=sign(image_xscale)
-			else hAxis=-sign(image_xscale)
+		
+		if !fullChase or y!=oPlayer.y {
+			if iaTimer++ >= iaDelay or chase() or alert{
+				iaTimer=0
+				iaDelay=choose(100,200,300,400)
+				currentState = states.RUN
+				if !oPlayer.invincible hAxis=sign(image_xscale)
+				else hAxis=-sign(image_xscale)
+			}
 		}
 		if distance_to_object(oPlayer) <= 14 and sign(oPlayer.x-x)==sign(image_xscale) and !oPlayer.invincible{
 			hAxis=0
 			attacking=1
+		}
+		
+		if !fullChase
+			exit
+		if !attacking {
+			currentState = states.RUN
+			if !oPlayer.invincible hAxis=sign(oPlayer.x-x)
+			else hAxis=-sign(oPlayer.x-x)
 		}
 		break
 		
@@ -44,16 +55,22 @@ switch(currentState){
 			break
 		}
 		
-		hAxis=sign(image_xscale)
-	
+		if !fullChase or y!=oPlayer.y
+			hAxis=sign(image_xscale)
+		if fullChase and y==oPlayer.y
+			hAxis = sign(oPlayer.x-x) 
+			
 		//se não houver um chão adiante ou se houver uma parede, inverta a direcao
 		if (!place_meeting(x+sign(image_xscale)*16,y+6,oWall) or place_meeting(x+sign(image_xscale)*4,y,oWall)) and onFloor{
 			hAxis = -hAxis
 			alert=false
 		}
 		
-		if chase()
-			iaTimer=0 //temporizador zera enquanto está perseguindo
+		if !fullChase or y!=oPlayer.y{
+			if chase()
+				iaTimer=0 //temporizador zera enquanto está perseguindo
+		}else
+			iaTimer=0
 		
 		if distance_to_object(oPlayer)<=14 and !oPlayer.invincible {
 			hAxis=0

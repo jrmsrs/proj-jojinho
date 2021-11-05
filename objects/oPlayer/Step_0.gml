@@ -48,8 +48,7 @@ if jumpPressTime>0 and !keyJumpHold
 if jumping and keyJumpReleased 
 	vSpeed = vSpeed/2
 
-//recupera possibilidade de dash quando esta no chao ou quando faz walljump
-if onFloor or (place_meeting(x+6,y,oWall) and keyJumpPressed) 
+if onFloor
 	dashLimiter = 1
 
 if !gpAxisRNull{

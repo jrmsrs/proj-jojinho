@@ -1,5 +1,7 @@
 event_inherited();
 
+fullChase = false
+
 aiFlyingStatesInit()
 
 movSpeed=1.2

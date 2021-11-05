@@ -30,6 +30,8 @@
         "\"demo\"",
         "\"sniper\"",
       ],"multiselect":true,"filters":[],"resourceVersion":"1.0","name":"groupNames","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"400","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"delay","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"4","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"maxInsts","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {

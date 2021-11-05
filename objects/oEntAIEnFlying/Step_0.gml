@@ -27,7 +27,7 @@ switch currentState{
 			scoutCounter=0
 		}
 		
-		if (distance_to_object(oPlayer)<=130 or alert) and !oPlayer.invincible
+		if ( (distance_to_object(oPlayer)<=130 or alert) and !oPlayer.invincible ) or fullChase
 			currentState=aiFlyingStates.CHASE
 		if distance_to_point(originX,originY)>=300
 			currentState=aiFlyingStates.RETURN
@@ -44,10 +44,14 @@ switch currentState{
 			hSpeed = lengthdir_x(movSpeedChase, dirToPlayer)
 		if y-oPlayer.y>3 or y-oPlayer.y<-3 
 			vSpeed = lengthdir_y(movSpeedChase, dirToPlayer)
-		if (distance_to_object(oPlayer)>maxChaseRange or oPlayer.invincible) and !alert
+		if (distance_to_object(oPlayer)>maxChaseRange or oPlayer.invincible) and !alert{
+			if !fullChase or oPlayer.invincible
+				currentState=aiFlyingStates.SCOUT
+		}
+		if distance_to_object(oPlayer)>maxAlertChaseRange{
+			if !fullChase
 			currentState=aiFlyingStates.SCOUT
-		if distance_to_object(oPlayer)>maxAlertChaseRange
-			currentState=aiFlyingStates.SCOUT
+		}
 		if hurt 
 			currentState=aiFlyingStates.HURT
 		if hSpeed!=0 

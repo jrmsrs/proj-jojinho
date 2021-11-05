@@ -61,20 +61,21 @@ jump=function(){
 wallJump=function(){
 	var canWallJump=false
 	if walljumpForce==0 exit
-	if place_meeting(x+8*-hSpeed,y,oWall) {
-		if place_meeting(x-image_xscale,y,oWall){
-			canWallJump=true
-		}
-	}else if currentState==states.WALLSLIDE{
+	if place_meeting(x+4*sign(hSpeed),y,oWall) or place_meeting(x-16*sign(hAxis),y,oWall){
 		canWallJump=true
 	}
+	
+	if currentState==states.WALLSLIDE 
+		canWallJump=true
+	
 	if canWallJump{
 		if jumpPressTime>0 and !onFloor {
 	        vSpeed=-jumpHeight
 			hAxisLock=true
-	        if place_meeting(x-6,y,oWall) hSpeed=walljumpForce
+	        if place_meeting(x-16,y,oWall) hSpeed=walljumpForce
 	        else hSpeed=-walljumpForce
 	        jumpPressTime=0
+			image_xscale = defaultScale * sign(hSpeed)
 	    }
 	}
 }
